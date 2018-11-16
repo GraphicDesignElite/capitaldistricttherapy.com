@@ -1,0 +1,11 @@
+<!-- index.nunjucks -->
+{% set meta_title = "About Me" %}
+{% set meta_description = "Vanessa Bever, MFT" %}
+{% set activePage = 'about' %}
+
+{% extends "layout.nunjucks" %}
+
+
+{% block content %}
+<h1>About</h1>
+{% endblock %}

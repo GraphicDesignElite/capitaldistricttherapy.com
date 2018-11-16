@@ -1,0 +1,19 @@
+<!-- index.nunjucks -->
+{% set meta_title = "Teen Therapy" %}
+{% set meta_description = "Teen Therapy" %}
+{% set activePage = 'teen-therapy' %}
+
+{% extends "services-template.nunjucks" %}
+
+{% block serviceHeading %}
+Teen Therapy
+{% endblock %}
+{% block serviceSubheading %}
+Specialized therapy for adolecents
+{% endblock %}
+{% block leftcontent %}
+<h1>Left</h1>
+{% endblock %}
+{% block rightcontent %}
+<h1>Right</h1>
+{% endblock %}

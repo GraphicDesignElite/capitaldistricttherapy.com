@@ -1,0 +1,28 @@
+<!-- index.nunjucks -->
+
+{% extends "layout.nunjucks" %}
+
+
+{% block content %}
+<header class="services">
+    <div class="container pt-5 pb-5">
+        <div class="row">
+            <div class="col pt-3 pb-3">
+                <h1>{% block serviceHeading %}{% endblock %}</h1>
+                <h2>{% block serviceSubheading %}{% endblock %}</h2>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-sm-4" style="background:green;">
+            {% include "components/services-sidebar.nunjucks" %}
+        </div>
+        <div class="col" style="background:green;">
+            {% block rightcontent %}{% endblock %}
+        </div>
+    </div>
+</div>
+{% endblock %}
+

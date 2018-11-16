@@ -1,0 +1,11 @@
+<!-- index.nunjucks -->
+{% set meta_title = "Individual Therapy" %}
+{% set meta_description = "Individual Therapy" %}
+{% set activePage = 'individual-therapy' %}
+
+{% extends "layout.nunjucks" %}
+
+
+{% block content %}
+<h1>Individual Therapy</h1>
+{% endblock %}

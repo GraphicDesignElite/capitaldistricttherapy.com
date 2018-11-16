@@ -1,0 +1,29 @@
+<!-- index.nunjucks -->
+{% set meta_title = "Capital District Therapy - Providing phycotherapy services for Albany, Schenectady and Troy" %}
+{% set meta_description = "Capital District Therapy provides individual therapy, couples counceling, group and family therapy, and services for children with developmental delays, located in Troy, Ny." %}
+{% extends "layout.nunjucks" %}
+{% set activePage = 'home' %}
+
+
+
+{% block content %}
+<header class="home-page">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="mt-5 mb-5">
+                    <h1 class="-primary">Therapy to help you craft <br class="d-none d-md-block" /><span>a new begining</span></h1>
+                    <h2>Changing It</h2> 
+                    <h3>A third title</h3>
+                    <h4>A third title</h4>
+                    <h5>A third title</h5>
+                    <div class="pt-3">
+                        <a href="#" class="btn btn-primary">Make An Appointment</a>
+                        <a href="#" class="btn btn-secondary">Test</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+{% endblock %}

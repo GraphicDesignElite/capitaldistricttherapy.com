@@ -1,0 +1,8 @@
+Run > Gulp. Enjoy!
+
+npm install gulp-cli -g
+npm install gulp -D
+npx -p touch nodetouch gulpfile.js
+gulp --help
+
+Nunjucks - templates from pages are compiled to -> compiled, and then minified and moved into the dist folder.

@@ -1,0 +1,11 @@
+<!-- index.nunjucks -->
+{% set meta_title = "Graphic Design and Web Development Experts" %}
+{% set meta_description = "Graphic Design and Web Development Experts" %}
+{% set activePage = 'services' %}
+
+{% extends "layout.nunjucks" %}
+
+
+{% block content %}
+<h1>All Services</h1>
+{% endblock %}

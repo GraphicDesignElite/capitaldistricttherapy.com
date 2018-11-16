@@ -1,0 +1,38 @@
+html{
+  font-size:$font-size;
+}
+html, body {
+  height: 100%;
+}
+body{
+  font-family: $body-font;
+  background:#fff;
+  display: flex;
+  flex-direction: column;
+}
+h1,h2,h3,h4,h5{
+  font-family: $heading-font;
+}
+
+h1{
+  &.-light{
+    color:$white;
+  }
+  &.-primary{
+    color:$primary;
+  }
+}
+#content {
+    flex: 1 0 auto;
+}
+.page-content{
+    display:initial;
+}
+footer{
+  background:$dark;
+  color:$white;
+  z-index: 5;
+}
+
+
+

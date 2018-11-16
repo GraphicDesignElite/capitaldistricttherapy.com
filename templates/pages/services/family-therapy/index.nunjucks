@@ -1,0 +1,11 @@
+<!-- index.nunjucks -->
+{% set meta_title = "Family Therapy" %}
+{% set meta_description = "Family Therapy" %}
+{% set activePage = 'family-therapy' %}
+
+{% extends "layout.nunjucks" %}
+
+
+{% block content %}
+<h1>Family Therapy</h1>
+{% endblock %}

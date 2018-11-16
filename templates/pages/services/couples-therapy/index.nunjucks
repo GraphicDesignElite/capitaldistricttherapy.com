@@ -1,0 +1,11 @@
+<!-- index.nunjucks -->
+{% set meta_title = "Couples Therapy" %}
+{% set meta_description = "Couples Therapy" %}
+{% set activePage = 'couples-therapy' %}
+
+{% extends "layout.nunjucks" %}
+
+
+{% block content %}
+<h1>Couples Therapy</h1>
+{% endblock %}
