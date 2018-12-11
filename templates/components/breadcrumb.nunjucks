@@ -1,0 +1,35 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb float-md-right" itemscope itemtype="http://schema.org/BreadcrumbList">
+    <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+        <a href="/" itemprop="item">
+            <span itemprop="name">
+            Home
+            </span>
+        </a>
+        <meta itemprop="position" content="1" />
+    </li>
+  
+    <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+        <a href="{{folder_link}}" itemprop="item">
+            <span itemprop="name">
+                {{folder_name}}
+            </span>
+        </a>
+        <meta itemprop="position" content="2" />
+    </li>
+   
+ 
+    <li class="breadcrumb-item active" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" aria-current="page">
+        <a href="{{active_page_link}}" itemprop="item">
+            <span itemprop="name">
+                {{active_page_name}}
+            </span>
+        </a>
+        {% if folder_name %}
+        <meta itemprop="position" content="3" />
+        {% else %}
+        <meta itemprop="position" content="2" />
+        {% endif %}
+    </li>
+  </ol>
+</nav>

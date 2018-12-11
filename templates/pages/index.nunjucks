@@ -10,20 +10,41 @@
 <header class="home-page">
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col-lg-7">
                 <div class="mt-5 mb-5">
-                    <h1 class="-primary">Therapy to help you craft <br class="d-none d-md-block" /><span>a new begining</span></h1>
-                    <h2>Changing It</h2> 
-                    <h3>A third title</h3>
-                    <h4>A third title</h4>
-                    <h5>A third title</h5>
+                    <h1 class="--thin">Therapy to help you craft&nbsp;<br class="d-none d-lg-block" /><span class="--primary font-weight-normal">a new begining</span></h1>
+                    <p class="pt-3">Life can bring about experiences or changes that can be difficult to navigate, and might leave us feeling depressed, anxious, or even hopeless. Through compassion, patience and support, I can help you address issues in your life preventing you from becoming your best self. I specialize in couples counceling, family therapy, trauma, and child development.</p>
                     <div class="pt-3">
-                        <a href="#" class="btn btn-primary">Make An Appointment</a>
-                        <a href="#" class="btn btn-secondary">Test</a>
+                        <a href="#" class="btn btn-primary --icon --appt">Schedule a Consultation</a>
+                        <a href="#" class="btn ">View All Services</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <secton id="home-pills">
+        <div class="container mt-5 mb-5">
+            <div class="row no-gutters">
+                <div class="col-md">
+                    <div class="pillbox --primary-light">
+                        <h2 class="--thin">Family Therapy</h2>
+                        <p>Family therapy focuses on reinforcing healthy and loving relationships between family members, and resolving issues or conflicts that can have a lasting impact on those relationships.</p>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="pillbox --primary --expanded">
+                        <h2 class="--thin">Children and Teens</h2>
+                        <p>Whether your child is having trouble at school, not getting along with friends, isn’t behaving like his peers, therapy can help improve your quality of life as a parent when you start seeing positive changes in your child. </p>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="pillbox --primary-light">
+                        <h2 class="--thin">Couples Counceling</h2>
+                        <p>Couples counceling provides partners with the tools they need to communicate more effectivley, solve problems in a healthy way, and approach each other with respect, kindness and understanding.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </header>
 {% endblock %}

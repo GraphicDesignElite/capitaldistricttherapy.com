@@ -1,8 +1,48 @@
 <footer id="footer">
     <div class="container">
         <div class="row">
+            <div class="col-md-4 col-12">
+               <p>Commited to providing personal, affordable quality care for patients in Schenectady, Albany and Troy.</p> 
+            </div>
             <div class="col">
-               <p>xx</p> 
+               <h5 class="--wborder"><span>Services</span></h5>
+               <ul>
+                    <li><a href="#">Family Therapy</a></li>
+                    <li><a href="#">Child Therapy</a></li>
+                    <li><a href="#">Individual Therapy</a></li>
+                    <li><a href="#">Marriage Counseling</a></li>
+                    <li><a href="#">Crisis Therapy</a></li>
+                    <li><a href="#">Pre/Postnatal Therapy</a></li>
+                    <li><a href="#">Couples Therapy</a></li>
+               </ul>
+            </div>
+            <div class="col">
+               <h5 class="--wborder"><span>Links</span></h5>
+               <ul>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">What to expect on your first session</a></li>
+                    <li><a href="#">Who should consider counseling?</a></li>
+                    <li><a href="#">Resources</a></li>
+                
+               </ul>
+            </div>
+            <div class="col">
+               <h5 class="--wborder"><span>Contact</span></h5>
+               <h6>1.818.620.2570</h6>
+               <div class="address">
+                    <p>
+                        <span>108 Thornberry Ln</span><br/>
+                        <span>Rensselaer Ny, 12144</span><br/>
+                        <span>Info@capitaldistricttherapy.com</span><br/>
+                    <p>
+               </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-center copy">
+                <p>Capital District Therapy | Copyright 2018</p>
             </div>
         </div>
     </div>

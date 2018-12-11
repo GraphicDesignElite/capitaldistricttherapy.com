@@ -1,11 +1,50 @@
 <!-- index.nunjucks -->
-{% set meta_title = "Child Therapy" %}
-{% set meta_description = "Child Therapy" %}
+{% set meta_title = "Child Therapy and Counseling" %}
+{% set meta_description = "Capital District Therapy in Troy, Ny specializes in treatment & counseling services for children and adolescents facing trauma, depression, and behavioral issues." %}
 {% set activePage = 'child-therapy' %}
 
-{% extends "layout.nunjucks" %}
+<!--breadcrumbs -->
+{% set folder_name = "Services" %}
+{% set folder_link = "/services/" %}
+{% set active_page_name = 'Child Therapy' %}
+{% set active_page_link = '/services/child-therapy/' %}
+
+{% extends "services-template.nunjucks" %}
+
+{% block serviceHeading %}
+Child Therapy 
+{% endblock %}
+{% block serviceSubheading %}
+Therapy and Counseling for Children
+{% endblock %}
+{% block maincontent %}
+<img src="/img/services/child_therapy_intro.jpg" class="img-fluid mb-4" alt="Child and Adolescent Therapy and Counseling"/>
+<h3>When is the right time to consider therapy for my child?</h3>
+<h4 class="--primary">Protecting our most vunerable.</h4>
+<p>As a parent, you may have wondered how long this stage will last? You may start to look back on other times that your child went through a period of being demanding and think, this too shall pass. Though as time passes, you notice your patience is dwindling and you think there might be other ways to speed things up and get on track.</p>
+<p>Children are mostly able to go about their day and enjoy many things even when they are having a hard time. I have seen children following a traumatic event, sleep, eat, and play as though “nothing” had just happened. </p>
+<p>The thing about children is that when something is going on with them and they need help, they will not likely tell you day in and day out what the problem is. Children have incredible ways of coping with hardships and continue with their day-to-day life. What we know though is that when children aren’t given help to work through the hard moments in their life, these events stay with them and leave a lasting stunted impression.</p>
+<p>With an adult we know that things are not okay in their life when they are not tending to their physical health, strained marriage, medical care, write ups at work, their home is in disarray, bills haven’t been paid, outstanding tickets. But with children, they have adults that take care of all of everything for them.</p>
+<p>We know the other domains that are more child-specific. These include: school, peers, listening to instructions, getting along with adults, being flexible, eating, sleeping, and no reported pain</p>
+<p>But lets face it. Children come into the world learning to be better in all of those areas. We as parents are learning to have been patient as children get better and better at all of those categories. </p>
+<p>Therefore, if you see your child having a hard time, and a little pattern emerges where you are becoming increasingly frustrated that things aren’t getting better, than you are likely onto something. As parents our intuition about our children’s needs is our most powerful tool.</p>
+<h3 class="h4">It can be confusing to think about a child going to therapy and spark many questions:</h3>
+<p>Parents often wonder, does my child even ‘need’ therapy? What will they do in therapy? Will my child just sit on a couch and talk to the therapist? Will the therapist just tell my child how to behave and my kid will actually listen? </p>
+<p>Therapy is a place where your child’s developing mind can receive the care and support to promote healthy overall development. We want to nourish children’s growth and it can be hard to tell how they are digesting all of the things going on in their lives.</p>
+<p>Therapy for children can be a place that they work through problems they are currently experiencing. There does not have to be a detrimental problem currently happening in order for a child to benefit from therapy. During the first appointment/s I will see make a recommendation based on you and your child to see if therapy is something that would be helpful for your little one. </p>
+<p>Therapy for you child does not mean I sit them down on a couch while I ask poignant questions about their dreams and fears. Child therapy is play; we play with toys, games, art supplies, writing and music. What makes it therapeutic is that there is a constant focus on child psychology, and each activity has the purpose of helping your child to work through the stuff that has happened or is happening in their life.</p>
+<p>Therapy for children is not a punishment, it’s a gift. Similar to other experiences you seek out for your child, whether it’s sports, tutoring, or scouts.</p>
+<p>There are certainly a lot of books and information about children and parenting out there. Each thing telling you how it can help your child be happy, listen, end sibling rivalry and so on. But none of these are able to specifically tell you what will help your child. </p>
+<p>What’s the point of therapy? Well therapy focuses on the problem areas of your child’s life, we make goals, and work towards achieving those goals. For children, these goals include increasing identification of emotions, improving communication, healthy problem solving, increased understanding, and improved peer relationships. 
+Children experience a wide array of emotions and are learning how to cope with them. They feel urges to behave or say certain things and are learning to control themselves in a socially acceptable manner.
+</p>
+<p>Children are also leaning to communicate more effectively. We want our children to be able to tell us about what is going on within them. </p>
+<p>Problem solving just seems so adult &amp; serious but it’s something children are doing before they turn 1! With age children are able to solve more complicated problems. </p>
+<p>Kids can also work on getting along better with others. When children show repeated problems getting along with someone in their life, they can get stuck in a pattern of behavior that only gets them into more trouble. This type of pattern can exist when a child is being bullied or behaving like a bully. </p>
+<p>The goals of therapy for children can include a child learning to label emotions (ex: that character is sad), tell a parent the way they are feeling (ex: I feel sad right now mom), and be able to utilize age-appropriate ways to cope with feelings (ex: mom can I have a hug please). </p>
+<p>We know that an incredible amount of brain development occurs in our formative years of life and that many of the events that happen during this time can leave lasting impressions on the people we grow up to become.</p>
 
 
-{% block content %}
-<h1>Child Therapy</h1>
+
+
 {% endblock %}

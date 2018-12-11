@@ -1,28 +1,25 @@
 <!-- index.nunjucks -->
-{% set meta_title = "Crisis Therapy" %}
-{% set meta_description = "Crisis Therapy" %}
-{% set activePage = 'crisis-therapy' %}
+{% set meta_title = "Trauma Therapy" %}
+{% set meta_description = "" %}
+{% set activePage = 'trauma-therapy' %}
 
 <!--breadcrumbs -->
 {% set folder_name = "Services" %}
 {% set folder_link = "/services/" %}
-{% set active_page_name = 'Crisis Therapy' %}
-{% set active_page_link = '/services/crisis-therapy/' %}
+{% set active_page_name = 'Trauma Therapy' %}
+{% set active_page_link = '/services/trauma-therapy/' %}
 
 {% extends "services-template.nunjucks" %}
 
 {% block serviceHeading %}
-Crisis Therapy
+Trauma Therapy
 {% endblock %}
 {% block serviceSubheading %}
 Evaluation, assesment and plan development for children.
 {% endblock %}
 {% block maincontent %}
-<img src="/img/services/crisis_therapy_intro.jpg" class="img-fluid mb-4" alt="Child and Adolescent Therapy and Counseling"/>
+<img src="/img/services/child_therapy_intro.jpg" class="img-fluid mb-4" alt="Child and Adolescent Therapy and Counseling"/>
 <h3>When is the right time to consider therapy?</h3>
 <h4 class="--primary">Protecting our most vunerable.</h4>
-
-
-
 
 {% endblock %}

@@ -1,11 +1,44 @@
 <!-- index.nunjucks -->
 {% set meta_title = "Prenatal and Post Natal Therapy In Albany Ny" %}
 {% set meta_description = "Prenatal and Postnatal Therapy" %}
-{% set activePage = 'prenatal-postnatal-therapy' %}
+{% set activePage = 'prenatal-therapy' %}
 
-{% extends "layout.nunjucks" %}
+<!--breadcrumbs -->
+{% set folder_name = "Services" %}
+{% set folder_link = "/services/" %}
+{% set active_page_name = 'Individual Therapy' %}
+{% set active_page_link = '/services/prenatal-postnatal-therapy/' %}
+
+{% extends "services-template.nunjucks" %}
+
+{% block serviceHeading %}
+Prenatal and Postnatal Therapy
+{% endblock %}
+{% block serviceSubheading %}
+Therapy and counseling for pregnancy
+{% endblock %}
+{% block maincontent %}
+<img src="/img/services/prenatal_therapy_intro.jpg" class="img-fluid mb-4" alt="Prenatal and Postnatal Therapy"/>
+<h3>Expecting mothers and post partem depression</h3>
+<h4 class="--primary">Help for one of life's most difficult stages.</h4>
+<p>You’re having a baby, bringing life into this world so feeling like you have it all together is probably high on your list. You’re having a lot of conflicting thoughts and feel like you’ve been thrown for a loop. </p>
+<p>Pregnancy and having a child puts our bodies through an incredible process. The messages we have received about pregnancy can be really contrary to what you’re currently experiencing. </p>
+<p>The anxiety and worry during this time period can be consuming. It’s hard to open up and even allow yourself to see how you’re really feeling.</p>
+<p>Your habits have probably begun to change as you accommodate to your evolving body. Some changes are welcome while others are…well let’s face it… annoying. But we usually adopt a healthier life style or do our best to take steps in that direction</p>
+<blockquote class="blockquote">
+  <p class="mb-0">The anxiety and worry during this time period can be consuming. It’s hard to open up and even allow yourself to see how you’re really feeling.</p>
+</blockquote>
+<p>When a woman is pregnant, already delivered a baby and nursing, the usual forms of treatment must be altered so that there is no harm to baby. If you have taken medications prior to becoming pregnant you may have had a conversation with your doctor about how to continue with treatment during your pregnancy. </p>
+<p>This is the time to think what will my home be like with this new little one. It starts with figuring out where we put baby and baby things. Building a registry &amp; thinking to yourself, does one little human really need all this $#!+ ? You begin to develop your intuition about your baby’s needs and what will make your home flow and work. At the end of the day, there’s has to be a place for all of that stuff.</p>
+<p>Speaking of that place, some women are also looking for a new home while pregnant. Either way there are changes that happen to our home environment before baby arrives, pregnancy pillow in the bed may be one of the more welcome additions. If you have a pet, you may be looking for ways that your fur baby will accept the new arrival. </p>
+<p>Thinking about the relationship with your partner and how this will be affected by your newest addition. If you have children already, also how they will react to their newest sibling. How will I have time for my partner, me and our children? How will be each do in our roles as parents? </p>
+
+<blockquote class="blockquote">
+  <p class="mb-0">Pregnancy can launch us into this future-focused outlook that can make us feel anxious.</p>
+</blockquote>
+<p>Then there’s the working chic who is thinking how my career will be impacted. Things like maternity leave, baby bonding time and when or if to return to work. We go into pregnancy with some ideas but as we feel that precious baby growing, our feelings can really be swayed. If you know that you will be returning to work, then child care options are likely moving through your mind. </p>
+<p>Making up our mind is hard, especially when we are anticipating various scenarios. Pregnancy can launch us into this future-focused outlook that can make us feel anxious.</p>
+<p>I find that life events such as welcoming a new baby can evoke a lot of self-reflection and a time to visualize what you want your life to look like. Therapy can be a time to sort out all of these thoughts and figure out how you truly feel about each of these decisions.</p>
 
 
-{% block content %}
-<h1>Prenatal Therapy</h1>
 {% endblock %}

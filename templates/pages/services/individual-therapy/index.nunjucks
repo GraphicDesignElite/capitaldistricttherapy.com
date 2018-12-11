@@ -3,9 +3,51 @@
 {% set meta_description = "Individual Therapy" %}
 {% set activePage = 'individual-therapy' %}
 
-{% extends "layout.nunjucks" %}
+<!--breadcrumbs -->
+{% set folder_name = "Services" %}
+{% set folder_link = "/services/" %}
+{% set active_page_name = 'Individual Therapy' %}
+{% set active_page_link = '/services/individual-therapy/' %}
+
+{% extends "services-template.nunjucks" %}
+
+{% block serviceHeading %}
+Individual Therapy
+{% endblock %}
+{% block serviceSubheading %}
+Counseling and therapy for individuals.
+{% endblock %}
+{% block maincontent %}
+<img src="/img/services/individual_therapy_intro.jpg" class="img-fluid mb-4" alt="Individual Therapy and Counseling"/>
+<h3>When you're not feeling like yourself, there is help.</h3>
+<h4 class="--primary">Take control by facing challenges head on.</h4>
+<p>It can be frustrating when we know things might be headed in the wrong direction but feel powerless to do anything about it. When something just doesn’t feel right, or you notice that there is more emptiness than joy, individual counseling can help you take control of your life and the way you feel each day.</p>
+<p>Individual therapy (also sometimes referred to as psychotherapy or individual counseling) mainly focuses on your immediate and near future concerns.  We work one on one to address issues important to your wellbeing in a safe and confidential environment.  Individual therapy looks different for each person,  depending on your specific needs. </p>
+<p><strong>Issues we often address in individual therapy are:</strong></p>
+<ul class="checkmark">
+    <li>Depression</li>
+    <li>Anxiety</li>
+    <li>Anger</li>
+    <li>Marriage and Personal Relationships</li>
+    <li>Parenting Challenges</li>
+    <li>Difficulties in School</li>
+    <li>Your career / Occupation</li>
+</ul>
+<p>The goals you have set for yourself may be scattered, and there’s no clear path to personal success. But there is pain, both new and old that can affect your mood from day to day. Discovering and addressing the heart of these feelings is often the best way to begin the healing process.</p>
+<p>There are only so many times we can distract ourselves. Maybe during vacations, weekends, or time away you feel more like yourself but it’s so short-lived that it’s not sustainable. </p>
+<h3 class="h4">When is the right time to start therapy?</h3>
+<p>Noticing and then acknowledging that something isn’t right is an incredibly brave step that you have already taken.  Tackling these issues can feel intimidating, but if you have been thinking about how things can be different, and you are ready to make a change, you are ready to try individual therapy. </p>
+<p>You are worth it and owe it to yourself to focus on what really matters. It’s time to roll up our sleeves and clean house on those bothersome problems. When you’re determined to accomplish something, you get it done. With the proper support and qualified help, there will be notable changes to celebrate in a short period of time. </p>
+<h3 class="h4">What happens during an individual therapy session?</h3>
+<p>I talk with my clients to incorporate a plan/goals to address the immediate concerns, what areas of your life you’d like to improve, and reducing risk factors and obstacles. That means that if you are losing sleep over an upcoming interview and you have been unemployed for months, then we focus on tools that can help you land interview, not get into your unresolved feelings about your parents’ divorce.</p>
+<p>We will have an honest conversation about the approaches used to help you and I will count on you to give me constant &amp; honest feedback. That means you enter this relationship knowing I can handle any criticism you have about me or my style. I’ve worked with people for years and ALWAYS emphasized this in my work with them. You have to tell me how you’re really doing so I can accurately help you.  </p>
+<h3 class="h4">What will we discuss during therapy?</h3>
+<p>Therapy can be short-term and problem focused , or longer term if it is the right fit for you. My goal is to help you meet your goals and start feeling better as quickly as possible. I practice therapy that is reliant on the goals that are initially established. That means when you complete your initial goals, it’s your decision to end therapy or reformulate new goals. </p>
+<p>I am passionate about people getting better, having quality relationships, and feeling good about themselves. I know that when we make personal changes it creates a ripple effect. You are a better employer, employee, student, sibling, spouse, child, and parent.</p>
 
 
-{% block content %}
-<h1>Individual Therapy</h1>
+
+
+
+
 {% endblock %}

@@ -1,5 +1,7 @@
 html{
-  font-size:$font-size;
+  padding:0px;
+  margin:0px;
+  font-size: $font-size;
 }
 html, body {
   height: 100%;
@@ -9,18 +11,149 @@ body{
   background:#fff;
   display: flex;
   flex-direction: column;
+  &.home{
+    background-image:url('/img/home/home-header.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
 }
-h1,h2,h3,h4,h5{
+h1,h2,h3,h4,h5,.h1,.h2,.h3,.h4,.h5, p, span{
   font-family: $heading-font;
-}
-
-h1{
-  &.-light{
+  &.--primary{
+      color:$primary;
+  }
+  &.--light{
     color:$white;
   }
-  &.-primary{
-    color:$primary;
+  &.--thin{
+    font-weight:100;
   }
+  &.--regular{
+    font-weight:500;
+  }
+  &.--wborder{
+    position:relative;
+    span{
+        background:#fff;
+        display: inline-block;
+        z-index:3;
+        position: relative;
+        padding-right:20px;
+        footer &{
+            background:$dark;
+        }
+    }
+    &:before{
+        content: "";
+        z-index:1;
+        display:block;
+        height:3px;
+        background: $primary;
+        width:100%;
+        position:absolute;
+        top:50%;
+        transform: translateY(-50%);
+    }
+  }
+  &.--italic{
+      font-style:italic;
+  }
+  
+}
+ul{
+    &.checkmark{
+        list-style-type:none;
+        li{
+            position:relative;
+            &:before{
+                content: '';
+                background:url(#{$spriteURL});
+                background-position: top right;
+                display:block;
+                height:15px; 
+                width:15px;
+                position:absolute;
+                left:-25px;
+                top:4px;
+            }
+        }
+    }
+    footer & {
+        padding:0px;
+        list-style-type: none;
+    }
+}
+.btn{
+    &.--square{
+        border-radius:0px;
+    }
+}
+.navbar{
+    @include media-breakpoint-down(sm) {
+        background:#fff;
+        padding:0px;
+        .container{
+            margin:0px;
+            max-width:100%;
+        }
+        .navbar-brand{
+            margin-left:15px;
+        }
+        .navbar-toggler{
+            margin-right:15px;
+        }
+        .nav-link{
+            padding:20px 15px;
+            border-top:1px solid #efefef;
+        }
+        .nav-link:hover, .nav-link:active, .nav-link:focus{
+            background:#efefef;
+        }
+    }
+    
+    .navbar-toggler{
+        outline: none;
+        background-color:$primary;
+        &:not(.collapsed) .navbar-toggler-icon{
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+        &.collapsed{
+            color:$primary;
+            background:#fff;
+        }
+    }
+}
+.nav-item{
+    &.btn-wrapper{
+        width:100%;
+        background:$primary;
+        @include media-breakpoint-up(md) {
+            padding-top:13px;
+            padding-left:15px;
+            background:none;
+        }
+        .btn{
+            @include media-breakpoint-down(sm) {
+                width:100%;
+                border-radius:0px;
+                padding:20px 15px;
+            }
+        }  
+    }
+    .dropdown-toggle:after{
+        position:absolute;
+        top:32px;
+        right:5px;
+        color:$primary;
+    }
+}
+.dropdown-menu{
+    border: 1px solid #ddd;
+    box-shadow: 0px 1px 3px rgba(0,0,0,.1);
+    padding-top:0px;
+    padding-bottom:0px;
+    margin-top:0px;
+    border-top:0px;
 }
 #content {
     flex: 1 0 auto;
@@ -29,10 +162,218 @@ h1{
     display:initial;
 }
 footer{
-  background:$dark;
-  color:$white;
-  z-index: 5;
+    padding: 30px 0px 0px 0px;
+    background:$dark;
+    color:$white;
+    z-index: 5;
+    font-size:.8em;
+    a{
+      color:#ddd; 
+      &:hover{
+          color:#fff;
+      }
+    }
+    .copy{
+        border-top:1px solid #252525;
+        padding:15px 0px;
+        margin-top:15px;
+        p{
+            margin:0px;
+        }
+    }
+}
+.list-group{
+    a{
+        transition:all .3s;
+        margin-bottom:4px;
+        &:hover, &:active{
+            color:#fff;
+        }
+    }
+}
+//Home
+.pillbox{
+    padding:30px 25px;
+    margin-bottom:10px;
+    @include media-breakpoint-up(md) {
+        margin-bottom:0px;
+    }
+    &.--primary{
+        background: $primary;
+        color:#fff;
+    }
+    &.--primary-light{
+        background: lighten($primary, 7.5%);
+        color:#fff;
+    }
+    &.--expanded{
+        @include media-breakpoint-up(md) {
+            padding-top: 45px;
+            padding-bottom: 45px;
+            position: relative;
+            top: -15px;
+        }
+        
+        
+    }
 }
 
+
+//Services
+.breadcrumb{
+    padding-left:0px;
+    color:#fff;
+    li{
+        a{
+            color:#fff;  
+        }
+        
+    }
+}
+.blockquote{
+    border-left: 4px solid $mediumDark;
+    padding: 20px;
+    text-align: left;
+    color: #666;
+    position: relative;
+    
+    p{
+        font-style: italic;
+        &:before, &:after{
+            content: '\201C';
+            display:inline-block;
+            font-family:arial;
+            font-size:2em;
+            line-height: 1em;
+            margin-top:-15px;
+            position:relative;
+            bottom:-10px;
+        }
+        &:after{
+            content: '\201D';
+            
+        }
+    }
+    
+}
+.contact-info-sidebar{
+    padding:15px;
+    margin-top:10px;
+    p{
+        margin:0px;
+    }
+}
+.nl-signup{
+    padding: 80px 0px;
+    background: $mediumDark;
+    color:#fff;
+    margin-top:60px;
+    h5{
+        font-weight: 100;
+        font-size:2.2em;
+        margin-bottom:.7em;
+    }
+}
+// Newsletter
+#mc_embed_signup{
+    label{
+        display: block;
+        margin-bottom: 3px;
+    }
+    .asterisk{
+       color:#e85c41; 
+    }
+    .mce_inline_error{
+       border: 2px solid #e85c41;
+    }
+    div.mce_inline_error{
+        border-radius: 3px;
+        font-size: 14px;
+        font-weight: normal;
+        z-index: 1;
+        color: #e85c41;
+        display: inline-block;
+        margin: 2px 0 1em 0;
+        padding: 5px 10px;
+        background-color: rgba(255,255,255,0.85);
+    }
+    small{
+        opacity:.7;
+        padding:5px 0px;
+        display:block;
+    }
+}
+.get-started{
+    border-top:1px solid $secondary;
+}
+.steps{
+    position:relative;
+    span{
+        display:inline-block;
+        position:relative;
+        padding:8px;
+        background:$dark;
+        border-radius:50%;
+        color:#fff;
+        width:3.6rem;
+        margin-bottom:1rem;
+        margin-top:.5rem;
+        z-index:2;
+        border:8px solid #fff;
+    }
+    &:after{
+        content:' ';
+        height:2px;
+        background:$primary;
+        position:absolute;
+        top:35px;
+        left:20%;
+        right:20%;
+        z-index:1;
+    }
+}
+.services-header{
+    background-color:$primary;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:#fff;
+    &.family-therapy{
+        background-image:url('/img/services/family_therapy_header.jpg');
+    }
+    &.child-therapy{
+        background-image:url('/img/services/child_therapy_header.jpg');
+    }
+    &.couples-therapy{
+        background-image:url('/img/services/couples_therapy_header.jpg');
+    }
+    &.teen-therapy{
+        background-image:url('/img/services/teen_therapy_header.jpg');
+    }
+    &.prenatal-therapy{
+        background-image:url('/img/services/prenatal_therapy_header.jpg');
+    }
+    &.individual-therapy{
+        background-image:url('/img/services/individual_therapy_header.jpg');
+    }
+    &.developmental-therapy{
+        background-image:url('/img/services/developmental_therapy_header.jpg');
+    }
+    &.crisis-therapy{
+        background-image:url('/img/services/crisis_therapy_header.jpg');
+    }
+    
+}
+
+/*Utilities*/
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+  
+    > .col,
+    > [class*="col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+}
 
 

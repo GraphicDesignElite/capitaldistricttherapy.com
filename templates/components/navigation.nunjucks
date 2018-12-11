@@ -1,5 +1,5 @@
 
-<nav class="navbar navbar-expand-md navbar-light bg-light">
+<nav class="navbar navbar-expand-md navbar-light">
 <div class="container">
   <a class="navbar-brand" href="#">Navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,16 +13,17 @@
       </li>
       <li class="nav-item dropdown {%if activePage == 'services' %} active {% endif %}">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
-          Services {%if activePage == 'services' %} <span class="sr-only">(current)</span> {% endif %}
+          Services{%if activePage == 'services' %} <span class="sr-only">(current)</span> {% endif %}
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item {%if activePage == 'family-therapy' %} active {% endif %}" href="/services/family-therapy">Family Therapy {%if activePage == 'family-therapy' %} <span class="sr-only">(current)</span> {% endif %}</a>
-          <a class="dropdown-item" href="/services/child-therapy">Child Therapy {%if activePage == 'child-therapy' %} <span class="sr-only">(current)</span> {% endif %}</a>
           <a class="dropdown-item" href="/services/individual-therapy">Individual Therapy {%if activePage == 'individual-therapy' %} <span class="sr-only">(current)</span> {% endif %}</a>
           <a class="dropdown-item" href="/services/crisis-therapy">Crisis Therapy {%if activePage == 'crisis-therapy' %} <span class="sr-only">(current)</span> {% endif %}</a>
           <a class="dropdown-item" href="/services/teen-therapy">Teen Therapy {%if activePage == 'teen-therapy' %} <span class="sr-only">(current)</span> {% endif %}</a>
           <a class="dropdown-item" href="/services/prenatal-postnatal-therapy">Pre/PostNatal Therapy {%if activePage == 'prenatal-postnatal-therapy' %} <span class="sr-only">(current)</span> {% endif %}</a>
           <a class="dropdown-item" href="/services/couples-therapy">Couples Therapy {%if activePage == 'couples-therapy' %} <span class="sr-only">(current)</span> {% endif %}</a>
+          <a class="dropdown-item" href="/services/child-therapy">Child Therapy {%if activePage == 'child-therapy' %} <span class="sr-only">(current)</span> {% endif %}</a>
+          <a class="dropdown-item" href="/services/developmental-therapy">Developmental Therapy {%if activePage == 'developmental-therapy' %} <span class="sr-only">(current)</span> {% endif %}</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item {%if activePage == 'services' %} active {% endif %}" href="/services/">All Services {%if activePage == 'services' %} <span class="sr-only">(current)</span> {% endif %}</a>
         </div>
@@ -32,6 +33,9 @@
       </li>
       <li class="nav-item {%if activePage == 'news' %} active {% endif %}">
         <a class="nav-link" href="#">News {%if activePage == 'news' %} <span class="sr-only">(current)</span> {% endif %}</a>
+      </li>
+      <li class="nav-item btn-wrapper">
+        <a class="btn btn-primary" href="#">Make an Appointment</a>
       </li>
     </ul>
   </div>

@@ -1,11 +1,54 @@
-<!-- index.nunjucks -->
+<!-- Base Settings.nunjucks -->
 {% set meta_title = "Family Therapy" %}
 {% set meta_description = "Family Therapy" %}
 {% set activePage = 'family-therapy' %}
 
-{% extends "layout.nunjucks" %}
+<!--breadcrumbs -->
+{% set folder_name = "Services" %}
+{% set folder_link = "/services/" %}
+{% set active_page_name = 'Family Therapy' %}
+{% set active_page_link = '/services/family-therapy/' %}
 
+{% extends "services-template.nunjucks" %}
 
-{% block content %}
-<h1>Family Therapy</h1>
+{% block serviceHeading %}
+Family Therapy 
+{% endblock %}
+{% block serviceSubheading %}
+Family Therapy Services and Counseling
+{% endblock %}
+{% block maincontent %}
+<img src="/img/services/family_therapy_intro.jpg" class="img-fluid mb-4" alt="Family Therapy and Counseling"/>
+<h3>What is Family Therapy / Counseling?</h3>
+<h4 class="--primary">Address family pain and heal wounds.</h4>
+<p>It can be difficult to make the choice to seek outside help when your family encounters obstacles. The first thing you should know about family therapy is that almost every family struggles at one point or another. If you're having issues with communication, trust, or daily interations within your immediate or extended family, you may want to set up a one on one consultation to find out if therapy is right for your family.</p>
+<p>Your family are often the people you love most, and your closest allies. Enrolling in family therapy can be the best way to help you recconect, improve your daily interactions, and rebuild broken relationships. By enrolling in therapy as a family, you share therapy as group, experiencing it together.-</p>
+<h3 class="h4 font-weight-bold">What is different about family therapy?</h3>
+<p>If you have been thinking about enrolling your family in therapy for the first time, you may wonder what that process will look like. Family therapy is often conducted in a group settingg, and focuses on improving the interations between you and your loved ones. Therapy can help you make directed, purposful progress towards resolving issues that may otherwise be difficult to fully overcome. </p>
+<p>You’ve been toying around with the idea of doing things differently and getting everyone together to go to therapy. But what will that really look like? Will it simply be a waste of everyone’s time? Will it be like the other times when you try to have meaningful conversations around the dinner table. You certainly don’t want to invest the time into family therapy when everyone begrudgingly gives one word answers.</p>
+<p>Then there’s also how we feel when we cast a light on our deepest insecurities. Am I going to be evaluated and told all of the many ways that I have messed up? Or just told that I need to suck it up and be kinder?</p>
+<p>Your family life is one of the most important factors of your mental health. In fact the individual mental health of each family member can be dependent on how the family is getting along as a whole. There are different stages that a family undergoes as people age and change. The problem is that a root problem can grow and take different forms, which can be confusing when trying to get better.</p>
+<blockquote class="blockquote">
+  <p class="mb-0">Your family life is one of the most important factors of your mental health.</p>
+</blockquote>
+<p>When one family member is dealing with something significant, it can affect everyone. Maybe the person is going through their own treatment so you feel like the problem is being worked on and things will get better soon. In the meantime, the family as a whole is accommodating and transforming. It can cause tension and emotions to come up and create a home environment that adapts to the needs of one individual. Although that is a compassionate approach, it’s really not going to serve the family as a whole.</p>
+<p>As a therapist who studied and was trained specifically in family therapy, I got you!</p>
+<p>When I work with families I make it a point to let everyone know that I am not here to be judge and jury. That’s not how truly profound and meaningful change happens. I’m here to enlist everyone to honestly look at how the family really is doing. To look at the areas that need attention and care. Then we all work hard to improve that communication.</p>
+<p>Family work exists in the communication we have with one another. When I say communication, people think of “what we talk about.” But one of the most important aspects to our communication and understanding of one another is listening.</p>
+<blockquote class="blockquote">
+  <p class="mb-0">Family work exists in the communication we have with one another.</p>
+</blockquote>
+<p>Family therapy can help you to have not only quality communication with one another but also to work through problem areas. I know it’s hard to just talk things through at home, even when you add another person to hear you out, it can feel like things change for a minute and then go back to the same old in no time.</p>
+<p>Family therapy is all about making those long-lasting changes that will forever impact how you get along.</p>
+<h3 class="h4">Common scenarios that are a good fit for family therapy:</h3>
+<ul class="checkmark">
+    <li>Families learning of a new diagnosis for a child, such as developmental disabilities including Autism Spectrum Disorder.</li>
+    <li>Families coping with a family member having an eating disorder.</li>
+    <li>Blended families, in which a step-parent or adoptive parent enters the family unit. </li>
+    <li>Families dealing with a recent or upcoming divorce /or separation.</li>
+    <li>Serious life changing events, including trauma.</li>
+    <li>A family coping with the reciept of a life altering medical diagnosis.</li>
+    <li>Families who have recently lost a loved one / member of the family.</li>
+</ul>
+
 {% endblock %}
