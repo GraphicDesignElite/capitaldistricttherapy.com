@@ -11,6 +11,10 @@
 
 {% extends "services-template.nunjucks" %}
 
+{% block sidebar %}
+{% include "components/services-sidebar.nunjucks" %}
+{% endblock %}
+
 {% block serviceHeading %}
 Trauma Therapy
 {% endblock %}
@@ -20,6 +24,41 @@ Evaluation, assesment and plan development for children.
 {% block maincontent %}
 <img src="/img/services/child_therapy_intro.jpg" class="img-fluid mb-4" alt="Child and Adolescent Therapy and Counseling"/>
 <h3>When is the right time to consider therapy?</h3>
-<h4 class="--primary">Protecting our most vunerable.</h4>
+<h4 class="--primary">A traumatic event can occur in any point in your life.</h4>
+<p>A trauma is an event that you are exposed to that either endangers your personal wellbeing &amp; safety or that of another individual. The person having the experience must feel the sense of endangerment to their psychological and/or physical wellbeing.</p>
+<p>Following a traumatic event you can feel like your life may never be the same again. It’s an event that shocks us to our core, full of cloudiness, pain and anger. </p>
+<p>The way that we get through a traumatic event will have a lasting impact in the rest of our lives. It’s like if you break a bone, if you seek the proper medical care, ideally the bone heals well and you have no resulting problems. If we fail to seek the adequate treatment though, you can be stuck with a poorly fused injury with chronic aches.</p>
+<p>Our psychological wellbeing works the same. A trauma leaves it’s mark on our mind and soul. The truth is that although there is pain, there is tremendous growth and beauty in the healing that happens as we recover form this. </p>
+<blockquote class="blockquote">
+  <p class="mb-0">I take special care unfold and help you see the areas of you that have been impacted by your experience.</p>
+</blockquote>
+<p>Working in the field of trauma for years, I take special care unfold and help you see the areas of you that have been impacted by your experience. </p>
+<p>When I work with people on their trauma I balance allowing my client to guide the pace of treatment while also challenging them when I can tell that they are strong enough to confront certain aspects of their pain. </p>
+<p>The traumatic event/s can be terrifying to address. Many people I see don’t want to have to talk about and in a way “relive” the experience. For this reason, I am clear with my clients that as you begin therapy, if you do not want to, you do not have to talk about the trauma right away. </p>
+<p>The traumatic event was something where on many levels you were not in control &amp; now you can control what parts of your experience you share. This allows you to have a new experience with your trauma. </p>
+<p>We will be talking about how you are currently doing, what areas of your life you want to see change in and increase the comfort with being in therapy. One of the most important things to keep in mind is that your trauma is a single or set of experiences but it is not everything about you and does not define you in ways you don’t want it to. </p>
+<h3 class="h4">How do we approach trauma therapy?</h3>
+<p>I work with the thoughts, emotions, and behaviors that have changed as a result of your trauma. My clients are able to discuss their trauma experience with me but do not repeatedly need to do so, I don’t believe there is much purpose to repeatedly recounting the specific trauma/s. I believe it is important for clients to have an awareness and feel in tune with their body and mind in order to heal from their pain. Trauma work with me is set at your pace, but I will never allow things to be overly drawn out. First, is the assessment & evaluation phase, that will help you to then you develop your goals for treatment, after goals are met treatment comes to an end. </p>
+<p><strong>Types of trauma I have seen clients for:</strong></p>
+<ul class="checkmark">
+    <li>Car accident</li>
+    <li>Attempted homicide</li>
+    <li>Sexual assault</li>
+    <li>Sexual abuse</li>
+    <li>Physical abuse</li>
+    <li>Physical assault (ex: robbery, mugging)</li>
+    <li>Emotional abuse</li>
+    <li>Childhood Abuse</li>
+    <li>War combat</li>
+    <li>Parent incarceration </li>
+    <li>Kidnapping</li>
+    <li>Sudden death of a loved one </li>
+</ul>
+<p>Being exposed to trauma directly isn’t the only way to feel the effects of trauma. People such as first responders are exposed to others’ trauma can have the effect of vicarious traumatization.</p>
+<ul>
+    <li>A professional walking into disarray where a traumatic event has just occurred. The nurse, school counselor, a doctor, teacher, police officer, EMT, firefighter or loved one who HEARS and SEES a person’s VIVID account of a tragedy they faced is a scenario that can lead to vicarious traumatization. </li>
+</ul>
+<p>Vicarious traumatization can happen to anyone, even if you’ve been working in the field for years and have heard almost everything you can think of. It’s important to notice any signs of this including: increased stress, difficulty performing work tasks, fatigue, irritability, anxiety, problems sleeping or with appetite. </p>
+<p>Addressing your current functioning can help you to continue doing work the work you feel passionate about. It can provide that extra support and allow you to increase the type of care that you provide to others. </p>
 
 {% endblock %}

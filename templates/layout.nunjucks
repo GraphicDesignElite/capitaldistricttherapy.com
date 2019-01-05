@@ -12,6 +12,7 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Open+Sans:400,700" rel="stylesheet">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     </head>
+    {% set backend_URL = "http://localhost:4000" %}
     <body class="{{activePage}}">
         <div id="content">
             {% include "components/navigation.nunjucks" %}
@@ -28,6 +29,6 @@
        
         <script src="/js/j.js"></script>
         {% include "components/tracking.nunjucks" %}  
-        
+        {% block addscripts %}{% endblock %}
     </body>
 </html>

@@ -10,16 +10,16 @@ $h2-font-size:  2.4rem;
 $h4-font-size:  1.25rem;
 $h5-font-size:  1.1rem;
 
-$primary:       #cc0435;
+$primary:       #33658a; /*#cc0435*/
 $primaryRGB:    rgba($primary, .9);
-$secondary:     #efefef;
+$secondary:     #f4f4f4;
 $dark:          #17171c;
 $mediumDark:    #474750;
 $light:         #f5f5f5;
  
 $btn-border-radius: 30px;
-$btn-padding-x: 20px; 
-$btn-padding-y: 10px;
+$btn-padding-x: 20px;
+$btn-padding-y: 12px;
 
 $navbar-padding-y: 0px;
 $nav-link-padding-y: 1.5rem;
@@ -30,6 +30,7 @@ $navbar-inverse-hover-color: inherit;
 $navbar-inverse-hover-color: inherit;
 $navbar-toggler-border-radius: 3px;
 $navbar-light-toggler-bg: #fff;
+$navbar-light-color: rgba(0,0,0,.8);
 $navbar-light-toggler-icon-bg:   url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$primaryRGB}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 $navbar-light-active-color: $primary;
 
@@ -46,8 +47,8 @@ $list-group-border-radius: 0px;
 $list-group-bg: $light;
 $list-group-border-color: rgba(255,255,255,0);
 $list-group-hover-bg: $primary;
-$list-group-active-bg: $mediumDark;
-$list-group-active-border-color: $mediumDark;
+$list-group-active-bg: $primary;
+$list-group-active-border-color: $primary;
 
 $breadcrumb-padding-y: 0rem;
 $breadcrumb-bg:  none;

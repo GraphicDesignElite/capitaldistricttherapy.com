@@ -4,8 +4,91 @@
 {% set activePage = 'about' %}
 
 {% extends "layout.nunjucks" %}
+{% set folder_name = "About" %}
+{% set folder_link = "/about/" %}
 
 
 {% block content %}
-<h1>About</h1>
+<header class="services-header about">
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col pt-3 pb-3">
+                <h1 class="--thin">About Me</h1>
+                <h2>Vanessa Bever, LMFT</h2>
+                 {% include "components/breadcrumb.nunjucks" %}
+            </div>
+        </div>
+    </div>
+</header>
+<section id="about-info">
+    <div class="container pt-5 pb-5">
+        <div class="row">
+            <div class="col-md-5 text-center">
+                <img src="/img/about/Vanessa-Bever-LMFT.jpg" alt="Vanessa Bever, LMFT" class="bio-image">
+                {% include "components/social-links.nunjucks" %}
+            </div>
+            <div class="col-md-7">
+                <h2 class="--thin">My Approach to Therapy</h2>
+                <h4>Dedicated to the health and well being of my clients.</h4>
+                <p>My clients often tell me how I am not what they thought a therapist would be. I’m not stuffy, I’m approachable, I love humor and I don’t look much like Freud.</p>
+                <p>The client is the expert of their mind and my role is to use my training and education to help my client unlock crucial information. We are all social beings and at the heart of getting better are nurturing relationships. In other words, we cannot do it alone.</p>
+                <h4>Education</h4>
+                <ul>
+                    <li>Master of Arts in Counseling Psychology</li>
+                    <li>Bachelor of Arts in Psychology</li>
+                </ul>
+                <h4>Licensing</h4>
+                <p>
+                    New York State Licensed Marriage and Family Therapist <br/><strong>(#001524)</strong><br/>
+                    California State Licensed Marriage and Family Therapist <br/><strong>(#80221)</strong>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="accreditations">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <p>Offering Services Through:</p>
+                    <div class="row">
+                        <div class="col"><a href="https://doxy.me/vboffice" target="_blank"><img src="/img/about/doxy-logo.gif" alt="Doxy.Me Online Meetings" class="img-fluid"></a></div>
+                        <div class="col"><a href="https://www.betterhelp.com/vanessa-bever/" target="_blank"><img src="/img/about/better-help-logo.gif" alt="Better Help" class="img-fluid"></a></div>
+                        <div class="col"><a href="https://www.psychologytoday.com/us/therapists/vanessa-bever-troy-ny/430762" target="_blank"><img src="/img/about/pt-logo.gif" alt="Psychology Today" class="img-fluid"></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+</section>
+<section id="about-ext">
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col order-lg-2">
+                <main>
+                    <h3>Bio</h3>
+                    <p>Not feeling like yourself? When you are going through a hard time it can be filled with loneliness. There’s nothing worse than feeling off, without clarity on where to go and what to do. We get stuck in a funk, a place we have been before and we feel grim about things changing for better. </p>
+                    <p>I love to support people through those difficult and painful moments in life. </p>
+                    <p>I want to know about the things you are noticing that you want to change, and we will work together to achieve a healthy you. Sometimes we don’t have words for what’s going on within us. Giving voice to what’s inside you, noticing the areas that need attention, and having a trained therapist to help you do through this can be a game changer.</p>
+                    <p>Chances are that you are spending energy, time and money on ways to feel better. Therapy is the place where you build your road map to your desired destination. </p>
+                    <p>I am therapist that provides a substantial amount of encouragement. I am not an empty cheerleader, I am here to provide quality treatment to improve your life. </p>
+                    <h4>Experience</h4>
+                    <p>In college I began working with children with developmental disabilities like Autism Spectrum Disorder and Intellectual Disabilities (at the time referred to as Mental Retardation). A big part of working with these children was working with their parents. That was because many of the children were engaging in very disruptive behaviors including self-harm, physical aggression, and severe tantrums. I saw how drastically peoples’ lives could change when they were given the tools and put in the work. It was then that I discovered my passion for therapy. </p>
+                    <p>I then pursued my Master of Arts in Counseling Psychology and received training with families and children who had experienced serious stressors and trauma.  </p>
+                    <p>I studied in California where I had the pleasure of working at UCLA and California State University. There I saw people with all sorts of problems and conditions. I have seen people that needed housing and had just experienced a serious trauma and people who seemingly had everything &amp; more but were feeling down and disconnected.</p>
+
+                </main>
+            </div>
+            <div class="col-lg-4 col-sm-12 order-md-1">
+                <aside>
+                    <section>
+                        {% include "components/articles-sidebar.nunjucks" %}
+                    </section>
+                    {% include "components/sidebar-contact-block.nunjucks" %}
+                </aside>
+            </div>
+        </div>
+    </div>
+</section>
 {% endblock %}

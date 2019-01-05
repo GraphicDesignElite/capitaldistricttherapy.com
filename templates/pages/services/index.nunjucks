@@ -7,5 +7,143 @@
 
 
 {% block content %}
-<h1>All Services</h1>
+
+<header>
+    <div class="services-header all-services">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center mt-5 mb-5 pt-5 pb-5">
+                    <h1 class="--thin --dark">Therapy Services</h1>
+                    <h2 class="h3 --primary">Change happens when we work together.</h2>
+                    <a href="/therapy-consultation/" class="btn btn-primary --icon --appt mt-4">Schedule a Consultation</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section id="all-services">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2 text-center mt-5 mb-5">
+                <h2 class="--thin">Healing starts with a plan.</h2>
+                <h3 class="h4 --primary font-weight-normal mb-4"><i>No matter what you're facing, there is always hope.</i></h3>
+                <p>Years of training, research, and experience working with individuals and families has taught me that just as no two people are alike, every situation and deserves a unique treatment plan. I work with you to develp a plan that fits your lifestyle that will prepare you to help you take the essential next step of your journey.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="service-boxes" class="mb-5">
+    <div class="container">
+        <div class="row row-eq-height">
+            <div class="col-md-6">
+                <div class="sl-box">
+                    <div class="row no-gutters">
+                        <div class="col-lg-5 bg couples"></div>
+                        <div class="col-lg-7">
+                            <div class="content">
+                                <small>Build a Better Marriage</small>
+                                <h4>Couples Counseling</h4>
+                                <p>Financial hardships, serious illness, infedelity, or communication issues. Couples often need a private and comforatable way to open up new lines of communication.</p>
+                                <a href="/services/couples-therapy/" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="sl-box">
+                    <div class="row no-gutters">
+                        <div class="col-lg-5 bg family"></div>
+                        <div class="col-lg-7">
+                            <div class="content">
+                                <small>Build Stronger Bonds</small>
+                                <h4>Family therapy</h4>
+                                <p>Families come in a variety of sizes and constructs. Maybe some or all of the family members want to attend, and those are options to consider when seeking therapy.</p>
+                                <a href="/services/family-therapy/" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-eq-height">
+            <div class="col-md-6">
+                <div class="sl-box">
+                    <div class="row no-gutters">
+                        <div class="col-lg-5 bg teen"></div>
+                        <div class="col-lg-7">
+                            <div class="content">
+                                <small>Growing Up Healthy</small>
+                                <h4>Teens and Preteens</h4>
+                                <p>Teens and preteens can experience difficulties coping with changes in themselves, their families, and their environment.</p>
+                                <a href="/services/teen-therapy/" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="sl-box">
+                    <div class="row no-gutters">
+                        <div class="col-lg-5 bg developmental"></div>
+                        <div class="col-lg-7">
+                            <div class="content">
+                                <small>Development</small>
+                                <h4>Child Therapy</h4>
+                                <p>Whether your child is having trouble at school, not getting along with friends, or isn’t behaving like his peers, therapy can help improve the quality of life.</p>
+                                <a href="/services/child-therapy/" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-eq-height">
+            <div class="col-md-6">
+                <div class="sl-box">
+                    <div class="row no-gutters">
+                        <div class="col-lg-5 bg individual"></div>
+                        <div class="col-lg-7">
+                            <div class="content">
+                                <small>Searching for Answers</small>
+                                <h4>Individual Therapy</h4>
+                                <p>You have been feeling down, tired, unhappy, and not like yourself.You’re not alone, depression affects 1 in 5 adults. We can work together to to reclaim your happiness.</p>
+                                <a href="/services/individual-therapy/" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="sl-box">
+                    <div class="row no-gutters">
+                        <div class="col-lg-5 bg postnatal"></div>
+                        <div class="col-lg-7">
+                            <div class="content">
+                                <small>Adjusting to Changes</small>
+                                <h4>New Mothers</h4>
+                                <p>The unique needs of mothers and their children are my passion. I love working during these transformative life stages and am enthusiastic to help you through this journey.</p>
+                                <a href="/services/prenatal-postnatal-therapy/" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="parallax-area">
+        <div class="container">
+            <div class="row">
+                <div class="col mt-5 mb-5 text-center">
+                    <p class="h2">"Change is the only constant in life."</p>
+                    <p class="h4 --primary --thin"> - Heraclitus, Greek Philosopher</p>
+                </div>
+            </div>
+        </div>   
+    </div>
+</section>
+{% include "components/ready-to-start.nunjucks" %}
+{% include "components/email-signup.nunjucks" %}
 {% endblock %}

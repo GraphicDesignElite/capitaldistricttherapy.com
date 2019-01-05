@@ -15,7 +15,7 @@
         </div>
     </div>
 </header>
-<div class="container mt-5">
+<div class="container mt-5 mb-5">
     <div class="row">
         <div class="col order-lg-2">
             <main>
@@ -25,20 +25,9 @@
         <div class="col-lg-4 col-sm-12 order-md-1">
             <aside>
                 <section>
-                    {% include "components/services-sidebar.nunjucks" %}
+                    {% block sidebar %}{% endblock %}
                 </section>
-                <section class="pt-3">
-                    <div class="contact-info-sidebar">
-                        <h4 class="--wborder"><span>Contact</span></h4>
-                        <p class="pb-1 pt-1"><strong>Office Phone:</strong></p>
-                        <p>(518) 880-2395</p>
-                        <p class="pb-1 pt-1"><strong>Our Address:</strong></p>
-                        <p>108 Thornberry Ln<br/>
-                        Renselaer Ny, 12144</p>
-                        <br/>
-                        <a href="/contact/make-an-appointment/" class="btn btn-primary --square">Contact Us</a>
-                    </div>
-                </section>
+                {% include "components/sidebar-contact-block.nunjucks" %}
             </aside>
         </div>
     </div>

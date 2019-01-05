@@ -10,6 +10,10 @@
 {% set active_page_link = '/services/child-therapy/' %}
 
 {% extends "services-template.nunjucks" %}
+{% block sidebar %}
+{% include "components/services-sidebar.nunjucks" %}
+{% endblock %}
+
 
 {% block serviceHeading %}
 Child Therapy 
@@ -19,7 +23,7 @@ Therapy and Counseling for Children
 {% endblock %}
 {% block maincontent %}
 <img src="/img/services/child_therapy_intro.jpg" class="img-fluid mb-4" alt="Child and Adolescent Therapy and Counseling"/>
-<h3>When is the right time to consider therapy for my child?</h3>
+<h3>When should I consider therapy for my child?</h3>
 <h4 class="--primary">Protecting our most vunerable.</h4>
 <p>As a parent, you may have wondered how long this stage will last? You may start to look back on other times that your child went through a period of being demanding and think, this too shall pass. Though as time passes, you notice your patience is dwindling and you think there might be other ways to speed things up and get on track.</p>
 <p>Children are mostly able to go about their day and enjoy many things even when they are having a hard time. I have seen children following a traumatic event, sleep, eat, and play as though “nothing” had just happened. </p>

@@ -11,6 +11,10 @@
 
 {% extends "services-template.nunjucks" %}
 
+{% block sidebar %}
+{% include "components/services-sidebar.nunjucks" %}
+{% endblock %}
+
 {% block serviceHeading %}
 Teen / Preteen Therapy
 {% endblock %}
@@ -19,10 +23,26 @@ Counseling for teenagers and preteens
 {% endblock %}
 {% block maincontent %}
 <img src="/img/services/teen_therapy_intro.jpg" class="img-fluid mb-4" alt="Teen and Adolescent Therapy and Counseling"/>
-<h3>When is the right time to consider therapy?</h3>
-<h4 class="--primary">Protecting our most vunerable.</h4>
-
-
-
+<h3>Therapy services for children ages 10-18</h3>
+<h4 class="--primary">A confusing and difficult time of growth and change.</h4>
+<p>That "in between" land of the teens &amp; preteens can be so intense! They are this group of people that seem so nonchalant then suddenly are a mess for what seems like a microscopic event. There’s just times when they are hard to be around because as you try to help they can easily target you for all that’s wrong.</p>
+<p>The moodiness, lack of interest, authority challenging, technology-immersed lives of kids during this stage leave you wondering about the type of person they are turning into. Many things are changing and although you felt prepared for them, now that it’s here, it’s a whole other story.</p>
+<p>There is an astounding amount of transformation that happens for teens and preteens. This stage for your child, you may feel like you don’t recognize them anymore. </p>
+<p>Preteens or “tweens” who are 10-12 years old and teens who are 13-18 years of age.</p>
+<p>Teens have a reputation in our culture, tell someone I have three teenagers at home and the jaws drop. It’s similar to the reaction that you would get if you said you had two-year-old triplets. They are seen as surly, uninterested, over it, whatever, go f&*# yourself kind of attitude. </p>
+<blockquote class="blockquote">
+  <p class="mb-0">In therapy, teens and tweens are some of the most honest people. Once they feel comfortable they show up and are transparent about their insecurities and observations. </p>
+</blockquote>
+<p>Not all, but many can come off this way. The sweet ones, the funny ones, the young ones, the prickly ones, the common thread is they are in a stage of identity, independence, social and psychological maturation that is incredible. </p>
+<p>In therapy, teens and tweens are some of the most honest people. Once they feel comfortable they show up and are transparent about their insecurities and observations. </p>
+<p>Whether you and your teen/tween have the best communication in the world or you get one word answers, I can guarantee that there are things that are not telling you. That’s because I have yet to meet a teen that tells their parents everything they are sorting through. It’s kind of humanly impossible for one person to know EVERYTHING about another.</p>
+<h3 class="h4">How does it work?</h3>
+<p>You know your child is growing and developing. They need a confidant during this time, someone they can be truly honest with and who will help guide them to healthy and positive outlets.</p>
+<p>Your child is sorting through lots of different social and societal expectations of them. They want to be able to make up their minds about issues and rebel a bit. You want that rebellion to be channeled in ways that won’t put them in danger. </p>
+<p>Therapy can be a place where your teen can come, be their true self and get the trained support that is merited.</p>
+<p>What will you be working on & how/what will I know about therapy? I will meet with parent/s separately and gather information about the reasons you want therapy for your teen. I will also meet with you teen/tween and conduct my own assessment of their psychological functioning. After a couple of sessions, I will have my results and I will meet with the parent/s to inform them of my conclusions. </p>
+<p>At that point, I will give you a rough estimate of the amount of therapy I recommend. Typically, I see teens/tweens for individual therapy sessions either weekly or every other week. </p>
+<p>The detailed content of my therapy sessions with your child are confidential. I will speak with your teen/tween in order to give you updates about what we are working on, how they are doing, and how responsive they are to therapy. </p>
+<p>There is also the option for parent/s to participate in Collateral Therapy with me. This is therapy that focuses on the needs of your teen/tween. It takes into account your observations of your child and their therapy goals. Collateral Therapy would consist of me meeting with parent/s alone and can be scheduled when based on the parent/s’ availability. </p>
 
 {% endblock %}

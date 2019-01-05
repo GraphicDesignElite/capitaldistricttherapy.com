@@ -1,0 +1,116 @@
+<!-- index.nunjucks -->
+{% set meta_title = "Helpful Resources" %}
+{% set meta_description = "Many local resources are available in the Schenectady, Albany, and Troy area for people who are in need of help. This is a list of resources you can use." %}
+
+{% extends "layout.nunjucks" %}
+
+{% set activePage = "resources" %}
+
+<!--breadcrumbs -->
+{% set folder_name = "Resources" %}
+{% set folder_link = "/resources/" %}
+
+
+{% block content %}
+<header class="services-header {{ activePage }}">
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col pt-3 pb-3">
+                <h1 class="--thin">Contact Us</h1>
+                <h2>Get in touch for assistance.</h2>
+                 {% include "components/breadcrumb.nunjucks" %}
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container mt-5 mb-5">
+        <form action="{{backend_URL}}/contact/" method="post">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_name">First Name *</label>
+                    <input id="form_name" type="text" name="firstname" class="form-control form-control-lg" required="required" data-error="Firstname is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_lastname">Last Name *</label>
+                    <input id="form_lastname" type="text" name="lastname" class="form-control form-control-lg" required="required" data-error="Lastname is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_email">Email *</label>
+                    <input id="form_email" type="email" name="email" class="form-control form-control-lg"  required="required" data-error="Valid email is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_email">Phone *</label>
+                    <input id="form_email" type="tel" name="phone" class="form-control form-control-lg"  required="required" data-error="Valid email is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_need">Reason For Contact *</label>
+                    <select id="form_need" name="nmessage" class="form-control form-control-lg" required="required" data-error="Please specify your need.">
+                        <option value="" selected="selected" disabled="disabled"></option>
+                        <option value="Set up an Appointment">Set up an Appointment</option>
+                        <option value="Request Information">Request Information</option>
+                        <option value="Pricing">Pricing Information</option>
+                        <option value="Technical Issue">Technical Issue</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">    
+            <div class="col-md-12">
+                <div class="form-group">
+                    <div>
+                        <label for="form_message">Prefered Contact Method</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="contactmethod" id="contactmethod1" value="Phone" checked="checked">
+                        <label class="form-check-label" for="contactmethod1">Phone</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="contactmethod" id="contactmethod2" value="Email">
+                        <label class="form-check-label" for="contactmethod2">Email</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="form_message">Message *</label>
+                    <textarea id="form_message" name="message" class="form-control" rows="5" required="required" data-error="Please, leave us a message."></textarea>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">    
+            <div class="col-md-12">
+                <input type="submit" class="btn btn-success btn-send" value="Send message">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-muted">
+                <strong>*</strong> These fields are required.
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block addscripts %}
+    
+{% endblock %}

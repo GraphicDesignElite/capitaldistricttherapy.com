@@ -12,6 +12,10 @@
 
 {% extends "services-template.nunjucks" %}
 
+{% block sidebar %}
+{% include "components/services-sidebar.nunjucks" %}
+{% endblock %}
+
 {% block serviceHeading %}
 Couples Therapy 
 {% endblock %}

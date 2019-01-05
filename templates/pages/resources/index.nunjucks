@@ -1,0 +1,28 @@
+<!-- index.nunjucks -->
+{% set meta_title = "Helpful Resources" %}
+{% set meta_description = "Many local resources are available in the Schenectady, Albany, and Troy area for people who are in need of help. This is a list of resources you can use." %}
+
+{% set activePage = "resources" %}
+
+<!--breadcrumbs -->
+{% set folder_name = "Resources" %}
+{% set folder_link = "/resources/" %}
+
+
+{% extends "services-template.nunjucks" %}
+
+{% block sidebar %}
+{% include "components/articles-sidebar.nunjucks" %}
+{% endblock %}
+
+{% block serviceHeading %}
+Local Therapy Resources
+{% endblock %}
+{% block serviceSubheading %}
+Helpful resources, links and organizations
+{% endblock %}
+{% block maincontent %}
+
+
+
+{% endblock %}

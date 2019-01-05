@@ -1,0 +1,31 @@
+<!-- index.nunjucks -->
+{% set meta_title = "What to expect during a therapy session" %}
+{% set meta_description = "Many people who have never been to therapy have questions and fears about what the first therapy session will be like. Let's explore what happens during your first session." %}
+
+{% set activePage = "who-can-benefit" %}
+
+
+<!--breadcrumbs -->
+{% set folder_name = "Articles" %}
+{% set folder_link = "/articles/" %}
+{% set active_page_name = 'What to expect' %}
+{% set active_page_link = '/articles/what-to-expect/' %}
+
+{% extends "services-template.nunjucks" %}
+
+{% block sidebar %}
+{% include "components/articles-sidebar.nunjucks" %}
+{% endblock %}
+
+{% block serviceHeading %}
+Who can benefit from therapy and counceling?
+{% endblock %}
+{% block serviceSubheading %}
+Everything you need to know about your first day in therapy.
+{% endblock %}
+{% block maincontent %}
+<h3>What should I expect during my first therapy session?</h3>
+<p>The quick overview is that the first session will consist of going over a couple of forms, you providing information and being clear on what you expect from therapy and going over the therapy process. I’m not the type of therapist that’s going to have you lie down on a couch and talk while I write in a notepad. I’m also not a hypnotists or a mind reader, instead, you will tell me about the things in your life that aren’t working for you. We will work together to get you leading the kind of life that is more pleasant. </p>
+
+
+{% endblock %}

@@ -1,6 +1,6 @@
 <!-- index.nunjucks -->
-{% set meta_title = "Capital District Therapy - Providing phycotherapy services for Albany, Schenectady and Troy" %}
-{% set meta_description = "Capital District Therapy provides individual therapy, couples counceling, group and family therapy, and services for children with developmental delays, located in Troy, Ny." %}
+{% set meta_title = "Counseling & Therapy Services for Albany, Schenectady and Troy" %}
+{% set meta_description = "Capital District Marriage and Family Therapy provides individual therapy, couples counceling, group and family therapy, and services for children with developmental delays, located in Troy, Ny." %}
 {% extends "layout.nunjucks" %}
 {% set activePage = 'home' %}
 
@@ -15,15 +15,15 @@
                     <h1 class="--thin">Therapy to help you craft&nbsp;<br class="d-none d-lg-block" /><span class="--primary font-weight-normal">a new begining</span></h1>
                     <p class="pt-3">Life can bring about experiences or changes that can be difficult to navigate, and might leave us feeling depressed, anxious, or even hopeless. Through compassion, patience and support, I can help you address issues in your life preventing you from becoming your best self. I specialize in couples counceling, family therapy, trauma, and child development.</p>
                     <div class="pt-3">
-                        <a href="#" class="btn btn-primary --icon --appt">Schedule a Consultation</a>
-                        <a href="#" class="btn ">View All Services</a>
+                        <a href="/contact/schedule-a-consultation/" class="btn btn-primary --icon --appt">Schedule a Consultation</a>
+                        <a href="/services/" class="btn ">View All Services</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <secton id="home-pills">
-        <div class="container mt-5 mb-5">
+        <div class="container mt-5">
             <div class="row no-gutters">
                 <div class="col-md">
                     <div class="pillbox --primary-light">
@@ -113,7 +113,7 @@
             </div>
             <div class="row">
                 <div class="col text-center mt-4">
-                    <a href="#" class="btn btn-primary --icon --appt">Schedule a Consultation</a>
+                    <a href="/contact/schedule-a-consultation/" class="btn btn-primary --icon --appt">Schedule a Consultation</a>
                 </div>
             </div>
         </div>
@@ -136,7 +136,7 @@
             <div class="container">
                 <div class="row pt-5 pb-3">
                     <div class="col text-center">
-                        <p class="--primary"><i>Keeping It Simple</i></p>
+                        <p class="--primary mb-0"><i>Keeping It Simple</i></p>
                         <h3 class="h2 --thin">How does the process work?</h2>
                     </div>
                 </div>
@@ -149,7 +149,7 @@
                                         <p class="--primary mb-1"><i>Step 1</i></p>
                                         <h3 class="font-weight-normal">Schedule a Consultation</h3>
                                         <p>Choose a time that we can discuss your needs and determine if Capital District Therapy is a good fit for you. Your consultation is obligation free, private, and can be completed from the comfort of your own home.</p>
-                                        <a href="/contact/make-an-appointment/" class="btn btn-primary --square">Select a Time</a>
+                                        <a href="/contact/schedule-a-consultation/" class="btn btn-primary --square">Select a Time</a>
                                     </div>
                                 </div>
                                 <div class="col-lg-5 col-sm-12 image-bg">
@@ -190,12 +190,69 @@
                         <h4>Vanessa Bever, MFT</h4>
                         <p>Vanessa Bever is a licensed Marriage and Family Therapist who specializes in family health, personal and child-development, parent-child relationships, and developmental disabilities. She graduated with her Bachelors in Psychology from California State University and her Masters of Arts in Counseling Psychology from National University, California. </p>
                         <p>She has helped parents for years with tailored curriculums specific to the needs of their personal experience parenting — no two families are the same. </p>
-                        <a href="/contact/make-an-appointment/" class="btn btn-white --square mt-3">Read More</a>
-
+                        <a href="/about/" class="btn btn-white --square mt-3">Read More</a>
                     </div>
                 </div>
                 <div class="col-lg-5 about-image order-lg-2 order-sm-1">
                     <img src="/img/home/about/vanessa-headshot.jpg" width="100%" alt="Vanessa Bever, MFT" class="img-fluid"/>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="artices">
+        <div class="container mb-5">
+            <div class="row pt-5 pb-3">
+                <div class="col text-center">
+                    <p class="--primary mb-0"><i>Capital District Therapy</i></p>
+                    <h3 class="h2 --thin">Latest News</h2>
+                </div>
+            </div>
+            <div class="row row-eq-height">
+                <div class="col-lg-6 col-md-12">
+                    <div class="article-display">
+                        <img src="/img/home/articles/handling-unsolicited-advice.jpg" class="img-fluid" width="100%" alt="How to handle unsolicited parenting advice."/>
+                        <div class="content">
+                            <h4>How to Handle Unsolicited Advice as a New Mom.</h4>
+                            <p class="--primary">Oct 15, 2018</p>
+                            <p>You might be casually describing a frustrating situation you experienced with your child to a friend. Instead of being met with the empathy and understanding you’re expecting, you are met with unwanted advice. Or maybe you are just going about your business, caretaking for your child in a public setting...</p>
+                            <a href="https://medium.com/@karisa.peer/can-i-give-you-some-advice-how-to-handle-unsolicited-advice-as-a-new-mom-a02aa58d36e2" class="btn btn-primary mt-2 mb-3 --square --long">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col">
+                    <div class="article-display snippet">
+                        <div class="row no-gutters">
+                            <div class="col-md-4 bg first"></div>
+                            <div class="col-md-8">
+                                <div class="content">
+                                    <h4>What to expect during your first session</h4>
+                                    <p>Get a quick overview about everything that will happen during your first therapy session. <a href="/articles/what-to-expect/" class="--primary">Read&nbsp;More</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article-display snippet">
+                        <div class="row no-gutters">
+                            <div class="col-md-4 bg second"></div>
+                            <div class="col-md-8">
+                                <div class="content">
+                                    <h4>Who can benefit from therapy and counceling?</h4>
+                                    <p>You might be casually describing a frustrating situation you experienced with your child to a friend... <a href="/articles/who-can-benefit-from-therapy/" class="--primary">Read&nbsp;More</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article-display snippet">
+                        <div class="row no-gutters">
+                            <div class="col-md-4 bg third"></div>
+                            <div class="col-md-8">
+                                <div class="content">
+                                    <h4>How to Handle Unsolicited Advice as a New Mom.</h4>
+                                    <p>You might be casually describing a frustrating situation you experienced with your child to a friend... <a href="/" class="--primary">Read&nbsp;More</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
