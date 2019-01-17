@@ -1,8 +1,8 @@
 <!-- index.nunjucks -->
-{% set meta_title = "Couples Therapy & Marriage Counseling" %}
-{% set meta_description = "Couples Therapy" %}
+{% set meta_title = "Couples Counseling and Therapy" %}
+{% set meta_description = "Couples counseling helps address a variety of issues that can arise through any long term romantic relationship by opening new ways of communication." %}
 {% set activePage = 'couples-therapy' %}
-
+{% set canonical = '/services/couples-therapy/' %}
 
 <!--breadcrumbs -->
 {% set folder_name = "Services" %}
@@ -17,7 +17,7 @@
 {% endblock %}
 
 {% block serviceHeading %}
-Couples Therapy 
+Couples Counseling
 {% endblock %}
 {% block serviceSubheading %}
 Marriage Counseling and Therapy for Couples
@@ -32,7 +32,7 @@ Marriage Counseling and Therapy for Couples
 
 <h3 class="h4">Why do many couples seek therapy?</h3>
 <p>The common goal of all couples that come to therapy is to get better at talking, listening, and understanding one another. This is a place where people who want to have a healthy way of interacting come &amp; do the work. There are misconceptions about couples therapy, but the real deal is that coming in for therapy means you get to outline what direction you want your relationship to go in. </p>
-<p>Couples come to therapy at all points in their relationship. You don’t have to be married, living together, or engaged, couples therapy just means you have a relationship and are seeking therapy to help you nurture that partnership. That includes couples who are:</p>
+<p>Couples come to therapy at all points in their relationship. You don’t have to be married, living together, or engaged, couples therapy just means you have a relationship and are seeking therapy to help you nurture that partnership. <strong>That includes couples who are:</strong></p>
 <ul class="checkmark">
     <li>Dating</li>
     <li>Engaged</li>

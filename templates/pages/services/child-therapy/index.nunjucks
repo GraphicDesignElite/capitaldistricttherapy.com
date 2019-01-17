@@ -1,8 +1,8 @@
 <!-- index.nunjucks -->
 {% set meta_title = "Child Therapy and Counseling" %}
-{% set meta_description = "Capital District Therapy in Troy, Ny specializes in treatment & counseling services for children and adolescents facing trauma, depression, and behavioral issues." %}
+{% set meta_description = "Capital District Marriage and Family Therapy in Troy, Ny specializes in treatment & counseling for children facing trauma, depression, and behavioral issues." %}
 {% set activePage = 'child-therapy' %}
-
+{% set canonical = '/services/child-therapy/' %}
 <!--breadcrumbs -->
 {% set folder_name = "Services" %}
 {% set folder_link = "/services/" %}

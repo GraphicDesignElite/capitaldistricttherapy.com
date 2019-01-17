@@ -2,7 +2,7 @@
 {% set meta_title = "Teen Counseling, Teen & Preteen Therapy" %}
 {% set meta_description = "Teen Therapy" %}
 {% set activePage = 'teen-therapy' %}
-
+{% set canonical = '/services/teen-therapy/' %}
 <!--breadcrumbs -->
 {% set folder_name = "Services" %}
 {% set folder_link = "/services/" %}

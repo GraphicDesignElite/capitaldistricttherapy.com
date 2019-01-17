@@ -1,8 +1,8 @@
 <!-- index.nunjucks -->
-{% set meta_title = "About Me" %}
-{% set meta_description = "Vanessa Bever, MFT" %}
+{% set meta_title = "About Capital District Marriage and Family Therapy" %}
+{% set meta_description = "Vanessa Bever, LMFT and owner of Capital District Marriage and Family Therapy in Troy, Ny." %}
 {% set activePage = 'about' %}
-
+{% set canonical = '/about/' %}
 {% extends "layout.nunjucks" %}
 {% set folder_name = "About" %}
 {% set folder_link = "/about/" %}
@@ -80,7 +80,7 @@
 
                 </main>
             </div>
-            <div class="col-lg-4 col-sm-12 order-md-1">
+            <div class="col-lg-4 col-sm-12 order-md-1 sidebar">
                 <aside>
                     <section>
                         {% include "components/articles-sidebar.nunjucks" %}

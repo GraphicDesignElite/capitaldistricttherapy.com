@@ -3,7 +3,7 @@
 {% set meta_description = "Many people who have never been to therapy have questions and fears about what the first therapy session will be like. Let's explore what happens during your first session." %}
 
 {% set activePage = "who-can-benefit" %}
-
+{% set canonical = '/articles/who-can-benefit-from-therapy/' %}
 
 <!--breadcrumbs -->
 {% set folder_name = "Articles" %}
@@ -24,8 +24,18 @@ Who can benefit from therapy and counceling?
 Everything you need to know about your first day in therapy.
 {% endblock %}
 {% block maincontent %}
-<h3>What should I expect during my first therapy session?</h3>
-<p>The quick overview is that the first session will consist of going over a couple of forms, you providing information and being clear on what you expect from therapy and going over the therapy process. I’m not the type of therapist that’s going to have you lie down on a couch and talk while I write in a notepad. I’m also not a hypnotists or a mind reader, instead, you will tell me about the things in your life that aren’t working for you. We will work together to get you leading the kind of life that is more pleasant. </p>
-
+<p>Participating in therapy is something you can pursue whether you are going through a tough time or have just been pondering and getting along just fine.  People think "it’s not that bad, like I have to go to therapy." They relate going to therapy with having a serious relationship problem, experiencing a trauma, or that you have to be feeling “depressed” or have to have a diagnosed condition such as anxiety disorder. People may view therapy as a last resort. You only see someone if there is a dyer or extreme need. That’s just not the case. </p>
+<p>The short answer is anyone who has an area of their life they want to improve can consider therapy as a place to help them in achieving their goals. For children, that can include a parent making observations about the child. For people who are older, or have been living with something from their past for years, therapy is also a good option. There is potential to process many years of pain and have a new chapter in your life through the use of therapy.</p>
+<ul class="checkmark">
+    <li>Children</li>
+    <li>Teenagers</li>
+    <li>Adults</li>
+    <li>Couples</li>
+    <li>Families</li>
+</ul>
+<p>Pretty much anyone can benefit from participating in therapy. That’s because seeing a therapist will help you by increasing your self-awareness. Being aware of how things affect you and the kind of impact you have on others can help you to have more clear communication and improve your relationships. </p>
+<p>Therapy is a place where you can sort out your thoughts, feelings, get to know yourself better and grow your mind. Similar to exercise, our brain is an organ in our body that needs nourishment. We do this as you work through problems and enhance your ability to cope, helping you to feel clear on various aspects of your life and the direction you are headed.</p>
+<p>The most important ingredient in the people that can benefit the most from therapy is: The person’s willingness to show up and take that first step forward. </p>
+<p>Now it’s time for you to reflect and ask yourself, is therapy something that I can benefit from? Is there a relationship I want to improve? Is there a loved one that comes to mind when I think about therapy? </p>
 
 {% endblock %}

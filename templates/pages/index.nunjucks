@@ -13,7 +13,7 @@
             <div class="col-lg-7">
                 <div class="mt-5 mb-5">
                     <h1 class="--thin">Therapy to help you craft&nbsp;<br class="d-none d-lg-block" /><span class="--primary font-weight-normal">a new begining</span></h1>
-                    <p class="pt-3">Life can bring about experiences or changes that can be difficult to navigate, and might leave us feeling depressed, anxious, or even hopeless. Through compassion, patience and support, I can help you address issues in your life preventing you from becoming your best self. I specialize in couples counceling, family therapy, trauma, and child development.</p>
+                    <p class="pt-3">Life can bring about experiences or changes that can be difficult to navigate, and might leave us feeling depressed, anxious, or even hopeless. Through compassion, patience and support, I can help you address issues in your life preventing you from becoming your best self. I specialize in children, developmental disabilities, family therapy, and trauma.</p>
                     <div class="pt-3">
                         <a href="/contact/schedule-a-consultation/" class="btn btn-primary --icon --appt">Schedule a Consultation</a>
                         <a href="/services/" class="btn ">View All Services</a>
@@ -34,13 +34,13 @@
                 <div class="col-md">
                     <div class="pillbox --primary --expanded">
                         <h2 class="--thin">Children and Teens</h2>
-                        <p>Whether your child is having trouble at school, not getting along with friends, isn’t behaving like his peers, therapy can help improve your quality of life as a parent when you start seeing positive changes in your child. </p>
+                        <p>Whether your child is having trouble at school, not getting along with friends, isn’t behaving like his peers, therapy can help improve your quality of life as a parent when you start seeing positive changes in your child.</p>
                     </div>
                 </div>
                 <div class="col-md">
                     <div class="pillbox --primary-light">
                         <h2 class="--thin">Couples Counceling</h2>
-                        <p>Couples counceling provides partners with the tools they need to communicate more effectivley, solve problems in a healthy way, and approach each other with respect, kindness and understanding.</p>
+                        <p>Couples counseling provides partners with the tools they need to communicate more effectively, solve problems in a healthy way, and approach each other with respect, kindness and understanding.</p>
                     </div>
                 </div>
             </div>
@@ -52,7 +52,7 @@
                 <div class="col-md-8 offset-md-2 text-center mb-5">
                     <h2 class="--thin">Stress, Anxiety, and Depression</h2>
                     <h3 class="h4 --primary font-weight-normal mb-4"><i>No matter what you're facing, there is always hope.</i></h3>
-                    <p>There are many different reasons why someone may decide that the time is right to make a healthy change in their life. By working together, we can work through issues that have caused discomfort, sadness, or a lack of fullfilment, enabling you to take control and reclaim your happiness.</p>
+                    <p>There are many different reasons why someone may decide that the time is right to make a healthy change in their life. By working together, we can work through issues that have caused discomfort, sadness, or a lack of fulfillment, enabling you to take control and reclaim your happiness.</p>
                 </div>
             </div>
             <div class="row small-gutters">
@@ -104,8 +104,8 @@
                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                     <div class="sb-link">
                         <span class="bg developmental"></span>
-                        <a href="/services/developmental-therapy/">
-                            <span class="heading">Child Development</span>
+                        <a href="/services/child-therapy/">
+                            <span class="heading">Child Therapy</span>
                             <span class="subheading">Unique and beautiful</span>
                         </a>
                     </div>
@@ -163,7 +163,7 @@
                                     <div class="content">
                                         <p class="--primary mb-1"><i>Step 2</i></p>
                                         <h3 class="font-weight-normal">We meet, discuss, and create a plan.</h3>
-                                        <p>Therapy isnt a one size fits all process. I create a treatment plan specifically for you, based on what you need and your availability. Once we create a plan, we begin the process while following the blueprint we have laid out, so you know exactly what to expect along the way.</p>
+                                        <p>Therapy isn't a one size fits all process. I create a treatment plan specifically for you, based on what you need and your availability. Once we create a plan, we begin the process while following the blueprint we have laid out, so you know exactly what to expect along the way.</p>
                                     </div>
                                 </div>
                                 <div class="col-lg-5 col-sm-12 image-bg">
@@ -188,8 +188,8 @@
                     <div class="about-home-cont">
                         <h3 class="h2 --thin">About Me</h3>
                         <h4>Vanessa Bever, MFT</h4>
-                        <p>Vanessa Bever is a licensed Marriage and Family Therapist who specializes in family health, personal and child-development, parent-child relationships, and developmental disabilities. She graduated with her Bachelors in Psychology from California State University and her Masters of Arts in Counseling Psychology from National University, California. </p>
-                        <p>She has helped parents for years with tailored curriculums specific to the needs of their personal experience parenting — no two families are the same. </p>
+                        <p>Vanessa Bever is a licensed Marriage and Family Therapist who specializes in family health, personal and child-development, parent-child relationships, and developmental disabilities. She graduated with her Bachelors in Psychology from California State University and her Masters of Arts in Counseling Psychology from National University, California.</p>
+                        <p>She has helped parents for years with tailored curriculums specific to the needs of their personal experience parenting — no two families are the same.</p>
                         <a href="/about/" class="btn btn-white --square mt-3">Read More</a>
                     </div>
                 </div>
@@ -247,8 +247,8 @@
                             <div class="col-md-4 bg third"></div>
                             <div class="col-md-8">
                                 <div class="content">
-                                    <h4>How to Handle Unsolicited Advice as a New Mom.</h4>
-                                    <p>You might be casually describing a frustrating situation you experienced with your child to a friend... <a href="/" class="--primary">Read&nbsp;More</a></p>
+                                    <h4>Mental Health Resources for the Capital District.</h4>
+                                    <p>Our list of local and national mental health resources valuable for people currently living in Albany, Schenectady, and Troy.. <a href="/" class="--primary">Read&nbsp;More</a></p>
                                 </div>
                             </div>
                         </div>

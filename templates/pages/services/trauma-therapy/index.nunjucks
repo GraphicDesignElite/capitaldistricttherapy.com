@@ -2,7 +2,7 @@
 {% set meta_title = "Trauma Therapy" %}
 {% set meta_description = "" %}
 {% set activePage = 'trauma-therapy' %}
-
+{% set canonical = '/services/trauma-therapy/' %}
 <!--breadcrumbs -->
 {% set folder_name = "Services" %}
 {% set folder_link = "/services/" %}

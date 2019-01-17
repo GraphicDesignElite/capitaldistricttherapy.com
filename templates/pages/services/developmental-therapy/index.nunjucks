@@ -2,7 +2,7 @@
 {% set meta_title = "Developmental Therapy - Childrens Therapy Services" %}
 {% set meta_description = "Capital District Therapy in Troy, Ny offers developmental therapy focusing on language, motor skills, and social emotional skills. I conduct ADHD evaluations & treatment as well behavioral therapy services for autism spectrum disorder (ABA)." %}
 {% set activePage = 'developmental-therapy' %}
-
+{% set canonical = '/services/developmental-therapy/' %}
 <!--breadcrumbs -->
 {% set folder_name = "Services" %}
 {% set folder_link = "/services/" %}

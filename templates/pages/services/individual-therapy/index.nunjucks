@@ -2,7 +2,7 @@
 {% set meta_title = "Individual Therapy" %}
 {% set meta_description = "Individual Therapy" %}
 {% set activePage = 'individual-therapy' %}
-
+{% set canonical = '/services/individual-therapy/' %}
 <!--breadcrumbs -->
 {% set folder_name = "Services" %}
 {% set folder_link = "/services/" %}
@@ -35,7 +35,10 @@ Counseling and therapy for individuals.
     <li>Marriage and Personal Relationships</li>
     <li>Parenting Challenges</li>
     <li>Difficulties in School</li>
-    <li>Your career / Occupation</li>
+    <li>Your Career / Occupation</li>
+    <li>Grief &amp; Loss</li>
+    <li>Self-Esteem</li>
+    <li>Making significant life decisions</li>
 </ul>
 <p>The goals you have set for yourself may be scattered, and there’s no clear path to personal success. But there is pain, both new and old that can affect your mood from day to day. Discovering and addressing the heart of these feelings is often the best way to begin the healing process.</p>
 <p>There are only so many times we can distract ourselves. Maybe during vacations, weekends, or time away you feel more like yourself but it’s so short-lived that it’s not sustainable. </p>

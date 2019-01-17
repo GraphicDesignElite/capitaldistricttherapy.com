@@ -2,7 +2,7 @@
 {% set meta_title = "Crisis Therapy" %}
 {% set meta_description = "Crisis Therapy" %}
 {% set activePage = 'crisis-therapy' %}
-
+{% set canonical = '/services/crisis-therapy/' %}
 <!--breadcrumbs -->
 {% set folder_name = "Services" %}
 {% set folder_link = "/services/" %}
@@ -33,7 +33,7 @@ Treatment for patients who experience sudden extreme events.
 <p>Crisis therapy is a form of therapy that focuses on restoring a person’s ability to continue with life the way they did before the crisis occurred. Crisis therapy is brief and targeted, usually lasting from 1 to 6 sessions. It’s natural that when a person experiences a significant life event that their usual ways of coping do not work. Therapy is a place where you can optimize your tool kit of coping. There are many unhealthy ways to go about dealing with a seriously messed up situation. Therapy can provide healthy support with the goal of the goal of being independent with long-lasting results.</p>
 
 <h3 class="h4">What kind of events are covered under crisis therapy?</h3>
-<p>We can feel unsure if what we are going through qualifies as a crisis. This can lead to unnessesary stress that compounds the original problem, making it even more difficult to handle. </p>
+<p>We can feel unsure if what we are going through qualifies as a crisis. This can lead to unnecessary stress that compounds the original problem, making it even more difficult to handle. </p>
 <p>The best way to explain who crisis therapy is for is to first explain what a crisis is, and the different types of crisis there are.</p>
 <p><strong>Crisis:</strong> an overwhelming event that seriously upsets a person’s ability to cope and continue with their everyday tasks. Usually a time of instability that is psychologically significant event. </p>
 <p><strong>Maturational crisis:</strong> related to a course of life event  (example: birth, retirement, marriage)</p>

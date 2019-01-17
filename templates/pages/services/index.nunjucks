@@ -2,7 +2,7 @@
 {% set meta_title = "Graphic Design and Web Development Experts" %}
 {% set meta_description = "Graphic Design and Web Development Experts" %}
 {% set activePage = 'services' %}
-
+{% set canonical = '/services/' %}
 {% extends "layout.nunjucks" %}
 
 

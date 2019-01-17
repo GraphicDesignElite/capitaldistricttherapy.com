@@ -1,0 +1,333 @@
+<!-- index.nunjucks -->
+{% set meta_title = "Schedule a free consultation with a therapist." %}
+{% set meta_description = "Talk to a therapist directly for more information about starting a new therapy program." %}
+{% set canonical = '/contact/schedule-a-consultation/' %}
+
+{% extends "layout.nunjucks" %}
+
+{% set activePage = "contact" %}
+
+<!--breadcrumbs -->
+{% set folder_name = "Contact" %}
+{% set folder_link = "/contact/" %}
+{% set active_page_name = 'Schedule a Consultation' %}
+{% set active_page_link = '/contact/schedule-a-consultation/' %}
+
+{% block headscripts %}
+    <script>
+
+        function userVerified(token) {
+            // Passed all validations, submit via ajax
+            var form = $("#consultation-form");
+            var url = form.attr('action');
+            $('#token').val(token);
+
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: form.serialize(), // serializes the form's elements.
+                success: function (data) {
+                    grecaptcha.reset();
+                    console.log('success');
+                    reportEmailSuccess();
+                    $('#consultation-form')[0].reset();
+                },
+                error: function (data) {
+                    console.log(data);
+                    if (data.responseJSON != undefined) {
+                        if (data.responseJSON.errorCodes != undefined) {
+                            processServerErrors(data.responseJSON.errorCodes);
+                        }
+                    }else{
+                        console.log('No Response Was Recieved From The Server');
+                    }
+                    grecaptcha.reset();
+                }
+            });
+        }
+        function processServerErrors(errors) {
+
+            var errMsgCnt = $('#errorMsgs');
+            var userMessage = '<strong>Server Errors Found:</strong><br/>';
+            for (var i = 0; i < errors.length; i++) {
+
+                if (errors[i]['msg']) {
+                    //validation response
+                    userMessage += (i + 1) + ". " + errors[i]['msg'] + '<br/>';
+                }
+                else {
+                    //captcha response
+                    userMessage += (i + 1) + ". " + errors[i].replace(/-/g, " ") + '<br/>';
+                }
+            }
+            $(errMsgCnt).html(userMessage);
+            $(errMsgCnt).show();
+        }
+        function reportEmailSuccess() {
+            var sccMsgCnt = $('#successMsgs');
+            $(sccMsgCnt).html('<strong>Success!</strong> Your message has been sent');
+            $(sccMsgCnt).show();
+        }
+        
+    </script>
+{% endblock %}
+{% block schema %}
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Capital District Marriage and Family Therapy",
+  "image": "https://www.capitaldistricttherapy.com",
+  "@id": "",
+  "url": "https://www.capitaldistricttherapy.com",
+  "telephone": "518-880-2395",
+  "priceRange": "90-120",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "406 Fulton St, Suite 509",
+    "addressLocality": "Troy",
+    "addressRegion": "NY",
+    "postalCode": "12180",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 42.7325264,
+    "longitude": -73.6883694
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": "Monday",
+    "opens": "08:00",
+    "closes": "19:00"
+  },{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": "Wednesday",
+    "opens": "08:00",
+    "closes": "19:00"
+  },{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": "Friday",
+    "opens": "08:00",
+    "closes": "19:00"
+  }]
+}
+</script>
+{% endblock %}
+{% block content %}
+<header class="services-header {{ activePage }}">
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col pt-3 pb-3">
+                <h1 class="--thin">Schedule a Consultation</h1>
+                <h2>Create an appointment to speak directly with a therapist.</h2>
+                 {% include "components/breadcrumb.nunjucks" %}
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container pt-5 pt-5">
+    <div class="row">
+        <div class="col">
+            <div>
+                <p>I offer a free one on one consultation for anyone who wants to know more about what we do and how we can work together. If you are interested in pursuing therapy and have questions, please fill out the form below with your basic contact information and the best time we can connect. <strong>Your consultation is private and 100% obligation free.</strong></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container mb-5 mt-3">
+    <div class="row">
+        <div class="col order-lg-2">
+            <div class="row">
+                <div class="col">
+                    <div id="errorMsgs" style="display:none;" class="alert alert-danger"></div>
+                    <div id="successMsgs" style="display:none;" class="alert alert-success"></div>
+                </div>
+            </div>
+            <form action="{{backend_URL}}/consultation/" method="post" id="consultation-form">
+                <div class="row">
+                    <div class="col">
+                        <h4 class="--wborder"><span>Basic Contact Details</span></h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_name">First Name <span class="red">*</span></label>
+                            <input id="form_name" type="text" name="firstname" class="form-control form-control-lg" required minlength="1" maxlength="255" data-error="Firstname is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_lastname">Last Name <span class="red">*</span></label>
+                            <input id="form_lastname" type="text" name="lastname" class="form-control form-control-lg" required="required" data-error="Lastname is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="email">Email <span class="red">*</span></label>
+                            <input id="email" type="email" name="email" class="form-control form-control-lg"  required="required" data-error="Valid email is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="phone">Phone <span class="red">*</span></label>
+                            <input id="phone" type="tel" name="phone" class="form-control form-control-lg"  required="required" data-error="Valid phone number is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="service">I'm interested in...<span class="red">*</span></label>
+                            <select id="service" name="service" class="form-control form-control-lg" required="required" data-error="Please specify your need.">
+                                <option value="" selected="selected" disabled="disabled"></option>
+                                <option value="Family Therapy">Family Therapy</option>
+                                <option value="Individual Therapy">Individual Therapy</option>
+                                <option value="Crisis Therapy">Crisis Therapy</option>
+                                <option value="Teen Therapy">Teen Therapy</option>
+                                <option value="Pre/Postnatal Therapy">Pre/Postnatal Therapy</option>
+                                <option value="Couples Therapy">Couples Therapy</option>
+                                <option value="Child Therapy">Child Therapy</option>
+                                <option value="Developmental Therapy">Developmental Therapy</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-4">    
+                    <div class="col-md-12">
+                        <div>
+                            <label for="form_message">Therapy Method</label>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="servicetype" id="servicetype" value="In Person Therapy" checked="checked">
+                                <label class="form-check-label --regular" for="servicetype">In Person Therapy</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="servicetype" id="servicetype2" value="Video Therapy">
+                                <label class="form-check-label --regular" for="servicetype2">Video Therapy</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">    
+                    <div class="col-md-12">
+                        <h4 class="--wborder"><span>Availability</span></h4>
+                        <p>Choose the best day and times that work for you. We can't always guarantee that the time slot selected is still available.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="day">Im available on<span class="red">*</span></label>
+                            <select id="day" name="day" class="form-control form-control-lg" required="required" data-error="Please choose a day for your consultation.">
+                                <option value="" selected="selected" disabled="disabled"></option>
+                                <option value="Monday">Monday</option>
+                                <option value="Wednesday">Wednesday</option>
+                                <option value="Friday">Friday</option>
+                            </select>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="start">From:<span class="red">*</span></label>
+                            <select id="start" name="start" class="form-control form-control-lg" required="required" data-error="Please choose a start time for your consultation.">
+                                <option value="" selected="selected" disabled="disabled"></option>
+                                <option value="8:00 a.m.">8:00 a.m.</option>
+                                <option value="8:30 a.m.">8:30 a.m.</option>
+                                <option value="9:00 a.m.">9:00 a.m.</option>
+                                <option value="9:30 a.m.">9:30 a.m.</option>
+                                <option value="10:00 a.m.">10:00 a.m.</option>
+                                <option value="10:30 a.m.">10:30 a.m.</option>
+                                <option value="11:00 a.m.">11:00 a.m.</option>
+                                <option value="11:30 a.m.">11:30 a.m.</option>
+                                <option value="12:00 p.m.">12:00 p.m.</option>
+                                <option value="12:30 p.m.">12:30 p.m.</option>
+                                <option value="1:00 p.m.">1:00 p.m.</option>
+                                <option value="1:30 p.m.">1:30 p.m.</option>
+                                <option value="2:00 p.m.">2:00 p.m.</option>
+                                <option value="2:30 p.m.">2:30 p.m.</option>
+                                <option value="3:00 p.m.">3:00 p.m.</option>
+                                <option value="3:30 p.m.">3:30 p.m.</option>
+                                <option value="4:00 p.m.">4:00 p.m.</option>
+                                <option value="5:00 p.m.">5:00 p.m.</option>
+                                <option value="5:30 p.m.">5:30 p.m.</option>
+                                <option value="6:00 p.m.">6:00 p.m.</option>
+                            </select>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="end">To:<span class="red">*</span></label>
+                            <select id="end" name="end" class="form-control form-control-lg" required="required" data-error="Please choose a start time for your consultation.">
+                                <option value="" selected="selected" disabled="disabled"></option>                                <option value="8:30 a.m.">8:30 a.m.</option>
+                                <option value="9:00 a.m.">9:00 a.m.</option>
+                                <option value="9:30 a.m.">9:30 a.m.</option>
+                                <option value="10:00 a.m.">10:00 a.m.</option>
+                                <option value="10:30 a.m.">10:30 a.m.</option>
+                                <option value="11:00 a.m.">11:00 a.m.</option>
+                                <option value="11:30 a.m.">11:30 a.m.</option>
+                                <option value="12:00 p.m.">12:00 p.m.</option>
+                                <option value="12:30 p.m.">12:30 p.m.</option>
+                                <option value="1:00 p.m.">1:00 p.m.</option>
+                                <option value="1:30 p.m.">1:30 p.m.</option>
+                                <option value="2:00 p.m.">2:00 p.m.</option>
+                                <option value="2:30 p.m.">2:30 p.m.</option>
+                                <option value="3:00 p.m.">3:00 p.m.</option>
+                                <option value="3:30 p.m.">3:30 p.m.</option>
+                                <option value="4:00 p.m.">4:00 p.m.</option>
+                                <option value="5:00 p.m.">5:00 p.m.</option>
+                                <option value="5:30 p.m.">5:30 p.m.</option>
+                                <option value="6:00 p.m.">6:00 p.m.</option>
+                                <option value="6:30 p.m.">6:00 p.m.</option>
+                            </select>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="form_message">Optional Message</label>
+                            <textarea id="form_message" name="message" class="form-control" rows="5"></textarea>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div id='recaptcha' class="g-recaptcha" data-sitekey="6Ldn6YQUAAAAAGKDPHRUditNxFLNo0hgOxCGMGkC" data-callback="userVerified" data-size="invisible"></div>
+                    </div>
+                </div>
+                <div class="row">    
+                    <div class="col-md-12">
+                        <input type="submit" class="btn btn-primary btn-send --long" id="contact-button" value="Schedule a Free Consultation">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-muted pt-3">
+                        <small><strong><span class="red">*</span></strong> These fields are required. Your information is privately transfered over a secure connection and will not shared. <br/>This form is protected by recaptcha.</small>
+                        </p>
+                    </div>
+                </div>
+                <input type="hidden" id="token" name="token">
+            </form>
+        </div>
+    </div>        
+</div>
+{% endblock %}
+{% block footscripts %}
+    <script async defer src='https://www.google.com/recaptcha/api.js'></script>
+{% endblock %}

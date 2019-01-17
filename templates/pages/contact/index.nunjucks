@@ -1,116 +1,267 @@
 <!-- index.nunjucks -->
-{% set meta_title = "Helpful Resources" %}
+{% set meta_title = "Contact Capital District Marriage and Family Therapy" %}
 {% set meta_description = "Many local resources are available in the Schenectady, Albany, and Troy area for people who are in need of help. This is a list of resources you can use." %}
-
+{% set canonical = '/contact/' %}
 {% extends "layout.nunjucks" %}
 
-{% set activePage = "resources" %}
+{% set activePage = "contact" %}
 
 <!--breadcrumbs -->
-{% set folder_name = "Resources" %}
-{% set folder_link = "/resources/" %}
+{% set folder_name = "Contact" %}
+{% set folder_link = "/contact/" %}
 
+{% block headscripts %}
+    <script>
+        function initMap() {
+            // The location of Uluru
+            var cdt = {lat: 42.7325264, lng: -73.6905634};
+            // The map, centered at Uluru
+            var map = new google.maps.Map(
+            document.getElementById('map'), {
+                zoom: 15, 
+                center: cdt,
+                disableDefaultUI: true
+            
+            });
+            // The marker, positioned at Uluru
+            var marker = new google.maps.Marker({position: cdt, map: map});
+        }
+        function userVerified(token) {
+            // Passed all validations, submit via ajax
+            var form = $("#contact-form");
+            var url = form.attr('action');
+            $('#token').val(token);
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: form.serialize(), // serializes the form's elements.
+                success: function (data) {
+                    grecaptcha.reset();
+                    console.log('success');
+                    reportEmailSuccess();
+                    $('#contact-form')[0].reset();
+                },
+                error: function (data) {
+                    console.log(data);
+                    if (data.responseJSON != undefined) {
+                        if (data.responseJSON.errorCodes != undefined) {
+                            processServerErrors(data.responseJSON.errorCodes);
+                        }
+                    }else{
+                        console.log('No Response Was Recieved From The Server');
+                    }
+                    grecaptcha.reset();
+                }
+            });
+        }
+        function processServerErrors(errors) {
+            var errMsgCnt = $('#errorMsgs');
+            var userMessage = '<strong>Server Errors Found:</strong><br/>';
+            for (var i = 0; i < errors.length; i++) {
 
+                if (errors[i]['msg']) {
+                    //validation response
+                    userMessage += (i + 1) + ". " + errors[i]['msg'] + '<br/>';
+                }
+                else {
+                    //captcha response
+                    userMessage += (i + 1) + ". " + errors[i].replace(/-/g, " ") + '<br/>';
+                }
+            }
+            $(errMsgCnt).html(userMessage);
+            $(errMsgCnt).show();
+        }
+        function reportEmailSuccess() {
+            var sccMsgCnt = $('#successMsgs');
+            $(sccMsgCnt).html('<strong>Success!</strong> Your message has been sent');
+            $(sccMsgCnt).show();
+        }
+        
+    </script>
+{% endblock %}
+{% block schema %}
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Capital District Marriage and Family Therapy",
+  "image": "https://www.capitaldistricttherapy.com",
+  "@id": "",
+  "url": "https://www.capitaldistricttherapy.com",
+  "telephone": "518-880-2395",
+  "priceRange": "90-120",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "406 Fulton St, Suite 509",
+    "addressLocality": "Troy",
+    "addressRegion": "NY",
+    "postalCode": "12180",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 42.7325264,
+    "longitude": -73.6883694
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": "Monday",
+    "opens": "08:00",
+    "closes": "19:00"
+  },{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": "Wednesday",
+    "opens": "08:00",
+    "closes": "19:00"
+  },{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": "Friday",
+    "opens": "08:00",
+    "closes": "19:00"
+  }]
+}
+</script>
+{% endblock %}
 {% block content %}
 <header class="services-header {{ activePage }}">
     <div class="container pt-5">
         <div class="row">
             <div class="col pt-3 pb-3">
                 <h1 class="--thin">Contact Us</h1>
-                <h2>Get in touch for assistance.</h2>
+                <h2>Capital District Marriage and Family Therapy</h2>
                  {% include "components/breadcrumb.nunjucks" %}
             </div>
         </div>
     </div>
 </header>
-<div class="container mt-5 mb-5">
-        <form action="{{backend_URL}}/contact/" method="post">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="form_name">First Name *</label>
-                    <input id="form_name" type="text" name="firstname" class="form-control form-control-lg" required="required" data-error="Firstname is required.">
-                    <div class="help-block with-errors"></div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="form_lastname">Last Name *</label>
-                    <input id="form_lastname" type="text" name="lastname" class="form-control form-control-lg" required="required" data-error="Lastname is required.">
-                    <div class="help-block with-errors"></div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="form_email">Email *</label>
-                    <input id="form_email" type="email" name="email" class="form-control form-control-lg"  required="required" data-error="Valid email is required.">
-                    <div class="help-block with-errors"></div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="form_email">Phone *</label>
-                    <input id="form_email" type="tel" name="phone" class="form-control form-control-lg"  required="required" data-error="Valid email is required.">
-                    <div class="help-block with-errors"></div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="form_need">Reason For Contact *</label>
-                    <select id="form_need" name="nmessage" class="form-control form-control-lg" required="required" data-error="Please specify your need.">
-                        <option value="" selected="selected" disabled="disabled"></option>
-                        <option value="Set up an Appointment">Set up an Appointment</option>
-                        <option value="Request Information">Request Information</option>
-                        <option value="Pricing">Pricing Information</option>
-                        <option value="Technical Issue">Technical Issue</option>
-                        <option value="Other">Other</option>
-                    </select>
-                    <div class="help-block with-errors"></div>
-                </div>
-            </div>
-        </div>
-        <div class="row">    
-            <div class="col-md-12">
-                <div class="form-group">
-                    <div>
-                        <label for="form_message">Prefered Contact Method</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="contactmethod" id="contactmethod1" value="Phone" checked="checked">
-                        <label class="form-check-label" for="contactmethod1">Phone</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="contactmethod" id="contactmethod2" value="Email">
-                        <label class="form-check-label" for="contactmethod2">Email</label>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="form-group">
-                    <label for="form_message">Message *</label>
-                    <textarea id="form_message" name="message" class="form-control" rows="5" required="required" data-error="Please, leave us a message."></textarea>
-                    <div class="help-block with-errors"></div>
-                </div>
-            </div>
-        </div>
-        <div class="row">    
-            <div class="col-md-12">
-                <input type="submit" class="btn btn-success btn-send" value="Send message">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <p class="text-muted">
-                <strong>*</strong> These fields are required.
+<section>
+    <div id="map" style="width:100%; height:300px;"></div>
+</section>
+<div class="container pt-5 pt-5">
+    <div class="row">
+        <div class="col">
+            <div>
+                Use this form for questions about our therapy services, therapy session pricing information, or to set up a consultation. Please leave your message along with your contact details with us, and we will get back to you as soon as we can. We usually respond within one or two business days. <strong>If this is a health emergency, please call 911.</strong> For local resources in the Albany, Troy and Schenectady area, please <a href="/resources/">click here.</a>
             </div>
         </div>
     </div>
 </div>
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <div class="col order-lg-2">
+            <div class="row">
+                <div class="col">
+                    <div id="errorMsgs" style="display:none;" class="alert alert-danger"></div>
+                    <div id="successMsgs" style="display:none;" class="alert alert-success"></div>
+                </div>
+            </div>
+            <form action="{{backend_URL}}/contact/" method="post" id="contact-form">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_name">First Name <span class="red">*</span></label>
+                            <input id="form_name" type="text" name="firstname" class="form-control form-control-lg" required minlength="1" maxlength="255" data-error="Firstname is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_lastname">Last Name <span class="red">*</span></label>
+                            <input id="form_lastname" type="text" name="lastname" class="form-control form-control-lg" required="required" data-error="Lastname is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="email">Email <span class="red">*</span></label>
+                            <input id="email" type="email" name="email" class="form-control form-control-lg"  required="required" data-error="Valid email is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="phone">Phone <span class="red">*</span></label>
+                            <input id="phone" type="tel" name="phone" class="form-control form-control-lg"  required="required" data-error="Valid email is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="reason">Reason For Contact <span class="red">*</span></label>
+                            <select id="reason" name="reason" class="form-control form-control-lg" required="required" data-error="Please specify your need.">
+                                <option value="" selected="selected" disabled="disabled"></option>
+                                <option value="Set up an Appointment">Set up an Appointment</option>
+                                <option value="Request Information">Request Information</option>
+                                <option value="Pricing">Pricing Information</option>
+                                <option value="Technical Issue">Technical Issue</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">    
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <div>
+                                <label for="form_message">Prefered Contact Method</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="contactmethod" id="contactmethod1" value="Phone" checked="checked">
+                                <label class="form-check-label" for="contactmethod1">Phone</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="contactmethod" id="contactmethod2" value="Email">
+                                <label class="form-check-label" for="contactmethod2">Email</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="form_message">Message</label>
+                            <textarea id="form_message" name="message" class="form-control" rows="5" required="required" data-error="Please, leave us a message."></textarea>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div id='recaptcha' class="g-recaptcha" data-sitekey="6Ldn6YQUAAAAAGKDPHRUditNxFLNo0hgOxCGMGkC" data-callback="userVerified" data-size="invisible"></div>
+                    </div>
+                </div>
+                <div class="row">    
+                    <div class="col-md-12">
+                        <input type="submit" class="btn btn-primary btn-send --long" id="contact-button" value="Send message">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-muted pt-3">
+                        <small><strong><span class="red">*</span></strong> These fields are required. Your information is privately transfered over a secure connection and will not shared. <br/>This form is protected by recaptcha.</small>
+                        </p>
+                    </div>
+                </div>
+                <input type="hidden" id="token" name="token">
+            </form>
+        </div>
+        <div class="col-lg-4 col-sm-12 order-md-1">
+            {% include "components/sidebar-contact-block.nunjucks" %}
+            <div class="contact-info-sidebar">
+                <h4><span>Hours of Operation</span></h4>
+                <p class="pb-1 pt-1">Monday - Friday: <br/>11am - 7pm</p>
+                <p class="pb-1 pt-1">Weekends <br/>11am - 7pm</p>
+                <br/>
+            </div>
+            <a href="/contact/" class="btn btn-primary --square">Get Directions</a>
+        </div>
+    </div>        
+</div>
 {% endblock %}
-{% block addscripts %}
-    
+{% block footscripts %}
+    <script async defer src='https://www.google.com/recaptcha/api.js'></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZyslXkJ2LWzmOccxqCUCMD5Z_LRwLWSM&callback=initMap"></script>
 {% endblock %}

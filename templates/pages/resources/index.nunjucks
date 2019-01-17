@@ -3,7 +3,7 @@
 {% set meta_description = "Many local resources are available in the Schenectady, Albany, and Troy area for people who are in need of help. This is a list of resources you can use." %}
 
 {% set activePage = "resources" %}
-
+{% set canonical = '/resources/' %}
 <!--breadcrumbs -->
 {% set folder_name = "Resources" %}
 {% set folder_link = "/resources/" %}
@@ -19,9 +19,85 @@
 Local Therapy Resources
 {% endblock %}
 {% block serviceSubheading %}
-Helpful resources, links and organizations
+Mental health resources for Albany, Schenectady, and Troy.
 {% endblock %}
 {% block maincontent %}
+<div class="row">
+    <div class="col-md-12">
+        <div class="resource">
+            <h4>Department of Mental Health</h4>
+            <p><a href="https://www.autismspeaks.org/">https://www.autismspeaks.org/</a></p>
+            <p><strong>Telephone:</strong> 518-447-4555</p>
+            <p>The Department of Mental Health offers a wide range of services to Albany County citizens, including treatment for mental illness and substance abuse. It is our mission to ensure that persons with mental illness, substance and alcohol problems or developmental disabilities are provided a full range of services that promote stabilization, rehabilitation and recovery for the purpose of enhancing or improving their lives.</p>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="resource">
+            <h4>CDPC Crisis Unit</h4>
+            <p class="--primary">Psychiatric crisis services available by phone 24/7</p>
+            <p><strong>Address:</strong><br>75 New Scotland Avenue<br> Albany, NY 12208</p>
+            <p><strong>Telephone Number:</strong> 518-549-6500</p>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="resource">
+            <h4>Ellis Hospital Emergency Room </h4>
+            <p class="--primary">24 hour crisis</p>
+            <p><strong>Address:</strong><br>1101 Nott Street,<br> Schenectady, NY 12308 </p>
+            <p><strong>Telephone Number:</strong> 518-243-3300</p>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="resource">
+            <h4>Albany County Department for Children, Youth and Families </h4>
+            <p class="--primary">24 hour crisis</p>
+            <p><strong>Address:</strong><br>260 South Pearl Street,<br> Albany, NY 12202</p>
+            <p><strong>Telephone Number:</strong> 518-447-4550</p>
+            <p>Offers crisis assessment, triage, ongoing counseling, and emergency on call access to Child and Adolescent Mobile Crisis Team</p>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="resource">
+            <h4>NY State Central Registry for child Abuse &amp; Maltreatment: </h4>
+            <p><a href="https://ocfs.ny.gov/main/cps/">https://ocfs.ny.gov/main/cps/</a></p>
+            <p><strong>Telephone Number:</strong> 1-800-342-3720</p>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="resource">
+            <h4>National Suicide Prevention Lifeline</h4>
+            <p><a href="https://suicidepreventionlifeline.org/">https://suicidepreventionlifeline.org/</a></p>
+            <p><strong>Telephone Number:</strong> 1-800-273-8255</p>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="resource">
+            <h4>National Sexual Assault Telephone Hotline</h4>
+            <p><a href="https://www.rainn.org/">https://www.rainn.org/</a></p>
+            <p><strong>Telephone Number:</strong> 1-800-656-4673</p>
+            <p>RAINN (Rape, Abuse & Incest National Network) is the nation's largest anti-sexual violence organization. RAINN created and operates the National Sexual Assault Hotline in partnership with more than 1,000 local sexual assault service providers across the country and operates the DoD Safe Helpline for the Department of Defense. RAINN also carries out programs to prevent sexual violence, help survivors, and ensure that perpetrators are brought to justice.</p>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="resource">
+            <h4>National Alliance on Mental Illness (NAMI)</h4>
+            <p><a href="https://www.nami.org/">https://www.nami.org/</a></p>
+            <p><strong>Helpline:</strong> 1-800-950-6264 or Text NAMI to 741741</p>
+            <p>NAMI, the National Alliance on Mental Illness, is the nation’s largest grassroots mental health organization dedicated to building better lives for the millions of Americans affected by mental illness.” “Today, we are an association of more than 500 local affiliates who work in your community to raise awareness and provide support and education that was not previously available to those in need.</p>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="resource">
+            <h4>Autism Speaks</h4>
+            <p><a href="https://www.autismspeaks.org/">https://www.autismspeaks.org/</a></p>
+            <p><strong>Helpline:</strong> 1-800-950-6264 or Text NAMI to 741741</p>
+            <p>Autism Speaks is dedicated to promoting solutions, across the spectrum and throughout the life span, for the needs of individuals with autism and their families through advocacy and support; increasing understanding and acceptance of people with autism spectrum disorder; and advancing research into causes and better interventions for autism spectrum disorder and related conditions.</p>
+        </div>
+    </div>
+</div>
+
 
 
 

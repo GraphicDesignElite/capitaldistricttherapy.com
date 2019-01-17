@@ -19,10 +19,11 @@
             <div class="col">
                <h5 class="--wborder"><span>Links</span></h5>
                <ul>
+                    <li><a href="/contact/">Contact</a></li>
                     <li><a href="/about/">About Me</a></li>
-                    <li><a href="/articles/what-to-expect/">What to expect on your first session</a></li>
-                    <li><a href="/articles/who-cab-benefit-from-therapy/">Who should consider therapy?</a></li>
-                    <li><a href="#">Resources</a></li>
+                    <li><a href="/articles/what-to-expect/">What to Expect in Your First Session</a></li>
+                    <li><a href="/articles/who-cab-benefit-from-therapy/">Who Should Consider Therapy?</a></li>
+                    <li><a href="/resources/">Local Resources</a></li>
                 
                </ul>
             </div>
@@ -35,7 +36,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col text-center copy">
-                <p>Capital District Therapy | Copyright 2018</p>
+                <p>Capital District Therapy | Copyright&nbsp;<script>document.write(new Date().getFullYear())</script></p>
             </div>
         </div>
     </div>

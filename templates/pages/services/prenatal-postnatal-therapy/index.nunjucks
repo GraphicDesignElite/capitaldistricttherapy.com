@@ -1,8 +1,8 @@
 <!-- index.nunjucks -->
-{% set meta_title = "Prenatal and Post Natal Therapy In Albany Ny" %}
-{% set meta_description = "Prenatal and Postnatal Therapy" %}
+{% set meta_title = "Prenatal and Postpartum Therapy" %}
+{% set meta_description = "In person and online therapy for mothers dealing with postpartum depression, as well as soon to be moms experiencing anxiety." %}
 {% set activePage = 'prenatal-therapy' %}
-
+{% set canonical = '/services/prenatal-postnatal-therapy/' %}
 <!--breadcrumbs -->
 {% set folder_name = "Services" %}
 {% set folder_link = "/services/" %}
@@ -16,19 +16,19 @@
 {% endblock %}
 
 {% block serviceHeading %}
-Prenatal and Postnatal Therapy
+Prenatal and Postpartum Therapy
 {% endblock %}
 {% block serviceSubheading %}
 Therapy and counseling for pregnancy
 {% endblock %}
 {% block maincontent %}
 <img src="/img/services/prenatal_therapy_intro.jpg" class="img-fluid mb-4" alt="Prenatal and Postnatal Therapy"/>
-<h3>Expecting mothers and post partem depression</h3>
+<h3>Expecting mothers and postpartum depression</h3>
 <h4 class="--primary">Help for one of life's most difficult stages.</h4>
 <p>You’re having a baby, bringing life into this world so feeling like you have it all together is probably high on your list. You’re having a lot of conflicting thoughts and feel like you’ve been thrown for a loop. </p>
 <p>Pregnancy and having a child puts our bodies through an incredible process. The messages we have received about pregnancy can be really contrary to what you’re currently experiencing. </p>
 <p>The anxiety and worry during this time period can be consuming. It’s hard to open up and even allow yourself to see how you’re really feeling.</p>
-<p>Your habits have probably begun to change as you accommodate to your evolving body. Some changes are welcome while others are…well let’s face it… annoying. But we usually adopt a healthier life style or do our best to take steps in that direction</p>
+<p>Your habits have probably begun to change as you accommodate to your evolving body. Some changes are welcome while others are…well let’s face it… annoying. But we usually adopt a healthier lifestyle or do our best to take steps in that direction</p>
 <blockquote class="blockquote">
   <p class="mb-0">The anxiety and worry during this time period can be consuming. It’s hard to open up and even allow yourself to see how you’re really feeling.</p>
 </blockquote>

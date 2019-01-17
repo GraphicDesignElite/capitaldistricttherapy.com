@@ -6,7 +6,7 @@
                     <h5>Join Our Mailing List</h5>
                     <p>Get our free newsletter for monthly zen right to your mailbox. Well send you wellness tips, ways you can reduce your daily stress, information about local activites and group therapy, and more.</p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 newsletter-wrapper">
                     <!-- Begin Mailchimp Signup Form -->
                     <div id="mc_embed_signup">
                         <form action="https://capitaldistricttherapy.us19.list-manage.com/subscribe/post?u=b58666adfada92f51e09173fe&amp;id=1e86c7b79e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -14,7 +14,7 @@
                                 <div class="mc-field-group form-group">
                                     <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span></label>
                                     <input type="email" value="" name="EMAIL" class="required email form-control input-lg" id="mce-EMAIL">
-                                    <small>We have a strict no spam policy. Your email will not be shared.</small>
+                                    <small>We have a strict no spam policy.</small>
                                 </div>
                                 <div id="mce-responses" class="clear">
                                     <div class="response" id="mce-error-response" style="display:none"></div>
