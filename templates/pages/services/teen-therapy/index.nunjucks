@@ -1,6 +1,6 @@
 <!-- index.nunjucks -->
 {% set meta_title = "Teen Counseling, Teen & Preteen Therapy" %}
-{% set meta_description = "Teen Therapy" %}
+{% set meta_description = "We offer teen counseling with and experienced therapist for a variety of common issues including teen drug addiction, bullying, teen depression and anxiety treatment." %}
 {% set activePage = 'teen-therapy' %}
 {% set canonical = '/services/teen-therapy/' %}
 <!--breadcrumbs -->

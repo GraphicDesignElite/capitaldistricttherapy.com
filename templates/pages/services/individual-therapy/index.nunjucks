@@ -1,6 +1,6 @@
 <!-- index.nunjucks -->
-{% set meta_title = "Individual Therapy" %}
-{% set meta_description = "Individual Therapy" %}
+{% set meta_title = "Individual Therapy and Counseling" %}
+{% set meta_description = "Individual therapy is a one on one process that involves embracing change and improving the quality of your life." %}
 {% set activePage = 'individual-therapy' %}
 {% set canonical = '/services/individual-therapy/' %}
 <!--breadcrumbs -->

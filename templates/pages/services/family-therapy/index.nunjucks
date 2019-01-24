@@ -1,6 +1,6 @@
 <!-- Base Settings.nunjucks -->
-{% set meta_title = "Family Therapy" %}
-{% set meta_description = "Family Therapy" %}
+{% set meta_title = "Family Therapy and Counseling" %}
+{% set meta_description = "We offer family therapy and counseling services to help your family improve communication and work through conflicts." %}
 {% set activePage = 'family-therapy' %}
 {% set canonical = '/services/family-therapy/' %}
 <!--breadcrumbs -->

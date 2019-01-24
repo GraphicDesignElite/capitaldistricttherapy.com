@@ -256,7 +256,7 @@
                 <p class="pb-1 pt-1">Weekends <br/>11am - 7pm</p>
                 <br/>
             </div>
-            <a href="/contact/" class="btn btn-primary --square">Get Directions</a>
+            <a href="https://goo.gl/maps/Yjj3qsquYWP2" class="btn btn-secondary --square">Get Directions Here</a>
         </div>
     </div>        
 </div>

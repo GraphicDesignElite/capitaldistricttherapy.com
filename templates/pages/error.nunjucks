@@ -1,0 +1,26 @@
+<!-- index.nunjucks -->
+{% set meta_title = "Error - Page Not Found." %}
+{% set meta_description = "We are sorry for the inconvenience, but the page you are looking for is not found on our server." %}
+{% extends "layout.nunjucks" %}
+{% set activePage = 'error' %}
+{% set canonical = '/error.html' %}
+{% set meta_robots = 'true' %}
+
+
+{% block content %}
+<div class="jumbotron services-header">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="display-4">Error - Page Not Found</h1>
+                <p class="lead">We appologize for the inconvenience, but the page you are looking for cannot be found on our server.</p>
+                <p>If you believe you are seeing this message in error, please report this error on our <a href="/contact/" class="--light">contact page</a>.</p>
+                <p class="lead">
+                    <a class="btn btn-secondary" href="/" role="button">Return Home</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

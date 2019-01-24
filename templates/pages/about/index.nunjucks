@@ -1,6 +1,6 @@
 <!-- index.nunjucks -->
 {% set meta_title = "About Capital District Marriage and Family Therapy" %}
-{% set meta_description = "Vanessa Bever, LMFT and owner of Capital District Marriage and Family Therapy in Troy, Ny." %}
+{% set meta_description = "Vanessa Bever is a licensed marriage and family therapist and owner of Capital District Marriage and Family Therapy located in Troy, Ny." %}
 {% set activePage = 'about' %}
 {% set canonical = '/about/' %}
 {% extends "layout.nunjucks" %}
@@ -10,11 +10,11 @@
 
 {% block content %}
 <header class="services-header about">
-    <div class="container pt-5">
+    <div class="container pt-5 pb-5 pb-md-3">
         <div class="row">
             <div class="col pt-3 pb-3">
                 <h1 class="--thin">About Me</h1>
-                <h2>Vanessa Bever, LMFT</h2>
+                <h2>Capital District Marriage and Family Therapy</h2>
                  {% include "components/breadcrumb.nunjucks" %}
             </div>
         </div>
@@ -28,8 +28,8 @@
                 {% include "components/social-links.nunjucks" %}
             </div>
             <div class="col-md-7">
-                <h2 class="--thin">My Approach to Therapy</h2>
-                <h4>Dedicated to the health and well being of my clients.</h4>
+                <h2 class="--thin">Vanessa Bever, LMFT</h2>
+                <h4>Committed to providing personal &amp; affordable quality care.</h4>
                 <p>My clients often tell me how I am not what they thought a therapist would be. I’m not stuffy, I’m approachable, I love humor and I don’t look much like Freud.</p>
                 <p>The client is the expert of their mind and my role is to use my training and education to help my client unlock crucial information. We are all social beings and at the heart of getting better are nurturing relationships. In other words, we cannot do it alone.</p>
                 <h4>Education</h4>
@@ -70,7 +70,7 @@
                     <h3>Bio</h3>
                     <p>Not feeling like yourself? When you are going through a hard time it can be filled with loneliness. There’s nothing worse than feeling off, without clarity on where to go and what to do. We get stuck in a funk, a place we have been before and we feel grim about things changing for better. </p>
                     <p>I love to support people through those difficult and painful moments in life. </p>
-                    <p>I want to know about the things you are noticing that you want to change, and we will work together to achieve a healthy you. Sometimes we don’t have words for what’s going on within us. Giving voice to what’s inside you, noticing the areas that need attention, and having a trained therapist to help you do through this can be a game changer.</p>
+                    <p>I want to know about the things that you want to change, and we will work together to achieve a healthy you. Sometimes we don’t have words for what’s going on within us. Giving voice to what’s inside you, noticing the areas that need attention, and having a trained therapist to help you do through this can be a game changer.</p>
                     <p>Chances are that you are spending energy, time and money on ways to feel better. Therapy is the place where you build your road map to your desired destination. </p>
                     <p>I am therapist that provides a substantial amount of encouragement. I am not an empty cheerleader, I am here to provide quality treatment to improve your life. </p>
                     <h4>Experience</h4>
@@ -85,7 +85,7 @@
                     <section>
                         {% include "components/articles-sidebar.nunjucks" %}
                     </section>
-                    {% include "components/sidebar-contact-block.nunjucks" %}
+                    
                 </aside>
             </div>
         </div>

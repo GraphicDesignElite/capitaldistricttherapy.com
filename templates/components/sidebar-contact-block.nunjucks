@@ -1,9 +1,9 @@
 <section>
     <div class="contact-info-sidebar">
-        <h4 class="--wborder"><span>Contact Information</span></h4>
-        <p class="pb-1 pt-1"><strong>Office Phone:</strong></p>
+        <h5 class="--wborder"><span>Contact Information</span></h5>
+        <p class="pb-1 pt-1"><strong>Phone:</strong></p>
         <p>(518) 880-2395</p>
-        <p class="pb-1 pt-1"><strong>Our Address:</strong></p>
+        <p class="pb-1 pt-1"><strong>Address:</strong></p>
         <p>406 Fulton St, Suite 509<br/>
         Troy, NY 12180</p>
         <br/>

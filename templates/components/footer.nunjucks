@@ -1,10 +1,13 @@
 <footer id="footer">
     <div class="container">
         <div class="row">
-            <div class="col-md-4 col-sm-12">
-               <p>Commited to providing personal, affordable quality care for patients in Schenectady, Albany and Troy.</p> 
+            <div class="col-lg-3 col-sm-12">
+                <a class="navbar-brand logo" href="/">
+                    <img src="/img/common/capital-district-therapy-logo-icon.svg" alt="Capital District Marriage and Family Therapy" class="logo-icon"/>
+                    <span>Capital District <span>Marriage and Family Therapy</span></span> 
+                </a>
             </div>
-            <div class="col">
+            <div class="col-6 col-md-4 col-lg-3">
                <h5 class="--wborder"><span>Services</span></h5>
                <ul>
                     <li><a href="/services/family-therapy/">Family Therapy</a></li>
@@ -16,18 +19,18 @@
                     <li><a href="/services/teen-therapy/">Teen Therapy</a></li>
                </ul>
             </div>
-            <div class="col">
+            <div class="col-6 col-md-4 col-lg-3">
                <h5 class="--wborder"><span>Links</span></h5>
                <ul>
-                    <li><a href="/contact/">Contact</a></li>
+                    <li><a href="/contact/">Contact</a></li> 
                     <li><a href="/about/">About Me</a></li>
                     <li><a href="/articles/what-to-expect/">What to Expect in Your First Session</a></li>
-                    <li><a href="/articles/who-cab-benefit-from-therapy/">Who Should Consider Therapy?</a></li>
+                    <li><a href="/articles/who-can-benefit-from-therapy/">Who Should Consider Therapy?</a></li>
                     <li><a href="/resources/">Local Resources</a></li>
                 
                </ul>
             </div>
-            <div class="col">
+            <div class="col col-md-4 col-lg-3">
                {% include "components/sidebar-contact-block.nunjucks" %}
                {% include "components/social-links.nunjucks" %}
             </div>
@@ -36,7 +39,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col text-center copy">
-                <p>Capital District Therapy | Copyright&nbsp;<script>document.write(new Date().getFullYear())</script></p>
+                <p>Capital District Marriage and Family Therapy | Copyright&nbsp;<script>document.write(new Date().getFullYear())</script></p>
             </div>
         </div>
     </div>

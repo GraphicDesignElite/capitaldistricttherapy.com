@@ -17,8 +17,16 @@ var gulp        = require('gulp'),
     pngquant    = require('imagemin-pngquant'),
     plumber     = require('gulp-plumber'),
     deploy      = require('gulp-gh-pages'),
-    notify      = require('gulp-notify');
-    
+    notify      = require('gulp-notify'),
+    gzip = require('gulp-gzip');
+
+var gzipConfig = { 
+    gzipOptions: { 
+        level: 9 
+    },
+    skipGrowingFiles : true,
+    append: false 
+}
 
 gulp.task('scss', function() {
     var onError = function(err) {

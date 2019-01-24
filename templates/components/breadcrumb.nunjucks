@@ -8,7 +8,7 @@
         </a>
         <meta itemprop="position" content="1" />
     </li>
-  
+    {% if folder_name %}
     <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
         <a href="{{folder_link}}" itemprop="item">
             <span itemprop="name">
@@ -17,19 +17,16 @@
         </a>
         <meta itemprop="position" content="2" />
     </li>
-   
- 
+    {% endif %}
+    {% if active_page_name %}
     <li class="breadcrumb-item active" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" aria-current="page">
         <a href="{{active_page_link}}" itemprop="item">
             <span itemprop="name">
                 {{active_page_name}}
             </span>
         </a>
-        {% if folder_name %}
         <meta itemprop="position" content="3" />
-        {% else %}
-        <meta itemprop="position" content="2" />
-        {% endif %}
     </li>
+    {% endif %}
   </ol>
 </nav>

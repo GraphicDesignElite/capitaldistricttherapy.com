@@ -1,6 +1,6 @@
 <!-- index.nunjucks -->
-{% set meta_title = "Crisis Therapy" %}
-{% set meta_description = "Crisis Therapy" %}
+{% set meta_title = "Crisis Therapy Counseling and Intervention" %}
+{% set meta_description = "Capital District Marriage and Family therapy offers short term crisis therapy for patients looking to deal with overwhelming events or situations. " %}
 {% set activePage = 'crisis-therapy' %}
 {% set canonical = '/services/crisis-therapy/' %}
 <!--breadcrumbs -->
@@ -61,5 +61,5 @@ Treatment for patients who experience sudden extreme events.
     <li><strong>Reaction Type 4:</strong> Those who find a portal to transport their mind to another world. This can portal can be via drinking, smoking, elicit drugs, prescribed medication, sex, online activities, or gambling. Something you are doing to escape from reality. You may feel like it’s just temporary and you have it under control but you’re in a dangerous place. People who use these habits to escape are at risk developing serious problem such as addiction, overdose, health problems and psychological disorders.</li>
 </ul>
 <p>Although these are common scenarios, you may dip into a few or all of the above reaction types.</p>
-<p>If you feel like you are in need of a little help but are having trouble with a clear route of where to get relief from the pain, crisis therapy can be an excellent option. <a href="/contact-us/">Contact us</a> for a private consultation and start getting help right away.</p>
+<p>If you feel like you are in need of a little help but are having trouble with a clear route of where to get relief from the pain, crisis therapy can be an excellent option. <a href="/contact/">Contact us</a> for a private consultation and start getting help right away.</p>
 {% endblock %}

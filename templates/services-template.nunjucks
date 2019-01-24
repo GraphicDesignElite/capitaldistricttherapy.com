@@ -5,7 +5,7 @@
 
 {% block content %}
 <header class="services-header {{ activePage }}">
-    <div class="container pt-5">
+    <div class="container pt-5 pb-5 pb-md-3">
         <div class="row">
             <div class="col pt-3 pb-3">
                 <h1 class="--thin">{% block serviceHeading %}{% endblock %}</h1>
@@ -27,7 +27,7 @@
                 <section>
                     {% block sidebar %}{% endblock %}
                 </section>
-                {% include "components/sidebar-contact-block.nunjucks" %}
+                
                 
             </aside>
         </div>

@@ -1,6 +1,6 @@
 <!-- index.nunjucks -->
-{% set meta_title = "Graphic Design and Web Development Experts" %}
-{% set meta_description = "Graphic Design and Web Development Experts" %}
+{% set meta_title = "Therapy and Counseling Services" %}
+{% set meta_description = "Capital District Marriage and Family Therapy offers a variety of therapy and counseling services for patients in Schenectady, Albany, Troy, and Colonie." %}
 {% set activePage = 'services' %}
 {% set canonical = '/services/' %}
 {% extends "layout.nunjucks" %}
@@ -15,7 +15,7 @@
                 <div class="col text-center mt-5 mb-5 pt-5 pb-5">
                     <h1 class="--thin --dark">Therapy Services</h1>
                     <h2 class="h3 --primary">Change happens when we work together.</h2>
-                    <a href="/therapy-consultation/" class="btn btn-primary --icon --appt mt-4">Schedule a Consultation</a>
+                    <a href="/contact/schedule-a-consultation/" class="btn btn-primary --icon --appt mt-4">Schedule a Consultation</a>
                 </div>
             </div>
         </div>

@@ -7,24 +7,24 @@
             </div>
         </div>
         <div class="steps">
-            <div class="row">
-                <div class="col">
+            <div class="row row-eq-height">
+                <div class="col-md-4 col-12">
                     <span>1</span>
                     <p>Provide your basic&nbsp;<br class="d-none d-lg-block"/>contact information.</p>
                 </div>
-                <div class="col">
+                <div class="col-md-4 col-12"> 
                     <span>2</span>
                     <p>Choose the time that works&nbsp;<br class="d-none d-lg-block"/> for you.</p>
                 </div>
-                <div class="col">
+                <div class="col-md-4 col-12">
                     <span>3</span>
                     <p>We contact you to answer any&nbsp;<br class="d-none d-lg-block"/>questions you have.</p>
                 </div>
             </div>
         </div>
         <div class="row pt-4">
-            <div class="col">
-                <a class="btn btn-primary --icon --appt" href="/contact/make-an-appointment/">Schedule a Consultation</a>
+            <div class="col pt-4 pt-sm-0">
+                <a class="btn btn-primary --icon --appt" href="/contact/schedule-a-consultation/">Schedule a Consultation</a>
             </div>
         </div>
     </div>

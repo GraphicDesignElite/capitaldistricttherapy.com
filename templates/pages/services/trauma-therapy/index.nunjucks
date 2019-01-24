@@ -1,6 +1,6 @@
 <!-- index.nunjucks -->
-{% set meta_title = "Trauma Therapy" %}
-{% set meta_description = "" %}
+{% set meta_title = "Trauma Focused Therapy" %}
+{% set meta_description = "Trauma focused therapy helps people cope and heal from traumatic life events and addresses forms of Post Traumatic Stress Disorder. " %}
 {% set activePage = 'trauma-therapy' %}
 {% set canonical = '/services/trauma-therapy/' %}
 <!--breadcrumbs -->
@@ -33,7 +33,7 @@ Evaluation, assesment and plan development for children.
   <p class="mb-0">I take special care unfold and help you see the areas of you that have been impacted by your experience.</p>
 </blockquote>
 <p>Working in the field of trauma for years, I take special care unfold and help you see the areas of you that have been impacted by your experience. </p>
-<p>When I work with people on their trauma I balance allowing my client to guide the pace of treatment while also challenging them when I can tell that they are strong enough to confront certain aspects of their pain. </p>
+<p>When I work with people on their trauma, I allow my client to guide the pace of treatment while also challenging them when I can tell that they are strong enough to confront certain aspects of their pain. </p>
 <p>The traumatic event/s can be terrifying to address. Many people I see don’t want to have to talk about and in a way “relive” the experience. For this reason, I am clear with my clients that as you begin therapy, if you do not want to, you do not have to talk about the trauma right away. </p>
 <p>The traumatic event was something where on many levels you were not in control &amp; now you can control what parts of your experience you share. This allows you to have a new experience with your trauma. </p>
 <p>We will be talking about how you are currently doing, what areas of your life you want to see change in and increase the comfort with being in therapy. One of the most important things to keep in mind is that your trauma is a single or set of experiences but it is not everything about you and does not define you in ways you don’t want it to. </p>

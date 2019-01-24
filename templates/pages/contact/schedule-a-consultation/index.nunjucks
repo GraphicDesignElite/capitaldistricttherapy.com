@@ -1,6 +1,6 @@
 <!-- index.nunjucks -->
 {% set meta_title = "Schedule a free consultation with a therapist." %}
-{% set meta_description = "Talk to a therapist directly for more information about starting a new therapy program." %}
+{% set meta_description = "Schedule an appointment to talk to a therapist directly for more information about starting a new therapy program." %}
 {% set canonical = '/contact/schedule-a-consultation/' %}
 
 {% extends "layout.nunjucks" %}
@@ -116,7 +116,7 @@
 {% endblock %}
 {% block content %}
 <header class="services-header {{ activePage }}">
-    <div class="container pt-5">
+    <div class="container pt-5 pb-5 pb-md-3">
         <div class="row">
             <div class="col pt-3 pb-3">
                 <h1 class="--thin">Schedule a Consultation</h1>

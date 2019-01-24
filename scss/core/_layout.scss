@@ -17,7 +17,7 @@ body{
     background-repeat: no-repeat;
   }
 }
-h1,h2,h3,h4,h5,.h1,.h2,.h3,.h4,.h5, p, span, label{
+h1,h2,h3,h4,h5,.h1,.h2,.h3,.h4,.h5, p, span, label, a{
   font-family: $heading-font;
   &.--primary{
       color:$primary;
@@ -109,12 +109,7 @@ ul{
     }
 }
 .navbar{
-    .navbar-brand{
-        img{
-            min-width:310px;    
-        }
-    }
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
         background:#fff;
         padding:0px;
         .container{
@@ -123,9 +118,6 @@ ul{
         }
         .navbar-brand{
             margin-left:15px;
-            img{
-                min-width:240px;    
-            }
         }
         .navbar-toggler{
             margin-right:15px;
@@ -155,13 +147,13 @@ ul{
     &.btn-wrapper{
         width:100%;
         background:$primary;
-        @include media-breakpoint-up(md) {
+        @include media-breakpoint-up(lg) {
             padding-top:10px;
             padding-left:15px;
             background:none;
         }
         .btn{
-            @include media-breakpoint-down(sm) {
+            @include media-breakpoint-down(md) {
                 width:100%;
                 border-radius:0px;
                 padding:20px 15px;
@@ -185,6 +177,87 @@ ul{
         box-shadow: 0px 0px 0px rgba(0,0,0,.0);
     }
 }
+.logo{
+    .logo-icon{
+        width:70px;
+        display:block;
+        float:left;
+        @include media-breakpoint-down(sm) {
+            width:75px;
+        }
+        @include media-breakpoint-down(xs) {
+            width:52px;
+        }
+        footer &{
+            width:52px;
+            @include media-breakpoint-down(lg) {
+                display:none;
+            }
+            @include media-breakpoint-down(md) {
+                display:block;
+            }
+        }
+    }
+    > span{ 
+        color:#000;
+        font-weight:100;
+        font-family:$heading-font;
+        font-size:1.8em;
+        line-height:.75em;
+        display:block;
+        margin-top:3px;
+        float:left;
+        padding-left:10px;
+        footer &{
+            font-size:1.5em; 
+            color:#fff;
+            margin-top: 3px;
+            @include media-breakpoint-down(lg) {
+                padding-left:0px;
+            }
+            @include media-breakpoint-down(md) {
+                padding-left:10px;
+            }
+            @include media-breakpoint-down(sm) {
+                padding-left:10px;
+            }
+        }
+
+        @include media-breakpoint-down(lg) {
+            font-size:1.8em;
+        }
+        @include media-breakpoint-down(sm) {
+            font-size:1.6em;
+            margin-top:5px;
+        }
+        @media (max-width: 350px) {
+            font-size:1.3em;
+            margin-top:0px;
+            line-height:22px;
+        }
+        > span{
+            display:block;
+            font-family:$body-font;
+            font-weight:100;
+            font-size:.4em;
+            color:$primary;
+            line-height:1em;
+            margin-top:8px;
+            padding-left:2px;
+            @include media-breakpoint-down(sm) {
+                margin-top:4px;
+            }
+            @media (max-width: 350px) {
+                margin-top:2px;
+            }
+        }
+    }
+    footer &{
+       padding-top:0px;
+       margin:0px;
+    }
+}
+
 #content {
     flex: 1 0 auto;
 }
@@ -210,6 +283,9 @@ footer{
         p{
             margin:0px;
         }
+    }
+    .footer-logo{
+        margin-bottom:10px;
     }
 }
 .light-bg{
@@ -422,7 +498,7 @@ footer{
     }
 }
 #about{
-    margin-top:-100px;
+    margin-top:-110px;
 }
 .about-home{
     background:$primary;
@@ -433,9 +509,9 @@ footer{
     }
 }
 .about-image{
-    padding-top:60px;
+    padding-top:30px;
     @include media-breakpoint-down(lg) {
-        padding-top:100px;
+        padding-top:60px;
     }
     @include media-breakpoint-down(md) {
         padding-top:0px;
@@ -525,13 +601,20 @@ footer{
     }
     
 }
+.sidebar{
+    @include media-breakpoint-down(md) {
+        margin-top:30px;
+    }
+}
 .contact-info-sidebar{
-    
     .sidebar & {
         padding:15px;
         margin-top:10px;
         .btn{
             display:inline-block;
+        }
+        @include media-breakpoint-down(md) {
+            display:none;
         }
     }
     p{
@@ -540,6 +623,7 @@ footer{
     .btn{
         display:none;
     }
+    
 
     
 }
@@ -592,7 +676,7 @@ footer{
         display:block;
         position:absolute;
         top:0px;
-        right:0px;
+        right:10px;
         background:url(#{$spriteURL});
         background-position:0px -196px;
     }
@@ -614,6 +698,10 @@ footer{
         margin-top:.5rem;
         z-index:2;
         border:8px solid #fff;
+        @include media-breakpoint-down(sm){
+            margin-top:0px;
+        }
+        
     }
     &:after{
         content:' ';
@@ -624,6 +712,20 @@ footer{
         left:20%;
         right:20%;
         z-index:1;
+        @include media-breakpoint-down(sm){
+            display:none;
+        }
+    }
+    @include media-breakpoint-down(sm){
+        span{
+           margin-bottom:5px;
+            
+        }
+        p{
+            padding-left:20px;
+            width:100%;
+            
+        }
     }
 }
 .services-header{

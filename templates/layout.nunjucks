@@ -1,12 +1,13 @@
+{% set backend_URL = "https://api.capitaldistricttherapy.com" %}
+{% set version = "?v=0002" %}
 <!doctype html>
 <html class="no-js" lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>{{ meta_title }} | Capital District Therapy</title>
+        <title>{{ meta_title }}</title>
         <meta name="description" content="{{meta_description}}">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
         <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png"> 
         <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
@@ -15,15 +16,19 @@
         <link rel="shortcut icon" href="/img/favicons/favicon.ico">
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="msapplication-config" content="/img/favicons/browserconfig.xml">
+        <meta name="google-site-verification" content="c-am3HNN1LeLeLyvm00_ZbnQ0HFSk7kf2qk8BeWkdhw" />
+        <meta name="msvalidate.01" content="D217ECA34453376753F21846ECCD21B0" />
         <meta name="theme-color" content="#ffffff">
         <link rel="canonical" href="https://capitaldistricttherapy.com{{ canonical }}" />
-        <link rel="stylesheet" href="/css/main.min.css">
+        <link rel="stylesheet" href="/css/main.min.css{{version}}">
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Open+Sans:400,700" rel="stylesheet">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+        {% if meta_robots %}
+        <meta name="robots" content="noindex">
+        {% endif %}
         {% block headscripts %}{% endblock %}
         {% block schema %}{% endblock %}
     </head>
-    {% set backend_URL = "https://api.capitaldistricttherapy.com" %}
+    
     <body class="{{activePage}}">
         <div id="content">
             {% include "components/navigation.nunjucks" %}
@@ -34,12 +39,10 @@
             <div class="page-content">
                 {% block content %}{% endblock %}
             </div>
-            
         </div>
         {% include "components/footer.nunjucks" %}
         {% block footscripts %}{% endblock %}
-        <script src="/js/j.js"></script>
+        <script src="/js/j.js{{version}}"></script>
         {% include "components/tracking.nunjucks" %}  
-        
     </body>
 </html>

@@ -1,6 +1,6 @@
 <!-- index.nunjucks -->
-{% set meta_title = "What to expect during a therapy session" %}
-{% set meta_description = "Many people who have never been to therapy have questions and fears about what the first therapy session will be like. Let's explore what happens during your first session." %}
+{% set meta_title = "Should I See a Therapist?" %}
+{% set meta_description = "It can be difficult for some people to recognize when the time is right to start considering therapy. " %}
 
 {% set activePage = "who-can-benefit" %}
 {% set canonical = '/articles/who-can-benefit-from-therapy/' %}
@@ -18,10 +18,10 @@
 {% endblock %}
 
 {% block serviceHeading %}
-Who can benefit from therapy and counceling?
+Who can benefit from therapy and counseling?
 {% endblock %}
 {% block serviceSubheading %}
-Everything you need to know about your first day in therapy.
+Should I start therapy?
 {% endblock %}
 {% block maincontent %}
 <p>Participating in therapy is something you can pursue whether you are going through a tough time or have just been pondering and getting along just fine.  People think "it’s not that bad, like I have to go to therapy." They relate going to therapy with having a serious relationship problem, experiencing a trauma, or that you have to be feeling “depressed” or have to have a diagnosed condition such as anxiety disorder. People may view therapy as a last resort. You only see someone if there is a dyer or extreme need. That’s just not the case. </p>

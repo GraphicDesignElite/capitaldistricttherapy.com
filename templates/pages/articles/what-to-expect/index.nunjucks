@@ -1,5 +1,5 @@
 <!-- index.nunjucks -->
-{% set meta_title = "What to expect during a therapy session" %}
+{% set meta_title = "What to expect during your first therapy session" %}
 {% set meta_description = "Many people who have never been to therapy have questions and fears about what the first therapy session will be like. Let's explore what happens during your first session." %}
 
 {% set activePage = "what-to-expect" %}
@@ -24,8 +24,7 @@ What to expect during your first session
 Everything you need to know about your first day in therapy.
 {% endblock %}
 {% block maincontent %}
-<h3>Overview</h3>
-<p>The quick overview is that the first session will consist of going over a couple of forms, you providing information and being clear on what you expect from therapy and going over the therapy process. I’m not the type of therapist that’s going to have you lie down on a couch and talk while I write in a notepad. I’m also not a hypnotists or a mind reader, instead, you will tell me about the things in your life that aren’t working for you. We will work together to get you leading the kind of life that is more pleasant. </p>
+
 <h3 class="h4">Individual Therapy</h3>
 <p>You arrive at my office, when you first walk in there’s a waiting area where you are welcomed to have a seat. I will come to greet you and we will step into my office. We have paperwork to complete, I will review everything with you and make sure you understand and feel comfortable with all of the information. The paperwork includes confidentiality, informed consent and HIPAA notice of practices, very similar to the kind of stuff you fill out at a doctor’s office. Then we begin by discussing what brought you in. I will also ask questions about various aspects of your life, answer any questions you may have and we will get to know each other.</p>
 <h3 class="h4">Child Therapy - Caregiver</h3>

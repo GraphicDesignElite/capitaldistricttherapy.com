@@ -1,6 +1,6 @@
 <!-- index.nunjucks -->
-{% set meta_title = "Helpful Resources" %}
-{% set meta_description = "Many local resources are available in the Schenectady, Albany, and Troy area for people who are in need of help. This is a list of resources you can use." %}
+{% set meta_title = "Mental Health Resources" %}
+{% set meta_description = "Many local and national mental health resources are available in the Schenectady, Albany, and Troy area for people who are in need of help." %}
 
 {% set activePage = "resources" %}
 {% set canonical = '/resources/' %}

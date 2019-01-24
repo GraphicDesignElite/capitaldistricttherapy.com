@@ -1,9 +1,9 @@
 <!-- index.nunjucks -->
-{% set meta_title = "Counseling & Therapy Services for Albany, Schenectady and Troy" %}
-{% set meta_description = "Capital District Marriage and Family Therapy provides individual therapy, couples counceling, group and family therapy, and services for children with developmental delays, located in Troy, Ny." %}
+{% set meta_title = "Counseling & Therapy Services for the Capital District." %}
+{% set meta_description = "Capital District Marriage and Family Therapy provides individual therapy, couples counseling, group and family therapy, and services for children with developmental delays, located in Troy, Ny." %}
 {% extends "layout.nunjucks" %}
 {% set activePage = 'home' %}
-
+{% set canonical = '/' %}
 
 
 {% block content %}
@@ -15,10 +15,9 @@
                     <h1 class="--thin">Therapy to help you craft&nbsp;<br class="d-none d-lg-block" /><span class="--primary font-weight-normal">a new begining</span></h1>
                     <p class="pt-3">Life can bring about experiences or changes that can be difficult to navigate, and might leave us feeling depressed, anxious, or even hopeless. Through compassion, patience and support, I can help you address issues in your life preventing you from becoming your best self. I specialize in children, developmental disabilities, family therapy, and trauma.</p>
                     <div class="pt-3">
-                        <a href="/contact/schedule-a-consultation/" class="btn btn-primary --icon --appt">Schedule a Consultation</a>
-                        <a href="/services/" class="btn ">View All Services</a>
+                        <a href="/services/" class="btn btn-primary --long">View All Therapy Services</a>
                     </div>
-                </div>
+                </div> 
             </div>
         </div>
     </div>
@@ -39,7 +38,7 @@
                 </div>
                 <div class="col-md">
                     <div class="pillbox --primary-light">
-                        <h2 class="--thin">Couples Counceling</h2>
+                        <h2 class="--thin">Couples Counseling</h2>
                         <p>Couples counseling provides partners with the tools they need to communicate more effectively, solve problems in a healthy way, and approach each other with respect, kindness and understanding.</p>
                     </div>
                 </div>
@@ -184,16 +183,15 @@
     <section id="about">
         <div class="container">
             <div class="row no-gutters">
-                <div class="col-lg-7 about-home order-lg-1 order-sm-2">
+                <div class="col-lg-7 about-home order-lg-1 order-sm-2 order-2">
                     <div class="about-home-cont">
                         <h3 class="h2 --thin">About Me</h3>
                         <h4>Vanessa Bever, MFT</h4>
                         <p>Vanessa Bever is a licensed Marriage and Family Therapist who specializes in family health, personal and child-development, parent-child relationships, and developmental disabilities. She graduated with her Bachelors in Psychology from California State University and her Masters of Arts in Counseling Psychology from National University, California.</p>
-                        <p>She has helped parents for years with tailored curriculums specific to the needs of their personal experience parenting — no two families are the same.</p>
                         <a href="/about/" class="btn btn-white --square mt-3">Read More</a>
                     </div>
                 </div>
-                <div class="col-lg-5 about-image order-lg-2 order-sm-1">
+                <div class="col-lg-5 about-image order-lg-2 order-sm-1 order-1">
                     <img src="/img/home/about/vanessa-headshot.jpg" width="100%" alt="Vanessa Bever, MFT" class="img-fluid"/>
                 </div>
             </div>
@@ -236,7 +234,7 @@
                             <div class="col-md-4 bg second"></div>
                             <div class="col-md-8">
                                 <div class="content">
-                                    <h4>Who can benefit from therapy and counceling?</h4>
+                                    <h4>Who can benefit from therapy and counseling?</h4>
                                     <p>You might be casually describing a frustrating situation you experienced with your child to a friend... <a href="/articles/who-can-benefit-from-therapy/" class="--primary">Read&nbsp;More</a></p>
                                 </div>
                             </div>
@@ -248,7 +246,7 @@
                             <div class="col-md-8">
                                 <div class="content">
                                     <h4>Mental Health Resources for the Capital District.</h4>
-                                    <p>Our list of local and national mental health resources valuable for people currently living in Albany, Schenectady, and Troy.. <a href="/" class="--primary">Read&nbsp;More</a></p>
+                                    <p>Our list of local and national mental health resources valuable for people currently living in the capital region. <a href="/" class="--primary">Read&nbsp;More</a></p>
                                 </div>
                             </div>
                         </div>

@@ -1,6 +1,6 @@
 <!-- index.nunjucks -->
-{% set meta_title = "Prenatal and Postpartum Therapy" %}
-{% set meta_description = "In person and online therapy for mothers dealing with postpartum depression, as well as soon to be moms experiencing anxiety." %}
+{% set meta_title = "Prenatal & Postpartum Depression Therapy" %}
+{% set meta_description = "In person and online therapy for mothers dealing with postpartum depression, as well as soon to be moms experiencing anxiety and other mental health issues." %}
 {% set activePage = 'prenatal-therapy' %}
 {% set canonical = '/services/prenatal-postnatal-therapy/' %}
 <!--breadcrumbs -->
