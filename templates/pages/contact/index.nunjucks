@@ -11,6 +11,21 @@
 {% set folder_link = "/contact/" %}
 
 {% block headscripts %}
+    <!-- Event snippet for Contact Us conversion pag -->
+    <script>
+    function gtag_report_conversion(url) {
+    var callback = function () {
+        if (typeof(url) != 'undefined') {
+        window.location = url;
+        }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-854124400/hDPICL2EhpQBEPDOo5cD',
+        'event_callback': callback
+    });
+    return false;
+    }
+    </script>
     <script>
         function initMap() {
             // The location of Uluru
@@ -40,6 +55,8 @@
                     console.log('success');
                     reportEmailSuccess();
                     $('#contact-form')[0].reset();
+                    gtag_report_conversion();
+                    ga('send', 'event', 'Form', 'Submit', 'Contact Us');
                 },
                 error: function (data) {
                     console.log(data);
@@ -81,45 +98,50 @@
 {% endblock %}
 {% block schema %}
 <script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "ProfessionalService",
-  "name": "Capital District Marriage and Family Therapy",
-  "image": "https://www.capitaldistricttherapy.com",
-  "@id": "",
-  "url": "https://www.capitaldistricttherapy.com",
-  "telephone": "518-880-2395",
-  "priceRange": "90-120",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "406 Fulton St, Suite 509",
-    "addressLocality": "Troy",
-    "addressRegion": "NY",
-    "postalCode": "12180",
-    "addressCountry": "US"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 42.7325264,
-    "longitude": -73.6883694
-  },
-  "openingHoursSpecification": [{
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": "Monday",
-    "opens": "08:00",
-    "closes": "19:00"
-  },{
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": "Wednesday",
-    "opens": "08:00",
-    "closes": "19:00"
-  },{
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": "Friday",
-    "opens": "08:00",
-    "closes": "19:00"
-  }]
-}
+    {
+        "@context": "http://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Capital District Marriage and Family Therapy",
+        "image": "https://capitaldistricttherapy.com/img/common/cdtfb.jpg",
+        "@id": "https://capitaldistricttherapy.com/",
+        "url": "https://capitaldistricttherapy.com/",
+        "telephone": "(518) 880-2395",
+        "priceRange": "$90-$120",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "406 Fulton St, Suite 509",
+            "addressLocality": "Troy",
+            "addressRegion": "NY",
+            "postalCode": "12180",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 42.7325264,
+            "longitude": -73.6883694
+        },
+        "openingHoursSpecification": [{
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Monday",
+            "opens": "08:00",
+            "closes": "19:00"
+        },{
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Wednesday",
+            "opens": "08:00",
+            "closes": "19:00"
+        },{
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Friday",
+            "opens": "08:00",
+            "closes": "19:00"
+        }],
+        "sameAs": [
+            "https://www.facebook.com/CapitalDistrictTherapy/",
+            "https://www.instagram.com/capital_district_therapy/",
+            "https://www.linkedin.com/in/vanessa-bever-353978171/"
+        ]
+    }
 </script>
 {% endblock %}
 {% block content %}
@@ -135,7 +157,7 @@
     </div>
 </header>
 <section>
-    <div id="map" style="width:100%; height:300px;"></div>
+
 </section>
 <div class="container pt-5 pt-5">
     <div class="row">
@@ -260,6 +282,9 @@
         </div>
     </div>        
 </div>
+<section>
+    <div id="map" style="width:100%; height:300px;"></div>
+</section>
 {% endblock %}
 {% block footscripts %}
     <script async defer src='https://www.google.com/recaptcha/api.js'></script>

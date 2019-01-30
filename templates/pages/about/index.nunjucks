@@ -9,7 +9,7 @@
 
 
 {% block content %}
-<header class="services-header about">
+<header class="services-header about-us">
     <div class="container pt-5 pb-5 pb-md-3">
         <div class="row">
             <div class="col pt-3 pb-3">

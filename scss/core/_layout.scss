@@ -11,11 +11,11 @@ body{
   background:#fff;
   display: flex;
   flex-direction: column;
-  &.home{
-    background-image:url('/img/home/home-header.jpg');
-    background-position: center top;
-    background-repeat: no-repeat;
-  }
+  //&.home{
+    //background-image:url('/img/home/home-header.jpg');
+    //background-position: center top;
+    //background-repeat: no-repeat;
+  //}
 }
 h1,h2,h3,h4,h5,.h1,.h2,.h3,.h4,.h5, p, span, label, a{
   font-family: $heading-font;
@@ -107,8 +107,30 @@ ul{
             color: $primary;
         }
     }
+    &.btn-outline{
+        background:none;
+        color:$primary;
+        border:2px solid $primary;
+        transition:all .3s;
+        &:hover{
+            border: 2px solid #a6032b;
+            color: #a6032b;
+        }
+        &.--light{
+            color:#fff;
+            border:2px solid #fff;
+            &:hover{
+                text-decoration:underline;
+            }
+        }
+    }
 }
 .navbar{
+    position:relative;
+    z-index:2;
+    -mox-box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
     @include media-breakpoint-down(md) {
         background:#fff;
         padding:0px;
@@ -130,7 +152,12 @@ ul{
             background:#efefef;
         }
     }
-    
+    .navbar-brand{
+        padding:1.2rem 0rem;
+    }
+    &.navbar-light{
+        background:#fff;
+    }
     .navbar-toggler{
         outline: none;
         background-color:$primary;
@@ -141,6 +168,9 @@ ul{
             color:$primary;
             background:#fff;
         }
+    }
+    .dropdown-menu{
+        top: 78px;
     }
 }
 .nav-item{
@@ -264,6 +294,16 @@ ul{
 .page-content{
     display:initial;
 }
+.mobile-btn{
+    padding:20px 0px;
+    @include media-breakpoint-up(sm) {
+        display:none;
+    }
+    .btn{
+        width:100%;
+        padding:15px 15px;
+    }
+}
 footer{
     padding: 30px 0px 0px 0px;
     background:$dark;
@@ -301,9 +341,38 @@ footer{
     }
 }
 //Home
+.home-hero{
+    background:#efefef;
+    padding-bottom:200px;
+    background-image:url('/img/home/home-header-4.jpg');
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    color:#fff;
+    &:before{
+        @include media-breakpoint-down(md) {
+            background:rgba(0,0,0,0.4);
+            z-index:0;
+            content:'';
+            display:block;
+            position:absolute;
+            top:0;
+            bottom:0;
+            left:0;
+            right:0;
+        } 
+    }
+}
+#home-pills{
+    position:relative; 
+    display:block;
+    margin-top: -180px;
+}
 .pillbox{
     padding:30px 25px;
     margin-bottom:10px;
+    background:#fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 4px;
     @include media-breakpoint-up(md) {
         margin-bottom:0px;
     }
@@ -311,12 +380,16 @@ footer{
         font-size:2rem;
     }
     &.--primary{
-        background: $primary;
-        color:#fff;
+        @include media-breakpoint-up(md) {
+            background: $primary;
+            color:#fff;
+        }
     }
     &.--primary-light{
-        background: lighten($primary, 7.5%);
-        color:#fff;
+        @include media-breakpoint-up(md) {
+            background: lighten($primary, 7.5%);
+            color:#fff;
+        }
     }
     &.--expanded{
         @include media-breakpoint-up(md) {
@@ -324,9 +397,18 @@ footer{
             padding-bottom: 45px;
             position: relative;
             top: -15px;
+        }   
+    }
+    .btn-white{
+        @include media-breakpoint-down(sm) {
+            background:$primary;
+            color:#fff;
         }
-        
-        
+        &:hover{
+            @include media-breakpoint-down(sm) {
+                color:#fff;
+            }
+        }
     }
 }
 .sb-link{
@@ -360,7 +442,7 @@ footer{
             background-image: url('/img/home/service-links/crisis-therapy.jpg');
         }
         &.developmental{
-            background-image: url('/img/home/service-links/developmental-therapy.jpg');
+            background-image: url('/img/home/service-links/developmental-therapy-b.jpg');
         }
         &.family{
             background-image: url('/img/home/service-links/family-therapy.jpg');
@@ -431,9 +513,8 @@ footer{
     position:relative;
     padding:105px 15px; 
     background-position: bottom center;
-    background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size:auto 100%;
+    background-size:cover;
     &:before, &:after{
         content: '';
         display:block;
@@ -452,7 +533,7 @@ footer{
         
     }
     .home &{
-        background-image:url('/img/parallax/home.jpg');
+        background-image:url('/img/parallax/autumn.jpg');
     }
     .services &{
         background-image:url('/img/parallax/all-services.jpg');
@@ -729,7 +810,7 @@ footer{
     }
 }
 .services-header{
-    background-color:$primary;
+    background-color:#000;
     background-size: cover;
     background-repeat: no-repeat;
     color:#fff;
@@ -761,7 +842,14 @@ footer{
         background-image:url('/img/services/crisis_therapy_header.jpg');
     }
     &.all-services{
+        background-color:#fff;
         background-image:url('/img/services/therapy-services.jpg');
+    }
+    &.about-us, &.who-can-benefit, &.what-to-expect, &.resources {
+        background-image:url('/img/services/about-capital-district-therapy.jpg');
+    }
+    &.contact{
+        background-image:url('/img/services/contact-capital-district-therapy.jpg');
     }
     
 }
@@ -787,7 +875,7 @@ footer{
                 background-image: url('/img/home/service-links/crisis-therapy.jpg');
             }
             &.developmental{
-                background-image: url('/img/home/service-links/developmental-therapy.jpg');
+                background-image: url('/img/home/service-links/developmental-therapy-b.jpg');
             }
             &.family{
                 background-image: url('/img/home/service-links/family-therapy.jpg');

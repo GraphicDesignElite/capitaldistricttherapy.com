@@ -5,48 +5,101 @@
 {% set activePage = 'home' %}
 {% set canonical = '/' %}
 
-
+{% block schema %}
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Capital District Marriage and Family Therapy",
+        "image": "https://capitaldistricttherapy.com/img/common/cdtfb.jpg",
+        "@id": "https://capitaldistricttherapy.com/",
+        "url": "https://capitaldistricttherapy.com/",
+        "telephone": "(518) 880-2395",
+        "priceRange": "$90-$120",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "406 Fulton St, Suite 509",
+            "addressLocality": "Troy",
+            "addressRegion": "NY",
+            "postalCode": "12180",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 42.7325264,
+            "longitude": -73.6883694
+        },
+        "openingHoursSpecification": [{
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Monday",
+            "opens": "08:00",
+            "closes": "19:00"
+        },{
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Wednesday",
+            "opens": "08:00",
+            "closes": "19:00"
+        },{
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Friday",
+            "opens": "08:00",
+            "closes": "19:00"
+        }],
+        "sameAs": [
+            "https://www.facebook.com/CapitalDistrictTherapy/",
+            "https://www.instagram.com/capital_district_therapy/",
+            "https://www.linkedin.com/in/vanessa-bever-353978171/"
+        ]
+    }
+</script>
+{% endblock %}
 {% block content %}
 <header class="home-page">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-7">
-                <div class="mt-5 mb-5">
-                    <h1 class="--thin">Therapy to help you craft&nbsp;<br class="d-none d-lg-block" /><span class="--primary font-weight-normal">a new begining</span></h1>
-                    <p class="pt-3">Life can bring about experiences or changes that can be difficult to navigate, and might leave us feeling depressed, anxious, or even hopeless. Through compassion, patience and support, I can help you address issues in your life preventing you from becoming your best self. I specialize in children, developmental disabilities, family therapy, and trauma.</p>
-                    <div class="pt-3">
-                        <a href="/services/" class="btn btn-primary --long">View All Therapy Services</a>
-                    </div>
-                </div> 
+    <div class="home-hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 pt-3">
+                    <div class="mt-5 mb-5">
+                        <h1 class="--thin">Therapy to help you craft&nbsp;<br class="d-none d-lg-block" /><span class="font-weight-normal">a new begining</span></h1>
+                        <p class="pt-3 pb-3">Life can bring about experiences or changes that can be difficult to navigate, and might leave us feeling depressed, anxious, or even hopeless. Through compassion, patience and support, I can help you address issues in your life preventing you from becoming your best self. I specialize in children, developmental disabilities, family therapy, and trauma.</p>
+                        <div class="pt-3">
+                            <a href="/services/" class="btn btn-white">View All Therapy Services</a>
+                        </div>
+                    </div> 
+                </div>
             </div>
         </div>
     </div>
+</header>  
     <secton id="home-pills">
-        <div class="container mt-5">
+        <div class="container">
             <div class="row no-gutters">
                 <div class="col-md">
                     <div class="pillbox --primary-light">
                         <h2 class="--thin">Family Therapy</h2>
                         <p>Family therapy focuses on reinforcing healthy and loving relationships between family members, and resolving issues or conflicts that can have a lasting impact on those relationships.</p>
+                        <a href="/services/family-therapy/" class="btn btn-white --square mt-3">Read More</a>
                     </div>
                 </div>
                 <div class="col-md">
                     <div class="pillbox --primary --expanded">
                         <h2 class="--thin">Children and Teens</h2>
                         <p>Whether your child is having trouble at school, not getting along with friends, isn’t behaving like his peers, therapy can help improve your quality of life as a parent when you start seeing positive changes in your child.</p>
+                        <a href="/services/child-therapy/" class="btn btn-white --square mt-3">Read More</a>
                     </div>
                 </div>
                 <div class="col-md">
                     <div class="pillbox --primary-light">
                         <h2 class="--thin">Couples Counseling</h2>
                         <p>Couples counseling provides partners with the tools they need to communicate more effectively, solve problems in a healthy way, and approach each other with respect, kindness and understanding.</p>
+                        <a href="/services/couples-therapy/" class="btn btn-white --square mt-3">Read More</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <secton id="home-services">
-        <div class="container mt-4 mb-4 pt-5 pb-5">
+        <div class="container mb-4 pt-5 pb-5">
             <div class="row">
                 <div class="col-md-8 offset-md-2 text-center mb-5">
                     <h2 class="--thin">Stress, Anxiety, and Depression</h2>
@@ -112,7 +165,7 @@
             </div>
             <div class="row">
                 <div class="col text-center mt-4">
-                    <a href="/contact/schedule-a-consultation/" class="btn btn-primary --icon --appt">Schedule a Consultation</a>
+                    <a href="/contact/schedule-a-consultation/" class="btn btn-outline">Schedule a Free Consultation</a>
                 </div>
             </div>
         </div>
@@ -255,5 +308,5 @@
             </div>
         </div>
     </section>
-</header>
+
 {% endblock %}

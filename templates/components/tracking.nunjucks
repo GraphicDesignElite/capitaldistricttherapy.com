@@ -6,4 +6,6 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-109148216-2');
+  // Adwords
+  gtag('config', 'AW-854124400');
 </script>

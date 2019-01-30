@@ -1,3 +1,4 @@
+
 <footer id="footer">
     <div class="container">
         <div class="row">
@@ -6,20 +7,23 @@
                     <img src="/img/common/capital-district-therapy-logo-icon.svg" alt="Capital District Marriage and Family Therapy" class="logo-icon"/>
                     <span>Capital District <span>Marriage and Family Therapy</span></span> 
                 </a>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3">
+            </div> 
+            <div class="col-12 col-md-4 col-lg-3">
                <h5 class="--wborder"><span>Services</span></h5>
                <ul>
                     <li><a href="/services/family-therapy/">Family Therapy</a></li>
-                    <li><a href="/services/child-therapy">Child Therapy</a></li>
                     <li><a href="/services/individual-therapy/">Individual Therapy</a></li>
-                    <li><a href="/services/couples-therapy/">Marriage Counseling</a></li>
                     <li><a href="/services/crisis-therapy/">Crisis Therapy</a></li>
-                    <li><a href="/services/prenatal-postnatal-therapy/">Pre/Postnatal Therapy</a></li>
                     <li><a href="/services/teen-therapy/">Teen Therapy</a></li>
+                    <li><a href="/services/prenatal-postnatal-therapy/">Pre/Postnatal Therapy</a></li>
+                    <li><a href="/services/couples-therapy/">CouplesTherapy</a></li>
+                    <li><a href="/services/child-therapy/">Child Therapy</a></li>
+                    <li><a href="/services/developmental-therapy/">Child Development</a></li>
+                    
+  
                </ul>
             </div>
-            <div class="col-6 col-md-4 col-lg-3">
+            <div class="col-12 col-md-4 col-lg-3">
                <h5 class="--wborder"><span>Links</span></h5>
                <ul>
                     <li><a href="/contact/">Contact</a></li> 
@@ -36,6 +40,15 @@
             </div>
         </div>
     </div>
+    <section class="mobile-btn">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <a href="tel:5188802395" class="btn btn-primary --square">Click To Call</a>
+                </div>
+            </div>
+        </div>      
+    </section>
     <div class="container-fluid">
         <div class="row">
             <div class="col text-center copy">

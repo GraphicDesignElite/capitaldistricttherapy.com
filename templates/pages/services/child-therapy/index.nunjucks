@@ -24,10 +24,10 @@ Therapy and Counseling for Children
 {% block maincontent %}
 <img src="/img/services/child_therapy_intro.jpg" class="img-fluid mb-4" alt="Child and Adolescent Therapy and Counseling"/>
 <h3>When should I consider therapy for my child?</h3>
-<h4 class="--primary">Protecting our most vunerable.</h4>
+<h4 class="--primary">Promoting healthy growth and development.</h4>
 <p>As a parent, you may have wondered how long this stage will last? You may start to look back on other times that your child went through a period of being demanding and think, this too shall pass. Though as time passes, you notice your patience is dwindling and you think there might be other ways to speed things up and get on track.</p>
-<p>Children are mostly able to go about their day and enjoy many things even when they are having a hard time. I have seen children following a traumatic event, sleep, eat, and play as though “nothing” had just happened. </p>
-<p>The thing about children is that when something is going on with them and they need help, they will not likely tell you day in and day out what the problem is. Children have incredible ways of coping with hardships and continue with their day-to-day life. What we know though is that when children aren’t given help to work through the hard moments in their life, these events stay with them and leave a lasting stunted impression.</p>
+<p>Children are mostly able to go about their day and enjoy many things even when they are going through a difficult time. I have seen children following a traumatic event, sleep, eat, and play as though "nothing" had just happened.</p>
+<p>The thing about children is that when something is going on with them and they need help, they will not likely tell you day in and day out what the problem is. Children have incredible ways of coping with hardships. What we know though is that when children aren’t given help to work through the hard moments in their life, these events stay with them and leave a lasting stunted impression.</p>
 <p>With an adult we know that things are not okay in their life when they are not tending to their physical health, strained marriage, medical care, write ups at work, their home is in disarray, bills haven’t been paid, outstanding tickets. But with children, they have adults that take care of all of everything for them.</p>
 <p>We know the other domains that are more child-specific. These include: school, peers, listening to instructions, getting along with adults, being flexible, eating, sleeping, and no reported pain</p>
 <p>But lets face it. Children come into the world learning to be better in all of those areas. We as parents are learning to have been patient as children get better and better at all of those categories. </p>
@@ -47,8 +47,6 @@ Children experience a wide array of emotions and are learning how to cope with t
 <p>Kids can also work on getting along better with others. When children show repeated problems getting along with someone in their life, they can get stuck in a pattern of behavior that only gets them into more trouble. This type of pattern can exist when a child is being bullied or behaving like a bully. </p>
 <p>The goals of therapy for children can include a child learning to label emotions (ex: that character is sad), tell a parent the way they are feeling (ex: I feel sad right now mom), and be able to utilize age-appropriate ways to cope with feelings (ex: mom can I have a hug please). </p>
 <p>We know that an incredible amount of brain development occurs in our formative years of life and that many of the events that happen during this time can leave lasting impressions on the people we grow up to become.</p>
-
-
 
 
 {% endblock %}

@@ -24,11 +24,11 @@ Marriage Counseling and Therapy for Couples
 {% endblock %}
 {% block maincontent %}
 <img src="/img/services/couples_therapy_intro.jpg" class="img-fluid mb-4" alt="Couples Therapy and Marriage Counseling"/>
-<h3>Do I need couples counseling?</h3>
-<h4 class="--primary">When is the right time to seek outside help?</h4>
+<h3>What is couples counseling?</h3>
+<h4 class="--primary">Is there a need to seek outside help?</h4>
 <p>Most couples will experience trying times, bickering, or bumps in the road. When you want to grow closer with your partner, but conflict always seems to get in the way, couples counseling can provide a new approach of solving old problems.</p>
-<p>Miscommunication happens, it’s completely normal. But what we know is that it can change, and when the way you communicate and listen changes, the quality of your relationship greatly improves.</p>
-<p>Communication and trust in any relationship requires and investment. That intention can help you both reach higher levels of satisfaction and resolve issues which may seem like barriers in the way of your happiness. </p>
+<p>Miscommunication happens, it’s completely normal. But what we know is that communication can change, and when the way you communicate and listen changes, the quality of your relationship greatly improves. Therapy allows you to have a place to improve the communication and work through problems in a constructive rather than destructive way.</p>
+<p>Communication and trust in a relationship requires an investment. That intention can help you both reach higher levels of satisfaction and resolve issues which may seem like barriers in the way of your happiness.</p>
 
 <h3 class="h4">Why do many couples seek therapy?</h3>
 <p>The common goal of all couples that come to therapy is to get better at talking, listening, and understanding one another. This is a place where people who want to have a healthy way of interacting come &amp; do the work. There are misconceptions about couples therapy, but the real deal is that coming in for therapy means you get to outline what direction you want your relationship to go in. </p>

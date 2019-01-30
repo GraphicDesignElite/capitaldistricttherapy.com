@@ -22,10 +22,10 @@
           <a class="dropdown-item" href="/services/individual-therapy/">Individual Therapy {%if activePage == 'individual-therapy' %} <span class="sr-only">(current)</span> {% endif %}</a>
           <a class="dropdown-item" href="/services/crisis-therapy/">Crisis Therapy {%if activePage == 'crisis-therapy' %} <span class="sr-only">(current)</span> {% endif %}</a>
           <a class="dropdown-item" href="/services/teen-therapy/">Teen Therapy {%if activePage == 'teen-therapy' %} <span class="sr-only">(current)</span> {% endif %}</a>
-          <a class="dropdown-item" href="/services/prenatal-postnatal-therapy/">Pre/PostNatal Therapy {%if activePage == 'prenatal-postnatal-therapy' %} <span class="sr-only">(current)</span> {% endif %}</a>
+          <a class="dropdown-item" href="/services/prenatal-postnatal-therapy/">Pre/Postnatal Therapy {%if activePage == 'prenatal-postnatal-therapy' %} <span class="sr-only">(current)</span> {% endif %}</a>
           <a class="dropdown-item" href="/services/couples-therapy/">Couples Therapy {%if activePage == 'couples-therapy' %} <span class="sr-only">(current)</span> {% endif %}</a>
           <a class="dropdown-item" href="/services/child-therapy/">Child Therapy {%if activePage == 'child-therapy' %} <span class="sr-only">(current)</span> {% endif %}</a>
-          <a class="dropdown-item" href="/services/developmental-therapy/">Developmental Therapy {%if activePage == 'developmental-therapy' %} <span class="sr-only">(current)</span> {% endif %}</a>
+          <a class="dropdown-item" href="/services/developmental-therapy/">Child Development {%if activePage == 'developmental-therapy' %} <span class="sr-only">(current)</span> {% endif %}</a>
           <a class="dropdown-item {%if activePage == 'services' %} active {% endif %}" href="/services/">All Therapy Services {%if activePage == 'services' %} <span class="sr-only">(current)</span> {% endif %}</a>
         </div>
       </li>

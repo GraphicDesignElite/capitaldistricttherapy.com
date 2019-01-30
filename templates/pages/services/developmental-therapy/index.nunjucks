@@ -16,7 +16,7 @@
 {% endblock %}
 
 {% block serviceHeading %}
-Developmental Therapy
+Child Development Therapy
 {% endblock %}
 {% block serviceSubheading %}
 Early intervention for young children and their families.
@@ -24,13 +24,13 @@ Early intervention for young children and their families.
 {% block maincontent %}
 <img src="/img/services/developmental_therapy_intro.jpg" class="img-fluid mb-4" alt="Developmental Therapy"/>
 <h3>Evaluation, assesment and plan development.</h3>
-<h4 class="--primary">Developmental therapy can help your child overcome challenges and improve the quality their interactions.</h4>
-<p>I'm kind of worried that my child is "behind." Maybe you notice that your child isn't speaking as well as children her age. Perhaps he doesn't seem to be understanding concepts you expected him to by now. Or still has tantrums that are more common for a young child. Perhaps a friend or relative has made a comment. </p>
+<h4 class="--primary">Therapy to focus on child development </h4>
+<p>I'm kind of worried that my child is "behind." Maybe you notice that your child isn't speaking as well as children her age. Perhaps he doesn't seem to be understanding concepts you expected him to by now. Or still has tantrums that are more common for a young child. Perhaps a friend or relative has made a comment.</p>
 <ol>
 <li><p><strong>Developmental milestones are not associated with a specific age. </strong> There is a window of time when we can see skills developing, because all children don't develop at the exact same rate. Most of the time there is no concern and no reason to worry and suffer sleepless nights. </p></li>
 <li><p><strong>When children are encountering changes in their life, it is normal for them to regress.</strong> This means they can go backwards and temporarily lose skills they previously demonstrated. This can also happen as they are gaining new skills. Like when a child starts waving they may not clap for a period of time. </p></li>
 </ol>
-<p>Either way there is really no harm in speaking with your child's pediatrician or see a therapist to have a more detailed conversation about this. I fully believe in taming our parental anxiety without accidentally neglecting something that is only going to get worse with time. The "wait and see" approach is not best when there is a legitimate delay in your child's development. That's because the effectiveness of early intervention are tremendously effective. </p>
+<p>Either way there is really no harm in speaking with your child's pediatrician or see a therapist to have a more detailed conversation about this. I fully believe in taming our parental anxiety without accidentally neglecting something that is only going to get worse with time. The "wait and see" approach is not best when there is a legitimate delay in your child's development. That's because the effectiveness of early intervention are tremendously effective.</p>
 <p>That means that children show better results the earlier that they receive help. Now, some parents are worried that their child may be "labeled" and will this will then negatively impact their child. Quite the contrary, a child can usually develop a negative view of herself if she is not given the support she needs to feel accomplished and capable. Additionally, when a child's needs aren't being met, we see that their relationships are also negatively impacted.</p>
 <p>I can tell you that what I want is for you to have a stellarly, thriving, brilliant, and happy child. I am going to evaluate your child in all of the aspects of their life, because we know that children behave differently with certain people, places or activities. A thorough evaluation of your child and gathering information is the first step in taking action and moving towards a better day.</p>
 <p>Then I will develop personalized treatment goals for your child to help improve those very areas you see need it. My approach to working with children and their caregivers is that we continually evaluate and analyze if what we are doing is working. I don't want to waste your time and money dragging things out, I am results driven because I truly value my clients' wellbeing and their dedication to treatment.</p>
