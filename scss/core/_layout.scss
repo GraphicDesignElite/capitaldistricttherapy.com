@@ -342,16 +342,15 @@ footer{
 }
 //Home
 .home-hero{
-    background:#efefef;
+    background-image:url('/img/home/home-header-3.jpg');
     padding-bottom:200px;
-    background-image:url('/img/home/home-header-4.jpg');
     background-size:cover;
     background-position:center;
     position:relative;
-    color:#fff;
+
     &:before{
         @include media-breakpoint-down(md) {
-            background:rgba(0,0,0,0.4);
+            background:rgba(0,0,0,0.0);
             z-index:0;
             content:'';
             display:block;
@@ -362,6 +361,8 @@ footer{
             right:0;
         } 
     }
+    
+    
 }
 #home-pills{
     position:relative; 
@@ -377,19 +378,7 @@ footer{
         margin-bottom:0px;
     }
     h2{
-        font-size:2rem;
-    }
-    &.--primary{
-        @include media-breakpoint-up(md) {
-            background: $primary;
-            color:#fff;
-        }
-    }
-    &.--primary-light{
-        @include media-breakpoint-up(md) {
-            background: lighten($primary, 7.5%);
-            color:#fff;
-        }
+        font-size:1.8rem;
     }
     &.--expanded{
         @include media-breakpoint-up(md) {
@@ -399,17 +388,7 @@ footer{
             top: -15px;
         }   
     }
-    .btn-white{
-        @include media-breakpoint-down(sm) {
-            background:$primary;
-            color:#fff;
-        }
-        &:hover{
-            @include media-breakpoint-down(sm) {
-                color:#fff;
-            }
-        }
-    }
+    
 }
 .sb-link{
     background:#000;
@@ -512,7 +491,7 @@ footer{
     background:#000;
     position:relative;
     padding:105px 15px; 
-    background-position: bottom center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size:cover;
     &:before, &:after{
@@ -533,7 +512,7 @@ footer{
         
     }
     .home &{
-        background-image:url('/img/parallax/autumn.jpg');
+        background-image:url('/img/parallax/mountains.jpg');
     }
     .services &{
         background-image:url('/img/parallax/all-services.jpg');
