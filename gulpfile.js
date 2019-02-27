@@ -17,16 +17,8 @@ var gulp        = require('gulp'),
     pngquant    = require('imagemin-pngquant'),
     plumber     = require('gulp-plumber'),
     deploy      = require('gulp-gh-pages'),
-    notify      = require('gulp-notify'),
-    gzip = require('gulp-gzip');
+    notify      = require('gulp-notify');
 
-var gzipConfig = { 
-    gzipOptions: { 
-        level: 9 
-    },
-    skipGrowingFiles : true,
-    append: false 
-}
 
 gulp.task('scss', function() {
     var onError = function(err) {
@@ -42,7 +34,6 @@ gulp.task('scss', function() {
   return gulp.src('scss/main.scss')
     .pipe(plumber({errorHandler: onError}))
     .pipe(sass())
-    .pipe(size({ gzip: true, showFiles: true }))
     .pipe(prefix())
     .pipe(rename('main.css'))
     .pipe(gulp.dest('dist/css'))
@@ -70,7 +61,6 @@ gulp.task('deploy', function () {
 gulp.task('js', function() {
   return gulp.src('js/**/*.js')
     .pipe(uglify())
-    .pipe(size({ gzip: true, showFiles: true }))
     .pipe(concat('j.js'))
     .pipe(gulp.dest('dist/js'))
     .pipe(reload({stream:true}));
