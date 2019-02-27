@@ -1,6 +1,6 @@
 <!-- index.nunjucks -->
-{% set meta_title = "Child Therapy and Counseling" %}
-{% set meta_description = "Capital District Marriage and Family Therapy in Troy, Ny specializes in treatment & counseling for children facing trauma, depression, and behavioral issues." %}
+{% set meta_title = "Child and Teen Therapist" %}
+{% set meta_description = "Capital District Marriage and Family Therapy specializes in treatment &amp; counseling for children and teens facing behavioral issues, depression, and trauma." %}
 {% set activePage = 'child-therapy' %}
 {% set canonical = '/services/child-therapy/' %}
 <!--breadcrumbs -->
@@ -22,7 +22,7 @@ Child Therapy
 Therapy and Counseling for Children
 {% endblock %}
 {% block maincontent %}
-<img src="/img/services/child_therapy_intro.jpg" class="img-fluid mb-4" alt="Child and Adolescent Therapy and Counseling"/>
+<img src="/img/services/child_therapy_intro_2.jpg" class="img-fluid mb-4" alt="Child and Adolescent Therapy and Counseling"/>
 <h3>When should I consider therapy for my child?</h3>
 <h4 class="--primary">Promoting healthy growth and development.</h4>
 <p>As a parent, you may have wondered how long this stage will last? You may start to look back on other times that your child went through a period of being demanding and think, this too shall pass. Though as time passes, you notice your patience is dwindling and you think there might be other ways to speed things up and get on track.</p>

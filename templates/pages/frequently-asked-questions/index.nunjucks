@@ -1,0 +1,152 @@
+<!-- index.nunjucks -->
+{% set meta_title = "Frequently Asked Therapy Questions" %}
+{% set meta_description = "Get answers to common patient questions, including insurance coverage questions, appointments and cancellation policies, and accepted payment methods." %}
+
+{% set activePage = "faqs" %}
+{% set canonical = '/frequently-asked-questions/' %}
+<!--breadcrumbs -->
+{% set folder_name = "Frequently Asked Questions" %}
+{% set folder_link = "/frequently-asked-questions/" %}
+
+
+{% extends "services-template.nunjucks" %}
+
+{% block sidebar %}
+{% include "components/articles-sidebar.nunjucks" %}
+{% endblock %}
+
+{% block serviceHeading %}
+Frequently Asked Questions
+{% endblock %}
+{% block serviceSubheading %}
+Answers to the most common patient questions.
+{% endblock %}
+{% block maincontent %}
+<div class="row">
+    <div class="col-md-12">
+        <p>Before starting therapy, you may have questions or concerns about payment, cancelations or insurance. Below are answers to the most commonly asked questions for our patient's convinience. If you cannot find the answer to your question below, please feel free to <a href="/contact/">contact us</a> for more information. We generally respond to questions we recieve within one business day. </p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-controls="collapseOne">
+                        Are you currently accepting new patients?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        I am accepting new therapy patients at both my Troy and Albany Locations. If you are looking to schedule an appointment immediately, I can typically schedule an appointment you within a weeks time. I also provide a <a href="/contact/schedule-a-consultation/">free consultation</a>, where I can answer any questions you may have before you set up an appointment. 
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            What is the cost per session? 
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        My fee is $120 per session. Each session lasts 50 minutes from start to finish. 
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Do you accept insurance?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        I don't currently accept insurance. I can provide you with documentation that you submit to your insurance company as "out of network" benefit coverage for possible reimbursement.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            What forms of payment are accepted? 
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                    <div class="card-body">
+                        Cash, check, credit or debit cards including Visa, MasterCard, American Express, PayPal, Health Savings Accounts & Flexible Spending Accounts.I can also accept Health Savings Accounts &amp; Flexible Spending Accounts.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFive">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            How often do clients go to therapy?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                    <div class="card-body">
+                        It varies depending on an individual client's needs, schedule availability, and what is recommended by your therapist. I typically see my clients one time a week, once every other week, or at a minimum twice per month as therapy is starting out.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingSix">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            Do you see people for therapy online?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                    <div class="card-body">
+                        Yes! I offer private and secure therapy online with clients who are located in the state of New York and the state of California. 
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingSeven">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                            What is your cancellation policy?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                    <div class="card-body">
+                        I have a 24 hour cancellation policy, that means clients let me know if they cannot make an appointment at least a day in advance. If a client fails to let me know, they forget or something comes up &amp; they cannot make an appointment, then they are responsible for the cost of the appointment. The only exception is if an emergency arises. I take extra measures to make sure that clients are clear on their appointment time &amp; also offer the option of clients receiving reminders for their scheduled appointment date &amp; time.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingEight">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                            What is the free consultation?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+                    <div class="card-body">
+                        A consultation is free telephone call with me. It's risk-free and you are in no way obligated to make an appointment. A consultation is a time when you can ask any questions about me & my practice and you can get a feel for how I work and my approach with clients. It is also a time for me to hear about the reason you are seeking therapy and for me to determine if we would be a good fit. The phone call will last no more than 15 minutes.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+{% endblock %}

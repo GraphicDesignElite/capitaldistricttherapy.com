@@ -8,5 +8,5 @@
   <a href="/services/couples-therapy/" class="list-group-item list-group-item-action {%if activePage == 'couples-therapy' %} active {% endif %}">Couples Therapy</a>
   <a href="/services/child-therapy/" class="list-group-item list-group-item-action {%if activePage == 'child-therapy' %} active {% endif %}">Child Therapy</a>
   <a href="/services/developmental-therapy/" class="list-group-item list-group-item-action {%if activePage == 'developmental-therapy' %} active {% endif %}">Developmental Therapy</a>
-  <a href="/resources/" class="list-group-item list-group-item-action">Resources</a>
+  <a href="/services/special-needs-therapy/" class="list-group-item list-group-item-action {%if activePage == 'special-needs-therapy' %} active {% endif %}">Special Needs Therapy</a>
 </div>

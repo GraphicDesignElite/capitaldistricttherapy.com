@@ -13,17 +13,25 @@
         "name": "Capital District Marriage and Family Therapy",
         "image": "https://capitaldistricttherapy.com/img/common/cdtfb.jpg",
         "@id": "https://capitaldistricttherapy.com/",
-        "url": "https://capitaldistricttherapy.com/",
+        "url": "https://capitaldistricttherapy.com",
         "telephone": "(518) 880-2395",
         "priceRange": "$90-$120",
-        "address": {
+        "address": [{
             "@type": "PostalAddress",
             "streetAddress": "406 Fulton St, Suite 509",
             "addressLocality": "Troy",
             "addressRegion": "NY",
             "postalCode": "12180",
             "addressCountry": "US"
-        },
+            },
+            {
+            "@type": "PostalAddress",
+            "streetAddress": "11 Computer Drive West, Suite 218",
+            "addressLocality": "Albany",
+            "addressRegion": "NY",
+            "postalCode": "12205",
+            "addressCountry": "US"
+        }],
         "geo": {
             "@type": "GeoCoordinates",
             "latitude": 42.7325264,
@@ -60,8 +68,9 @@
             <div class="row">
                 <div class="col-lg-6  pt-0">
                     <div class="mt-5 mb-4">
-                        <h1 class="--thin">Therapy to help you craft <span class="font-weight-normal --primary"><br class="d-none d-lg-block"/>a new beginning</span></h1>
-                        <p class="pt-3 pb-3">Life can bring about experiences or changes that can be difficult to navigate, and might leave us feeling depressed, anxious, or even hopeless. Through compassion, patience and support, I can help you address issues in your life preventing you from becoming your best self. I specialize in children, developmental disabilities, family therapy, and trauma.</p>
+                        <h1 class="--thin">Therapy to help you craft <span class="font-weight-normal"><br class="d-none d-lg-block"/>a new beginning.</span></h1>
+                        <p class="pt-3 pb-4">Life can bring about experiences or changes that can be difficult to navigate, and might leave us feeling depressed, anxious, or even hopeless. Through compassion, patience and support, I can help you address issues in your life preventing you from becoming your best self. I specialize in children, developmental disabilities, family therapy, and trauma.</p>
+                        <a class="btn btn-secondary --appt mb-2 --long" href="/contact/">Make an appointment</a>
                     </div> 
                 </div>
             </div>
@@ -73,23 +82,23 @@
             <div class="row no-gutters">
                 <div class="col-md">
                     <div class="pillbox --primary-light">
-                        <h2 class="--thin">Family Therapy</h2>
+                        <h2 class="--tight">Family Therapy</h2>
                         <p>Family therapy focuses on reinforcing healthy and loving relationships between family members, and resolving issues or conflicts that can have a lasting impact on those relationships.</p>
-                        <a href="/services/family-therapy/" class="btn btn-primary --square mt-3">Read More</a>
+                        <a href="/services/family-therapy/" class="btn btn-primary --square --small mt-3">Read More</a>
                     </div>
                 </div>
                 <div class="col-md">
                     <div class="pillbox --primary --expanded">
-                        <h2 class="--thin">Children and Teens</h2>
+                        <h2 class="--tight">Children and Teens</h2>
                         <p>Whether your child is having trouble at school, not getting along with friends, isn’t behaving like his peers, therapy can help improve your quality of life as a parent when you start seeing positive changes in your child.</p>
-                        <a href="/services/child-therapy/" class="btn btn-primary --square mt-3">Read More</a>
+                        <a href="/services/child-therapy/" class="btn btn-primary --square mt-3 --small">Read More</a>
                     </div>
                 </div>
                 <div class="col-md">
                     <div class="pillbox --primary-light">
-                        <h2 class="--thin">Couples Counseling</h2>
+                        <h2 class="--tight">Couples Counseling</h2>
                         <p>Couples counseling provides partners with the tools they need to communicate more effectively, solve problems in a healthy way, and approach each other with respect, kindness and understanding.</p>
-                        <a href="/services/couples-therapy/" class="btn btn-primary --square mt-3">Read More</a>
+                        <a href="/services/couples-therapy/" class="btn btn-primary --square mt-3 --small">Read More</a>
                     </div>
                 </div>
             </div>
@@ -183,7 +192,7 @@
     <section id="how-it-works">
         <div class="light-bg pb-5 pt-5">
             <div class="container">
-                <div class="row pt-5 pb-3">
+                <div class="row pt-4 pb-4">
                     <div class="col text-center">
                         <p class="--primary mb-0"><i>Keeping It Simple</i></p>
                         <h3 class="h2 --thin">How does the process work?</h2>
@@ -249,13 +258,13 @@
     </section>
     <section id="artices">
         <div class="container mb-5">
-            <div class="row pt-5 pb-3">
+            <div class="row pt-5 pb-4">
                 <div class="col text-center">
                     <p class="--primary mb-0"><i>Capital District Therapy</i></p>
                     <h3 class="h2 --thin">Latest News</h2>
                 </div>
             </div>
-            <div class="row row-eq-height">
+            <div class="row row-eq-height pb-4">
                 <div class="col-lg-6 col-md-12">
                     <div class="article-display">
                         <img src="/img/home/articles/handling-unsolicited-advice.jpg" class="img-fluid" width="100%" alt="How to handle unsolicited parenting advice."/>

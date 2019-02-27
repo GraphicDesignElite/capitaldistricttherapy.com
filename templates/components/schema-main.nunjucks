@@ -8,14 +8,22 @@
         "url": "https://capitaldistricttherapy.com",
         "telephone": "(518) 880-2395",
         "priceRange": "$90-$120",
-        "address": {
+        "address": [{
             "@type": "PostalAddress",
             "streetAddress": "406 Fulton St, Suite 509",
             "addressLocality": "Troy",
             "addressRegion": "NY",
             "postalCode": "12180",
             "addressCountry": "US"
-        },
+            },
+            {
+            "@type": "PostalAddress",
+            "streetAddress": "11 Computer Drive West, Suite 218",
+            "addressLocality": "Albany",
+            "addressRegion": "NY",
+            "postalCode": "12205",
+            "addressCountry": "US"
+        }],
         "geo": {
             "@type": "GeoCoordinates",
             "latitude": 42.7325264,

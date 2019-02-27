@@ -95,17 +95,25 @@
         "name": "Capital District Marriage and Family Therapy",
         "image": "https://capitaldistricttherapy.com/img/common/cdtfb.jpg",
         "@id": "https://capitaldistricttherapy.com/",
-        "url": "https://capitaldistricttherapy.com/",
+        "url": "https://capitaldistricttherapy.com",
         "telephone": "(518) 880-2395",
         "priceRange": "$90-$120",
-        "address": {
+        "address": [{
             "@type": "PostalAddress",
             "streetAddress": "406 Fulton St, Suite 509",
             "addressLocality": "Troy",
             "addressRegion": "NY",
             "postalCode": "12180",
             "addressCountry": "US"
-        },
+            },
+            {
+            "@type": "PostalAddress",
+            "streetAddress": "11 Computer Drive West, Suite 218",
+            "addressLocality": "Albany",
+            "addressRegion": "NY",
+            "postalCode": "12205",
+            "addressCountry": "US"
+        }],
         "geo": {
             "@type": "GeoCoordinates",
             "latitude": 42.7325264,
@@ -151,7 +159,7 @@
     <div class="row">
         <div class="col">
             <div>
-                <p>I offer a free one on one consultation for anyone who wants to know more about what we do and how we can work together. If you are interested in pursuing therapy and have questions, please fill out the form below with your basic contact information and the best time we can connect. <strong>Your consultation is private and 100% obligation free.</strong></p>
+                <p>I offer a free one on one consultation for anyone who wants to know more about what we do and how we can work together. If you are interested in pursuing therapy and have questions, please fill out the form below with your basic contact information and the best time we can connect. <strong>Your consultation is private and 100% obligation free.</strong> For questions about my fees, please view my <a href="/frequently-asked-questions/">frequently asked questions.</a></p>
             </div>
         </div>
     </div>

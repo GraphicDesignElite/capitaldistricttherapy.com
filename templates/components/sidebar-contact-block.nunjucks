@@ -1,11 +1,16 @@
 <section>
     <div class="contact-info-sidebar">
         <h5 class="--wborder"><span>Contact Information</span></h5>
-        <p class="pb-1 pt-1"><strong>Phone:</strong></p>
-        <p>(518) 880-2395</p>
-        <p class="pb-1 pt-1"><strong>Address:</strong></p>
+        <p class="pb-1 pt-1"><strong>Phone: </strong> (518) 844-4955</p>
+        <p class="pb-1 pt-1"><strong>Troy Office Location:</strong></p>
         <p>406 Fulton St, Suite 509<br/>
-        Troy, NY 12180</p>
+        Troy, NY 12180<br/>
+        <a href="https://goo.gl/maps/Yjj3qsquYWP2" target="_blank">Get Directions</a></p>
+        <br/> 
+        <p class="pb-1 pt-1"><strong>Albany Office Location:</strong></p>
+        <p>11 Computer Drive West, Suite 218<br/>
+        Albany, NY 12205<br/>
+        <a href="https://goo.gl/maps/33VbZfpZ8dJ2" target="_blank">Get Directions</a></p>
         <br/>
         <a href="/contact/" class="btn btn-primary --square --long">Contact Us</a>
     </div>

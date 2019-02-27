@@ -44,12 +44,29 @@
                                 <small>Build a Better Marriage</small>
                                 <h4>Couples Counseling</h4>
                                 <p>Financial hardships, serious illness, infedelity, or communication issues. Couples often need a private and comforatable way to open up new lines of communication.</p>
-                                <a href="/services/couples-therapy/" class="btn btn-primary">Read More</a>
+                                <a href="/services/couples-therapy/" class="btn btn-primary">Couples Counseling</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="col-md-6">
+                <div class="sl-box">
+                    <div class="row no-gutters">
+                        <div class="col-lg-5 bg individual"></div>
+                        <div class="col-lg-7">
+                            <div class="content">
+                                <small>Searching for Answers</small>
+                                <h4>Individual Therapy</h4>
+                                <p>Individual therapy takes place between a therapist and a patient, and is a process of setting realistic goals to inspire change that can greatly improve the quality of a patients life.</p>
+                                <a href="/services/individual-therapy/" class="btn btn-primary">Individual Therapy</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="row row-eq-height">
             <div class="col-md-6">
                 <div class="sl-box">
                     <div class="row no-gutters">
@@ -59,14 +76,27 @@
                                 <small>Build Stronger Bonds</small>
                                 <h4>Family therapy</h4>
                                 <p>Families come in a variety of sizes and constructs. Maybe some or all of the family members want to attend, and those are options to consider when seeking therapy.</p>
-                                <a href="/services/family-therapy/" class="btn btn-primary">Read More</a>
+                                <a href="/services/family-therapy/" class="btn btn-primary">Family Therapy</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row row-eq-height">
+            <div class="col-md-6">
+                <div class="sl-box">
+                    <div class="row no-gutters">
+                        <div class="col-lg-5 bg crisis"></div>
+                        <div class="col-lg-7">
+                            <div class="content">
+                                <small>Getting Back On Track</small>
+                                <h4>Crisis Therapy</h4>
+                                <p>Crisis therapy is an immediate and short-term psychological care that focuses on restoring a person’s ability to continue with life the way they did before the crisis occurred.</p>
+                                <a href="/services/crisis-therapy/" class="btn btn-primary">Crisis Therapy</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="col-md-6">
                 <div class="sl-box">
                     <div class="row no-gutters">
@@ -75,8 +105,8 @@
                             <div class="content">
                                 <small>Growing Up Healthy</small>
                                 <h4>Teens and Preteens</h4>
-                                <p>Teens and preteens can experience difficulties coping with changes in themselves, their families, and their environment.</p>
-                                <a href="/services/teen-therapy/" class="btn btn-primary">Read More</a>
+                                <p>Teen counseling offers a holistic solution for many common teen issues including teen drug addiction, bullying, teen depression and anxiety &amp; depression.</p>
+                                <a href="/services/teen-therapy/" class="btn btn-primary">Teen Therapy</a>
                             </div>
                         </div>
                     </div>
@@ -85,13 +115,13 @@
             <div class="col-md-6">
                 <div class="sl-box">
                     <div class="row no-gutters">
-                        <div class="col-lg-5 bg developmental"></div>
+                        <div class="col-lg-5 bg child"></div>
                         <div class="col-lg-7">
                             <div class="content">
                                 <small>Development</small>
                                 <h4>Child Therapy</h4>
                                 <p>Whether your child is having trouble at school, not getting along with friends, or isn’t behaving like his peers, therapy can help improve the quality of life.</p>
-                                <a href="/services/child-therapy/" class="btn btn-primary">Read More</a>
+                                <a href="/services/child-therapy/" class="btn btn-primary">Child Therapy</a>
                             </div>
                         </div>
                     </div>
@@ -102,13 +132,13 @@
             <div class="col-md-6">
                 <div class="sl-box">
                     <div class="row no-gutters">
-                        <div class="col-lg-5 bg individual"></div>
+                        <div class="col-lg-5 bg developmental"></div>
                         <div class="col-lg-7">
                             <div class="content">
-                                <small>Searching for Answers</small>
-                                <h4>Individual Therapy</h4>
-                                <p>You have been feeling down, tired, unhappy, and not like yourself.You’re not alone, depression affects 1 in 5 adults. We can work together to to reclaim your happiness.</p>
-                                <a href="/services/individual-therapy/" class="btn btn-primary">Read More</a>
+                                <small>Comprehensive Treatment</small>
+                                <h4>Developmental Therapy</h4>
+                                <p>Developmental Therapy is a form of therapy that focuses on integration of conceptual skills, motor skills, language skills, and social-emotional skills. </p>
+                                <a href="/services/prenatal-postnatal-therapy/" class="btn btn-primary">Developmental Therapy</a>
                             </div>
                         </div>
                     </div>
@@ -121,9 +151,9 @@
                         <div class="col-lg-7">
                             <div class="content">
                                 <small>Adjusting to Changes</small>
-                                <h4>New Mothers</h4>
-                                <p>The unique needs of mothers and their children are my passion. I love working during these transformative life stages and am enthusiastic to help you through this journey.</p>
-                                <a href="/services/prenatal-postnatal-therapy/" class="btn btn-primary">Read More</a>
+                                <h4>Postpartum Depression</h4>
+                                <p>If you feel empty, emotionless, or sad all or most of the time for longer than 2 weeks during or after pregnancy, it may be time reach out for help from a therapist.</p>
+                                <a href="/services/prenatal-postnatal-therapy/" class="btn btn-primary">Postpartum Therapy</a>
                             </div>
                         </div>
                     </div>

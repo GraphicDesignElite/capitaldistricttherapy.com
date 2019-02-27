@@ -1,0 +1,75 @@
+<!-- index.nunjucks -->
+{% set meta_title = "Therapy for children and adults with special needs." %}
+{% set meta_description = "Therapy services for children and adults with special needs, including Autism Spectrum Disorder, intellectual disabilities, learning disorders, traumatic braind injuries, Downs Syndrome, and neurological disease." %}
+{% set activePage = 'special-needs-therapy' %}
+{% set canonical = '/services/special-needs-therapy/' %}
+<!--breadcrumbs -->
+{% set folder_name = "Services" %}
+{% set folder_link = "/services/" %}
+{% set active_page_name = 'Special Needs Therapy' %}
+{% set active_page_link = '/services/special-needs-therapy/' %}
+
+{% extends "services-template.nunjucks" %}
+
+{% block sidebar %}
+{% include "components/services-sidebar.nunjucks" %}
+{% endblock %}
+
+{% block serviceHeading %}
+Therapy for children and adults with special needs
+{% endblock %}
+{% block serviceSubheading %}
+Individual and Family therapy and collaborative care.
+{% endblock %}
+{% block maincontent %}
+<img src="/img/services/special_needs_therapy_intro.jpg" class="img-fluid mb-4" alt="Teen and Adolescent Therapy and Counseling"/>
+<h3>Therapy and support services for special needs individuals and their families.</h3>
+<h4 class="--primary">Autism, intellectual disabilities, learning disorders, traumatic brain injuries and neurological disease.</h4>
+<p>Special Needs as defined by "any of various difficulties (such as physical, emotional, behavioral, or learning disability or impairment) that causes an individual to require additional or specialized services or accommodation (such as education or recreation) students with special needs." - <a href="https://www.merriam-webster.com/dictionary/special%20needs" target="_blank">Merriam-Webster</a></p>
+<blockquote class="blockquote">
+  <p class="mb-0">Transparency and honesty are the most important parts of an effective treatment. </p>
+</blockquote>
+<p>I started off in the field of psychology working with individuals with special needs. It was here where my passion for therapy began. I believe that working effectively with individuals with disabilities takes a special level of attention and care. As a clinician, I combine my education and experience with understanding and compassion that creates an ideal environment for my patients.</p>
+<p>In my experience, I have found that there is a wonderful transparency when working with my special needs patients. Transparency and honesty are the most important parts of an effective therapy treatment, so this makes working together easy and extremly intuitive.</p>
+<p>I have worked with individuals with special needs as young as 2 years of age up to adults. I started out working in the field of <a href="https://www.autismspeaks.org/applied-behavior-analysis-aba-0" target="_blank">Applied Behavioral Analysis (ABA)</a> and later received my Masters Degree in Psychology, which has provided me with the training needed to support both the patients and their families. </p>
+<h4 class="--primary">What types of services are provided?</h4>
+<p>There are various services offered depending on the needs of the patient and his/her family. </p>
+<p><strong>1. Individual Psychotherapy</strong></p>
+<p>Individual psychotherapy that utilizes a relationship based approach along with Cognitive Behavioral Therapy to assist in clients tuning into their experience, connect, and have quality help in making changes to their thoughts and actions.</p>
+<p>Types of goals clients work on through individual therapy:</p>
+<ol>
+    <li>Improving social skills and overall social functioning</li>
+    <li>Assertiveness training</li>
+    <li>Problem-Solving</li>
+    <li>Reducing risks to safety </li>
+    <li>Identification of emotions</li>
+    <li>Coping with emotions</li>
+    <li>Improving communication</li>
+    <li>Increase self-awareness</li>
+    <li>Process challenging situations</li>
+</ol>
+<p><strong>2. Family Therapy</strong></p>
+<p>Family therapy for siblings, parents and caregivers that address the family’s needs which include those of individuals paying special attention to the quality of relationships.</p>
+<p>Types of goals clients work on through family therapy:</p>
+<ol>
+    <li>Improving communication</li>
+    <li>Increased relationship satisfaction</li>
+    <li>Process diagnosis </li>
+    <li>Increase understanding of condition </li>
+    <li>Conflict resolution</li>
+    <li>Clarifying roles</li>
+    <li>Determining scheduling and division of responsibilities</li>
+    <li>Communicate the needs of each family member</li>
+</ol>
+<p><strong>3. Collaboration of care</strong></p>
+<p>I work with other providers such as a Speech therapist, Occupational therapist, Child Advocate, Applied Behavioral Analysis team so that you have one central place to review the coordination &amp; effectiveness of treatment. </p>
+
+<ol>
+    <li>When you have a family member with special needs, it can often mean that they have several service providers in their life. For parents and caregivers it can feel very overwhelming to coordinate and even just schedule of their loved ones appointments. Here is where I come in and can take the lead on coordinating services and care.</li>
+    <li>I can speak with all service providers individually and gather information about their approaches to treatment and the goals that they are working on with your child. I can analyze the various goals and figure out ways in which they compliment each other and create a cohesive approach to treatment.</li>
+    <li>I can also work with your child’s educators, such as teachers and school aides to review the type of intervention that your child is receiving. </li>
+</ol>
+
+<p>I truly love working with families with children with special needs. It is my passion, and one of the main reasons I chose the path of becoming a therapist. I provide the highest levels of professionalism and quality care to patients and their families. Not only am I able to work with you to create and implemen an effective treatment plan for your loved one, I am here to support parents and advocate for their children’s needs.</p>
+
+{% endblock %} 
