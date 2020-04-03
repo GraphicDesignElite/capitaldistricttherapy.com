@@ -131,26 +131,31 @@
             "postalCode": "12205",
             "addressCountry": "US"
         }],
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 42.7325264,
-            "longitude": -73.6883694
-        },
         "openingHoursSpecification": [{
             "@type": "OpeningHoursSpecification",
             "dayOfWeek": "Monday",
-            "opens": "08:00",
-            "closes": "19:00"
+            "opens": "09:00",
+            "closes": "20:00"
+        },{
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Tuesday",
+            "opens": "09:00",
+            "closes": "20:00"
         },{
             "@type": "OpeningHoursSpecification",
             "dayOfWeek": "Wednesday",
-            "opens": "08:00",
-            "closes": "19:00"
+            "opens": "09:00",
+            "closes": "20:00"
+        },{
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Thursday",
+            "opens": "09:00",
+            "closes": "20:00"
         },{
             "@type": "OpeningHoursSpecification",
             "dayOfWeek": "Friday",
-            "opens": "08:00",
-            "closes": "19:00"
+            "opens": "09:00",
+            "closes": "20:00"
         }],
         "sameAs": [
             "https://www.facebook.com/CapitalDistrictTherapy/",
@@ -176,6 +181,7 @@
 
 </section>
 <div class="container pt-5 pt-5">
+    {% include "components/site-message.nunjucks" %}
     <div class="row">
         <div class="col">
             <div>
@@ -290,8 +296,8 @@
             {% include "components/sidebar-contact-block.nunjucks" %}
             <div class="contact-info-sidebar">
                 <h4><span>Hours of Operation</span></h4>
-                <p class="pb-1 pt-1">Monday - Friday: <br/>11am - 7pm</p>
-                <p class="pb-1 pt-1">Weekends <br/>11am - 7pm</p>
+                <p class="pb-1 pt-1">Monday - Friday: <br/>9am - 8pm</p>
+                <p class="pb-1 pt-1">Saturday <br/>9am - 8pm</p>
                 <br/>
             </div>
         </div>

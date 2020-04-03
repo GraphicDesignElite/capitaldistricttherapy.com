@@ -80,7 +80,7 @@
             $(errMsgCnt).show();
         }
         function reportEmailSuccess() {
-            var sccMsgCnt = $('#successMsgs');
+            var sccMsgCnt = $('.successMsgs');
             $(sccMsgCnt).html('<strong>Success!</strong> Your message has been sent');
             $(sccMsgCnt).show();
         }
@@ -114,26 +114,31 @@
             "postalCode": "12205",
             "addressCountry": "US"
         }],
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 42.7325264,
-            "longitude": -73.6883694
-        },
         "openingHoursSpecification": [{
             "@type": "OpeningHoursSpecification",
             "dayOfWeek": "Monday",
-            "opens": "08:00",
-            "closes": "19:00"
+            "opens": "09:00",
+            "closes": "20:00"
+        },{
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Tuesday",
+            "opens": "09:00",
+            "closes": "20:00"
         },{
             "@type": "OpeningHoursSpecification",
             "dayOfWeek": "Wednesday",
-            "opens": "08:00",
-            "closes": "19:00"
+            "opens": "09:00",
+            "closes": "20:00"
+        },{
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Thursday",
+            "opens": "09:00",
+            "closes": "20:00"
         },{
             "@type": "OpeningHoursSpecification",
             "dayOfWeek": "Friday",
-            "opens": "08:00",
-            "closes": "19:00"
+            "opens": "09:00",
+            "closes": "20:00"
         }],
         "sameAs": [
             "https://www.facebook.com/CapitalDistrictTherapy/",
@@ -156,6 +161,7 @@
     </div>
 </header>
 <div class="container pt-5 pt-5">
+    {% include "components/site-message.nunjucks" %}
     <div class="row">
         <div class="col">
             <div>
@@ -170,7 +176,7 @@
             <div class="row">
                 <div class="col">
                     <div id="errorMsgs" style="display:none;" class="alert alert-danger"></div>
-                    <div id="successMsgs" style="display:none;" class="alert alert-success"></div>
+                    <div id="successMsgs" style="display:none;" class="alert alert-success successMsgs"></div>
                 </div>
             </div>
             <form action="{{backend_URL}}/consultation/" method="post" id="consultation-form">
@@ -344,6 +350,7 @@
                         <input type="submit" class="btn btn-primary btn-send --long" id="contact-button" value="Schedule a Free Consultation">
                     </div>
                 </div>
+                <div id="successMsgs" style="display:none; margin-top:20px;" class="alert alert-success successMsgs"></div>
                 <div class="row">
                     <div class="col-md-12">
                         <p class="text-muted pt-3">

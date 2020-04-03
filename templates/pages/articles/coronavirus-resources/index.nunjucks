@@ -1,0 +1,107 @@
+<!-- index.nunjucks -->
+{% set meta_title = "Coronavirus Resources for Albany County NY" %}
+{% set meta_description = "Capital District Therapy is Following NY on Pause offices are currently closed ~ telephone & video sessions available." %}
+
+{% set activePage = "coronavirus-resources" %}
+{% set canonical = '/articles/coronavirus-resources/' %}
+
+<!--breadcrumbs -->
+{% set folder_name = "Articles" %}
+{% set folder_link = "/articles/" %}
+{% set active_page_name = 'Coronavirus Resources' %}
+{% set active_page_link = '/articles/coronavirus-resources/' %}
+
+{% extends "services-template.nunjucks" %}
+
+{% block sidebar %}
+{% include "components/articles-sidebar.nunjucks" %}
+{% endblock %}
+
+{% block serviceHeading %}
+Coronavirus Resources for Albany County
+{% endblock %}
+{% block serviceSubheading %}
+Information for upstate New York Residents
+{% endblock %}
+{% block maincontent %}
+
+<h3 class="h4">New York On Pause</h3>
+<p>Capital District Therapy is Following NY on Pause offices are currently closed. <a href="/services/online-and-telehealth/">Telephone &amp; online video sessions are available</a>. Below I have provided some useful resources and links for Update New York residents.</p><br/>
+<div class="row">
+    <div class="col-md-12">
+        <div class="resource">
+            <h4>News & Coronavirus updates</h4>
+            <p class="--primary">Center for Disease Control (CDC)</p>
+            <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html" class="btn btn-primary --square mt-1 mb-2 --small" target="_blank">Visit Site</a>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="resource">
+            <h4>NY Office of Mental Health</h4>
+            <p>The NY Office of Mental Health is a brilliant resource of information. The information below was found from OMH’s website & I provide links to each resource.</p>
+            <a href="https://omh.ny.gov/" class="btn btn-primary --square mt-1 mb-2 --small" target="_blank">Visit Site</a>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="resource">
+            <h4>OMH Emotional Support Line</h4>
+            <p>The Emotional Support Line provides free and confidential support, helping callers experiencing increased anxiety due to the coronavirus emergency. The Help Line is staffed by volunteers, including mental health professionals, who have received training in crisis counseling.</p>
+            <p><strong>Telephone Number:</strong> 1-844-863-9314</p>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="resource">
+            <h4>Crisis Text Line</h4>
+            <p>An anonymous texting service available 24/7. Starting a conversation is easy.</p>
+            <p><strong>Telephone Number:</strong> Text GOT5 to 741741</p>
+            <a href="https://omh.ny.gov/omhweb/suicide_prevention/cp.html" class="btn btn-primary --square mt-1 mb-2 --small" target="_blank">Visit Site</a>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="resource">
+            <h4>SAMHSA Disaster Distress Helpline</h4>
+            <p>Provides 24/7 crisis counseling and support to people experiencing emotional distress related to natural or human-caused disasters.</p>
+            <p><strong>Telephone Number:</strong> 1-800-985-5990</p>
+            <a href="https://www.samhsa.gov/find-help/disaster-distress-helpline" class="btn btn-primary --square mt-1 mb-2 --small" target="_blank">Visit Site</a>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="resource">
+            <h4>Domestic Violence</h4>
+            <p>Advocates are available 24/7 to talk to anyone who is experiencing domestic violence, looking for information or questioning unhealthy aspects of their relationship.</p>
+            <p><strong>Telephone Number:</strong> 1-800-799-SAFE(7233)</p>
+            <a href="https://www.thehotline.org/help/" class="btn btn-primary --square mt-1 mb-2 --small" target="_blank">Visit Site</a>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="resource">
+            <h4>National Life Line Suicide Prevention</h4>
+            <p>If your life or someone else's is in imminent danger, please call 911. If you are in crisis and need immediate help, please call.</p>
+            <p><strong>Telephone Number:</strong> 1-800-273-TALK (8255)</p>
+            <a href="https://suicidepreventionlifeline.org/" class="btn btn-primary --square mt-1 mb-2 --small" target="_blank">Visit Site</a>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="resource">
+            <h4>Feeling Stressed About Coronavirus (COVID-19)?</h4>
+            <p>Managing Anxiety in an Anxiety-Provoking Situation</p>
+            <a href="https://omh.ny.gov/omhweb/guidance/covid-19-managing-stress-anxiety.pdf" class="btn btn-primary --square mt-1 mb-2 --small" target="_blank">Read Article</a>&nbsp;
+            <a href="https://omh.ny.gov/omhweb/guidance/covid-19-managing-stress-anxiety-spanish-us.pdf" class="btn btn-primary --square mt-1 mb-2 --small" target="_blank">Leer En Español</a>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="resource">
+            <h4>How  Families Can Help Children Cope w/ Fear & Anxiety</h4>
+            <p>Whether tragic events touch your family personally or are brought into your home via newspapers and television, you can help children cope with the anxiety that violence, death, and disasters can cause.</p>
+            <a href="https://omh.ny.gov/omhweb/disaster_resources/pandemic_influenza/families_help_children_cope_fear_anxiety.pdf" class="btn btn-primary --square mt-1 mb-2 --small" target="_blank">Read Article</a>&nbsp;
+        </div>
+    </div>
+        <div class="col-md-12">
+        <div class="resource">
+            <h4>After a Disaster: A Guide for Parents &amp; Teachers</h4>
+            <p>Natural disasters such as tornados, or man-made tragedies such as bombings, can leave children feeling frightened, confused, and insecure.</p>
+            <a href="https://omh.ny.gov/omhweb/disaster_resources/pandemic_influenza/after_disaster_guide_parents_and_teachers.html" class="btn btn-primary --square mt-1 mb-2 --small" target="_blank">Read Article</a>&nbsp;
+        </div>
+    </div>
+</div>
+{% endblock %}

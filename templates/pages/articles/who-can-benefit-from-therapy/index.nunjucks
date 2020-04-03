@@ -8,8 +8,8 @@
 <!--breadcrumbs -->
 {% set folder_name = "Articles" %}
 {% set folder_link = "/articles/" %}
-{% set active_page_name = 'What to expect' %}
-{% set active_page_link = '/articles/what-to-expect/' %}
+{% set active_page_name = 'Who Can Benefit From Therapy' %}
+{% set active_page_link = '/articles/who-can-benefit-from-therapy/' %}
 
 {% extends "services-template.nunjucks" %}
 

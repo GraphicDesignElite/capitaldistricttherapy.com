@@ -1,0 +1,42 @@
+<!-- index.nunjucks -->
+{% set meta_title = "Online Therapy and Telehealth" %}
+{% set meta_description = "Capital District Marriage offers online therapy and telehealth options to accommodate your at home or remote therapy needs. " %}
+{% set activePage = 'online-and-telehealth' %}
+{% set canonical = '/services/online-and-telehealth/' %}
+<!--breadcrumbs -->
+{% set folder_name = "Services" %}
+{% set folder_link = "/services/" %}
+{% set active_page_name = 'Online and Telehealth' %}
+{% set active_page_link = '/services/online-and-telehealth/' %}
+
+{% extends "services-template.nunjucks" %}
+{% block sidebar %}
+{% include "components/services-sidebar.nunjucks" %}
+{% endblock %}
+
+
+{% block serviceHeading %}
+Online Therapy and Telehealth
+{% endblock %}
+{% block serviceSubheading %}
+Remote therapy
+{% endblock %}
+{% block maincontent %}
+{% include "components/site-message.nunjucks" %}
+<img src="/img/services/online_therapy_intro.jpg" class="img-fluid mb-4" alt="Online Therapy"/>
+<h3>What are the benefits of online therapy?</h3>
+<h4 class="--primary">Eliminate barriers to access of care.</h4>
+<p>Online therapy has been proven to be as effective, and in some cases <strong><a href="https://www.ncbi.nlm.nih.gov/pubmed/23886401" target="_blank">more effective option than traditional, face to face therapy</a></strong>. Online sessions provide important benefits not only for patients with limited mobility, but also in cases where time or access to transportation are an issue.</p>
+<p>This use of these new technologies is also called &quot;telemedicine,&quot; and is part of a growing trend in the healthcare industry, with technology enabling more convenient, affordable, and on-demand benefits.</p>
+<p>For some patients, the idea of online therapy may seem unusual or ineffective. Before you write off online therapy as an option, consider the many benefits.</p>
+<ul class="checkmark">
+    <li>Circumvent mobility issues preventing you from getting the care you need</li>
+    <li>Decrese the amount of time needed to complete your sessions by eliminating travel time</li>
+    <li>Conduct your session from the comfort of your own home</li>
+</ul>
+
+<p>Online therapy allows you, the patient, more control and better flexability to drive the directon of our theraputic relationship. There is no defined location for an online therapy session. Your session happens wherever you are comfortable, at a time that fits your schedule. Often times, your challenges may extend beyond your mental health into your lifestyle or career. Online therapy removes the hurdles that can otherwise lead to a lack of care for many patients. </p>
+<h3 class="h4">Is online therapy private/confidential?</h3>
+<p>Many patients who are new to online therapy or inexperienced with online video technologies are reluctant to consider online therapy due to privacy concerns. Therapy is ALWAYS a private experience, and your privacy is a top priority. During our online sessions, I remain completely isolated throughout our conversation to provide you with an extra layer of protection. It is important however to consider your own surroundings during your session, ensuring you have a quiet, and private place to talk.</p>
+
+{% endblock %}

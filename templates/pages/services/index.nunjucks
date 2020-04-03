@@ -5,7 +5,67 @@
 {% set canonical = '/services/' %}
 {% extends "layout.nunjucks" %}
 
-
+{% block schema %}
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Capital District Marriage and Family Therapy",
+        "image": "https://capitaldistricttherapy.com/img/common/cdtfb.jpg",
+        "@id": "https://capitaldistricttherapy.com/",
+        "url": "https://capitaldistricttherapy.com",
+        "telephone": "(518) 880-2395",
+        "priceRange": "$90-$120",
+        "address": [{
+            "@type": "PostalAddress",
+            "streetAddress": "406 Fulton St, Suite 509",
+            "addressLocality": "Troy",
+            "addressRegion": "NY",
+            "postalCode": "12180",
+            "addressCountry": "US"
+            },
+            {
+            "@type": "PostalAddress",
+            "streetAddress": "11 Computer Drive West, Suite 218",
+            "addressLocality": "Albany",
+            "addressRegion": "NY",
+            "postalCode": "12205",
+            "addressCountry": "US"
+        }],
+        "openingHoursSpecification": [{
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Monday",
+            "opens": "09:00",
+            "closes": "20:00"
+        },{
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Tuesday",
+            "opens": "09:00",
+            "closes": "20:00"
+        },{
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Wednesday",
+            "opens": "09:00",
+            "closes": "20:00"
+        },{
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Thursday",
+            "opens": "09:00",
+            "closes": "20:00"
+        },{
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Friday",
+            "opens": "09:00",
+            "closes": "20:00"
+        }],
+        "sameAs": [
+            "https://www.facebook.com/CapitalDistrictTherapy/",
+            "https://www.instagram.com/capital_district_therapy/",
+            "https://www.linkedin.com/in/vanessa-bever-353978171/"
+        ]
+    }
+</script>
+{% endblock %}
 {% block content %}
 
 <header>
@@ -30,6 +90,7 @@
                 <p>Years of training, research, and experience working with individuals and families has taught me that just as no two people are alike, every situation and deserves a unique treatment plan. I work with you to develp a plan that fits your lifestyle that will prepare you to help you take the essential next step of your journey.</p>
             </div>
         </div>
+        {% include "components/site-message.nunjucks" %}
     </div>
 </section>
 <section id="service-boxes" class="mb-5">
@@ -43,7 +104,7 @@
                             <div class="content">
                                 <small>Build a Better Marriage</small>
                                 <h4>Couples Counseling</h4>
-                                <p>Financial hardships, serious illness, infedelity, or communication issues. Couples often need a private and comforatable way to open up new lines of communication.</p>
+                                <p>Financial hardships, serious illness, infidelity, or communication issues. Couples often need a private and comfortable way to open up new lines of communication.</p>
                                 <a href="/services/couples-therapy/" class="btn btn-primary">Couples Counseling</a>
                             </div>
                         </div>

@@ -18,6 +18,8 @@
           Services{%if activePage == 'services' %} <span class="sr-only">(current)</span> {% endif %}
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          
+          <a class="dropdown-item {%if activePage == 'online-and-telehealth' %} active {% endif %}" href="/services/online-and-telehealth/">Online Therapy {%if activePage == 'online-and-telehealth' %} <span class="sr-only">(current)</span> {% endif %}</a>
           <a class="dropdown-item {%if activePage == 'family-therapy' %} active {% endif %}" href="/services/family-therapy/">Family Therapy {%if activePage == 'family-therapy' %} <span class="sr-only">(current)</span> {% endif %}</a>
           <a class="dropdown-item" href="/services/individual-therapy/">Individual Therapy {%if activePage == 'individual-therapy' %} <span class="sr-only">(current)</span> {% endif %}</a>
           <a class="dropdown-item" href="/services/crisis-therapy/">Crisis Therapy {%if activePage == 'crisis-therapy' %} <span class="sr-only">(current)</span> {% endif %}</a>

@@ -3,6 +3,7 @@
     <a href="/articles/who-can-benefit-from-therapy/" class="list-group-item list-group-item-action {%if activePage == 'who-can-benefit' %} active {% endif %}">Who can benefit from therapy?</a>
     <a href="/articles/what-to-expect/" class="list-group-item list-group-item-action {%if activePage == 'what-to-expect' %} active {% endif %}">What to expect during your first session</a>
     <a href="/resources/" class="list-group-item list-group-item-action {%if activePage == 'resources' %} active {% endif %}">Resources</a>
+    <a href="/articles/coronavirus-resources/" class="list-group-item list-group-item-action {%if activePage == 'coronavirus-resources' %} active {% endif %}">Coronavirus Resources</a>
     <a href="/frequently-asked-questions/" class="list-group-item list-group-item-action {%if activePage == 'faqs' %} active {% endif %}">Frequently Asked Questions</a>
     <a href="/contact/schedule-a-consultation/" class="list-group-item list-group-item-action {%if activePage == 'crisis-therapy' %} active {% endif %}">Schedule a Consultation</a>
 </div>

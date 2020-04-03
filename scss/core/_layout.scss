@@ -363,8 +363,8 @@ footer{
 
 //Home
 .home-hero{
-    color:#fff;
-    background-image:url('/img/home/home-header-6.jpg');
+    /*background-image:url('/img/home/home-header.jpg'); */
+    background-color:#fafaff;
     padding-bottom:200px;
     background-repeat:no-repeat;
     background-size:cover;
@@ -372,7 +372,7 @@ footer{
     background-position: bottom center;
     &:before{
         @include media-breakpoint-down(md) {
-            background:rgba(0,0,0,0.5);
+            /*background:rgba(0,0,0,0.5);
             z-index:0;
             content:'';
             display:block;
@@ -380,7 +380,7 @@ footer{
             top:0;
             bottom:0;
             left:0;
-            right:0;
+            right:0;*/
         } 
     }
     @include media-breakpoint-up(xl) {
@@ -851,11 +851,14 @@ footer{
     &.special-needs-therapy{
         background-image:url('/img/services/special_needs_therapy_header.jpg');
     }
+    &.online-and-telehealth{
+        background-image:url('/img/services/online_therapy_header.jpg');
+    }
     &.all-services{
         background-color:#fff;
         background-image:url('/img/services/therapy-services.jpg');
     }
-    &.about-us, &.who-can-benefit, &.what-to-expect, &.resources {
+    &.about-us, &.who-can-benefit, &.what-to-expect, &.resources, &.coronavirus-resources {
         background-image:url('/img/services/about-capital-district-therapy.jpg');
     }
     &.contact{

@@ -50,7 +50,7 @@
 
            }
         });
-
+ 
 
         $("#consultation-form").validate({
             rules: {
