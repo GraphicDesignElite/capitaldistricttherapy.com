@@ -166,6 +166,17 @@
 </script>
 {% endblock %}
 {% block content %}
+<div class="alert alert-danger text-center mb-0">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                
+                <strong>Please note:</strong> Due to an exceptionally high demand for services, I am no longer able to accept any new clients at this time. Please check back soon for additional openings.
+                
+            </div>
+        </div>
+    </div>
+</div>
 <header class="services-header {{ activePage }}">
     <div class="container pt-5">
         <div class="row">
@@ -295,7 +306,7 @@
         <div class="col-lg-4 col-sm-12 order-md-1">
             {% include "components/sidebar-contact-block.nunjucks" %}
             <div class="contact-info-sidebar">
-                <h4><span>Hours of Operation</span></h4>
+                <h5><span>Hours of Operation</span></h5>
                 <p class="pb-1 pt-1">Monday - Friday: <br/>9am - 8pm</p>
                 <p class="pb-1 pt-1">Saturday <br/>9am - 8pm</p>
                 <br/>

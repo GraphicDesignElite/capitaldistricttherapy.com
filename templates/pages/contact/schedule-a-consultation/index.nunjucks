@@ -149,6 +149,17 @@
 </script>
 {% endblock %}
 {% block content %}
+<div class="alert alert-danger text-center mb-0">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                
+                <strong>Please note:</strong> Due to an exceptionally high demand for services, I am no longer able to accept any new clients at this time. Please check back soon for additional openings.
+                
+            </div>
+        </div>
+    </div>
+</div>
 <header class="services-header {{ activePage }}">
     <div class="container pt-5 pb-5 pb-md-3">
         <div class="row">

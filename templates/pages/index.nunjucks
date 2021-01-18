@@ -62,6 +62,7 @@
 </script>
 {% endblock %}
 {% block content %}
+
 <header class="home-page">
     <div class="home-hero" style="background-image: none;">
         <div class="container">
