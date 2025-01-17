@@ -1,4 +1,6 @@
 Run > Gulp. Enjoy!
+Set Gulp Local version: 3.9.1 
+Open .Dist folder in another window with live server to view changes and enjoy browser sync
 
 npm install gulp-cli -g
 npm install gulp -D

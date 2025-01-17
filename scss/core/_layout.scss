@@ -11,11 +11,11 @@ body{
   background:#fff;
   display: flex;
   flex-direction: column;
-  //&.home{
-    //background-image:url('/img/home/home-header.jpg');
-    //background-position: center top;
-    //background-repeat: no-repeat;
-  //}
+  &.home{
+    /*background-image:url('/img/home/home-header.jpg');*/
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
 }
 h1,h2,h3,h4,h5,.h1,.h2,.h3,.h4,.h5, p, span, label, a{
   font-family: $heading-font;
@@ -363,7 +363,7 @@ footer{
 
 //Home
 .home-hero{
-    /*background-image:url('/img/home/home-header.jpg'); */
+    background-image:url('/img/home/home-header.jpg'); 
     background-color:#fafaff;
     padding-bottom:200px;
     background-repeat:no-repeat;
